@@ -1,0 +1,26 @@
+# System files
+.DS_Store
+.tmp.driveupload/
+.antigravitycli/
+*.aux
+
+# Large media files
+*.MOV
+*.mp4
+*.avi
+*.mkv
+*.mov
+
+# Cache files
+.nra.cache
+*.cache
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Node modules (if applicable)
+node_modules/
+tools/annotator/imgui/

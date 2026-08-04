@@ -1,0 +1,6 @@
+--- Hessian Trick Analysis ---
+Spatiotemporal Elements (N): 307200
+1. Trace(H): 1.80135e+06
+2. Frobenius Norm ||H||_F: 3520.68
+3. Leading Eigenvalue (Max curvature): 11.5019
+4. Spectral Gap (Min Eigenvalue): 0.434668

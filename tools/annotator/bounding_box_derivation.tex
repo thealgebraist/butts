@@ -1,0 +1,72 @@
+\documentclass{article}
+\usepackage{amsmath, amssymb}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+\title{Formal Derivation of Minimum Axis-Aligned Bounding Box for Polygons}
+\author{Antigravity}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{Introduction}
+In the development of the C++23 manual image annotation tool, it is necessary to rigorously compute the minimum axis-aligned bounding box (AABB) of an arbitrary closed $n$-vertex polygon. This report formally derives the bounding box bounds from first principles.
+
+\section*{Definitions and Axioms}
+
+Let $\mathcal{P}$ be an $n$-sided simple polygon in the Cartesian plane $\mathbb{R}^2$, defined by an ordered sequence of vertices:
+\[
+\mathcal{V} = \{v_1, v_2, \dots, v_n\}
+\]
+where each vertex $v_i \in \mathbb{R}^2$ is parameterized by its Euclidean coordinates $v_i = (x_i, y_i)$.
+
+The polygon boundary $\partial\mathcal{P}$ is the union of straight line segments $\overline{v_i v_{i+1}}$, closing with $\overline{v_n v_1}$.
+
+\textbf{Definition 1:} An axis-aligned bounding box $\mathcal{B}$ is a rectangular region defined by four bounds: $(x_{\min}, x_{\max}, y_{\min}, y_{\max})$, such that:
+\[
+\mathcal{B} = \{ (x, y) \in \mathbb{R}^2 \mid x_{\min} \le x \le x_{\max} \text{ and } y_{\min} \le y \le y_{\max} \}
+\]
+
+\textbf{Axiom 1 (Containment):} To strictly bound the polygon $\mathcal{P}$, all points in the polygon region $\mathcal{P} \cup \partial\mathcal{P}$ must reside within $\mathcal{B}$.
+
+\section*{Theorem: Vertex Bounds Sufficiency}
+\textbf{Theorem 1:} An axis-aligned bounding box $\mathcal{B}$ completely encloses a polygon $\mathcal{P}$ if and only if it completely encloses all vertices $\mathcal{V}$ of the polygon.
+
+\textit{Proof:} 
+By definition, any point $p = (x,y)$ on an edge $\overline{v_i v_{i+1}}$ is a convex combination of $v_i$ and $v_{i+1}$:
+\[
+p = \lambda v_i + (1-\lambda) v_{i+1}, \quad \lambda \in [0, 1]
+\]
+For the $x$-coordinate:
+\[
+x = \lambda x_i + (1-\lambda) x_{i+1}
+\]
+Since $\lambda \ge 0$ and $(1-\lambda) \ge 0$, the sum is bounded by the extremal values of the vertices:
+\[
+\min(x_i, x_{i+1}) \le x \le \max(x_i, x_{i+1})
+\]
+This property holds independently for the $y$-coordinate. Any point strictly inside the polygon can be represented as a convex combination of boundary points (by triangulation). Therefore, the extrema of the entire polygon space $\mathcal{P}$ are identically the extrema of the vertex set $\mathcal{V}$. $\blacksquare$
+
+\section*{Derivation of Bounds}
+
+Given Theorem 1, the minimum enclosing bounds $(x_{\min}, x_{\max}, y_{\min}, y_{\max})$ must satisfy:
+\[
+x_{\min} = \inf \{x \mid (x,y) \in \mathcal{P}\} = \min_{1 \le i \le n} x_i
+\]
+\[
+x_{\max} = \sup \{x \mid (x,y) \in \mathcal{P}\} = \max_{1 \le i \le n} x_i
+\]
+\[
+y_{\min} = \inf \{y \mid (x,y) \in \mathcal{P}\} = \min_{1 \le i \le n} y_i
+\]
+\[
+y_{\max} = \sup \{y \mid (x,y) \in \mathcal{P}\} = \max_{1 \le i \le n} y_i
+\]
+
+The final width $W$ and height $H$ of the AABB are therefore formally derived as:
+\[
+W = \max_{1 \le i \le n} x_i - \min_{1 \le i \le n} x_i, \quad H = \max_{1 \le i \le n} y_i - \min_{1 \le i \le n} y_i
+\]
+
+These equations guarantee a minimal bounding box tightly fitted to the annotated objects, which perfectly translates into the $\mathcal{O}(n)$ computation algorithm implemented in our C++23 \texttt{main.cpp} file without reliance on assumed heuristic boundaries.
+\end{document}

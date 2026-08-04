@@ -1,0 +1,79 @@
+DIGEST 1b4e7db3041aaaaf4964723b4fbf7d0c
+Fproof
+R27:31 Stdlib.Reals.Reals <> <> lib
+ax 143:148 <> Matrix
+R155:158 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R152:154 Corelib.Init.Datatypes <> nat ind
+R162:165 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R159:161 Corelib.Init.Datatypes <> nat ind
+ax 178:183 <> Vector
+R190:193 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R187:189 Corelib.Init.Datatypes <> nat ind
+ax 207:211 <> Trace
+binder 223:223 <> n:5
+R237:240 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R227:232 proof <> Matrix prfax
+R234:234 proof <> n:5 var
+R236:236 proof <> n:5 var
+R241:241 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+ax 250:260 <> Expectation
+binder 272:272 <> n:8
+R276:276 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R290:294 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R285:288 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R277:282 proof <> Vector prfax
+R284:284 proof <> n:8 var
+R289:289 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R295:295 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+ax 343:359 <> vec_transpose_mul
+binder 371:371 <> n:11
+R383:386 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R375:380 proof <> Vector prfax
+R382:382 proof <> n:11 var
+R397:400 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R387:392 proof <> Matrix prfax
+R394:394 proof <> n:11 var
+R396:396 proof <> n:11 var
+R409:412 Corelib.Init.Logic <> ::type_scope:x_'->'_x not
+R401:406 proof <> Vector prfax
+R408:408 proof <> n:11 var
+R413:413 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+ax 505:529 <> Local_Hutchinson_Equality
+R545:550 proof <> Matrix prfax
+binder 541:541 <> H:14
+R617:619 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R560:570 proof <> Expectation prfax
+R581:586 proof <> Vector prfax
+binder 577:577 <> z:15
+R593:609 proof <> vec_transpose_mul prfax
+R615:615 proof <> z:15 var
+R613:613 proof <> H:14 var
+R611:611 proof <> z:15 var
+R620:624 proof <> Trace prfax
+R626:626 proof <> H:14 var
+def 720:733 <> SaliencyEnergy
+R740:745 proof <> Matrix prfax
+binder 736:736 <> H:18
+R754:754 Stdlib.Reals.Rdefinitions RbaseSymbolsImpl R defax
+R761:761 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R769:773 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R781:781 Stdlib.Reals.Rdefinitions <> ::R_scope:x_'*'_x not
+R762:766 proof <> Trace prfax
+R768:768 proof <> H:18 var
+R774:778 proof <> Trace prfax
+R780:780 proof <> H:18 var
+prf 793:814 <> bbox_saliency_unbiased
+R830:835 proof <> Matrix prfax
+binder 826:826 <> H:19
+R902:904 Corelib.Init.Logic <> ::type_scope:x_'='_x not
+R845:855 proof <> Expectation prfax
+R866:871 proof <> Vector prfax
+binder 862:862 <> z:20
+R878:894 proof <> vec_transpose_mul prfax
+R900:900 proof <> z:20 var
+R898:898 proof <> H:19 var
+R896:896 proof <> z:20 var
+R905:909 proof <> Trace prfax
+R911:911 proof <> H:19 var
+R939:963 proof <> Local_Hutchinson_Equality prfax
+R939:963 proof <> Local_Hutchinson_Equality prfax

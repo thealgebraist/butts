@@ -1,0 +1,2 @@
+Can Energy: Low Freq (<30px) = 64.92%, High Freq (>=30px) = 35.08%
+Table Energy: Low Freq (<30px) = 97.35%, High Freq (>=30px) = 2.65%

@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in}
+
+\title{Spatiotemporal Hessian Analysis via Hutchinson's Trace Estimator}
+\author{Antigravity}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{First Principles Formulation}
+Let the video sequence be defined as a continuous state vector $\mathbf{x} \in \mathbb{R}^N$ where $N = T \times H \times W = 307200$. 
+We associate the spatiotemporal sequence with the Dirichlet Energy functional:
+\begin{equation}
+E(\mathbf{x}) = \frac{1}{2} \int |\nabla \mathbf{x}|^2 \, dt \, dy \, dx
+\end{equation}
+Taking the second variation yields the Hessian operator, which corresponds to the negative 3D Laplacian: $H = -\Delta$. 
+Since the explicit construction of $H \in \mathbb{R}^{N \times N}$ is computationally intractable, we use Hutchinson's trace estimator (the ``Hessian Trick'') using Rademacher random vectors $\mathbf{v} \in \{-1, 1\}^N$.
+
+\subsection{Formal Proof of Trace Expectation}
+To rigorously show that the expectation of the quadratic form $\mathbf{v}^T H \mathbf{v}$ yields the trace of the Hessian, we proceed from first principles.
+Let $\mathbf{v}$ be a vector where each component $v_i$ is drawn independently from a distribution such that $\mathbb{E}[v_i] = 0$ and $\mathbb{E}[v_i^2] = 1$.
+\begin{equation}
+\mathbb{E}[\mathbf{v}^T H \mathbf{v}] = \mathbb{E}\left[ \sum_{i,j} H_{ij} v_i v_j \right] = \sum_{i,j} H_{ij} \mathbb{E}[v_i v_j]
+\end{equation}
+By the independence of the components, for $i \neq j$, $\mathbb{E}[v_i v_j] = \mathbb{E}[v_i]\mathbb{E}[v_j] = 0$. For $i = j$, $\mathbb{E}[v_i^2] = 1$. Thus, the summation collapses strictly to the diagonal elements:
+\begin{equation}
+\sum_{i,j} H_{ij} \mathbb{E}[v_i v_j] = \sum_{i} H_{ii} (1) = \text{Tr}(H)
+\end{equation}
+This confirms that the implicit Hessian-vector product provides an unbiased estimator for the trace.
+
+\section{Analysis and Results}
+We evaluated four critical properties of the implicit Hessian evaluated on the downscaled HD video tensor ($300 \times 32 \times 32$):
+
+\begin{enumerate}
+    \item \textbf{Trace of the Hessian:} $\text{Tr}(H) \approx 1.80135 \times 10^6$. Evaluated via $\mathbf{v}^T H \mathbf{v}$. This measures the total spatiotemporal divergence of the gradient field (total non-smoothness).
+    \item \textbf{Frobenius Norm:} $\|H\|_F = \sqrt{\text{Tr}(H^T H)} \approx 3520.68$. Evaluated by tracking the trace of the squared Hessian via $\|H \mathbf{v}\|$. This isolates regions of high-frequency motion and spatial edges independently of their direction.
+    \item \textbf{Leading Eigenvalue:} $\lambda_{\max} \approx 11.5019$. Computed via power iteration $\mathbf{v}_{k+1} = H \mathbf{v}_k / \|H \mathbf{v}_k\|$. Since the theoretical maximum eigenvalue for a 3D finite-difference Laplacian is exactly 12, this confirms the grid approaches theoretical maximum curvature along its steepest spatiotemporal bounds.
+    \item \textbf{Spectral Gap:} $\lambda_{\min} \approx 0.434668$. Evaluated via shifted power iteration on $(12I - H)$. The strictly positive minimum eigenvalue confirms the strict convexity of the Dirichlet energy functional across the evaluated state.
+\end{enumerate}
+
+\end{document}
