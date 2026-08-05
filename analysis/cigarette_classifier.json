@@ -1,0 +1,28 @@
+{
+ "location": {
+  "counts": {
+   "cigarette_butt": 10,
+   "dontknow": 31
+  },
+  "val_n": 41,
+  "accuracy": 0.854,
+  "majority_baseline": 0.756,
+  "recall": {
+   "cigarette_butt": 0.8,
+   "dontknow": 0.871
+  }
+ },
+ "random": {
+  "counts": {
+   "cigarette_butt": 11,
+   "dontknow": 32
+  },
+  "val_n": 43,
+  "accuracy": 0.977,
+  "majority_baseline": 0.744,
+  "recall": {
+   "cigarette_butt": 1.0,
+   "dontknow": 0.969
+  }
+ }
+}

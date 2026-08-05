@@ -34,3 +34,5 @@ analysis/batch/
 *.log
 *.out
 *.toc
+
+analysis/cls_work/
