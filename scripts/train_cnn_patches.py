@@ -173,6 +173,10 @@ def build(patch):
             Y += y
         X = np.stack(X).astype(np.float32) / 255.0
         data[name] = (torch.from_numpy(X).permute(0, 3, 1, 2), torch.tensor(Y))
+    # train-side sources are handed back so hard negatives can be mined from
+    # exactly the images the model is allowed to see.
+    data["mine_paths"] = tr_a + tr_b
+    data["boxes"] = boxes
     return data
 
 
@@ -200,7 +204,16 @@ class ButtCNN(nn.Module):
         return self.head(x)
 
 
-def augment(xb, rng):
+def augment(xb, rng, colour=True):
+    """Geometric + photometric augmentation.
+
+    The colour part matters more than usual here. Trained without it, the
+    network keys on "orange blob": on external images its peak response landed
+    on reddish ground and red chalk graffiti rather than on butts. Randomising
+    hue, saturation and channel order — and dropping to greyscale a third of
+    the time — makes colour an unreliable cue and forces shape to carry the
+    decision.
+    """
     if rng.random() < 0.5:
         xb = torch.flip(xb, [3])
     if rng.random() < 0.5:
@@ -208,10 +221,60 @@ def augment(xb, rng):
     k = rng.randint(0, 3)
     if k:
         xb = torch.rot90(xb, k, [2, 3])
-    xb = xb * rng.uniform(0.8, 1.2)            # brightness jitter
+
+    if colour:
+        if rng.random() < 0.33:                       # full greyscale
+            g = (xb * torch.tensor([0.114, 0.587, 0.299],
+                                   device=xb.device).view(1, 3, 1, 1)).sum(1, keepdim=True)
+            xb = g.repeat(1, 3, 1, 1)
+        else:
+            if rng.random() < 0.5:                    # channel permutation
+                xb = xb[:, torch.randperm(3, device=xb.device)]
+            # desaturate towards grey by a random amount
+            g = xb.mean(1, keepdim=True)
+            xb = g + (xb - g) * rng.uniform(0.2, 1.3)
+            # per-channel gain = hue/tint shift
+            gain = torch.tensor([rng.uniform(0.8, 1.2) for _ in range(3)],
+                                device=xb.device).view(1, 3, 1, 1)
+            xb = xb * gain
+
+    xb = xb * rng.uniform(0.7, 1.3)                   # brightness
+    xb = (xb - 0.5) * rng.uniform(0.8, 1.25) + 0.5    # contrast
     # flip/rot90 leave the tensor non-contiguous, which breaks the flatten in
     # the backward pass; make it contiguous before it reaches the model.
     return xb.clamp(0, 1).contiguous()
+
+
+def mine_hard_negatives(model, paths, boxes, rng, patch, dev, per_image=6, cap=1200):
+    """Collect the background crops the current model scores most butt-like."""
+    model.eval()
+    found = []
+    for p in paths:
+        im = cv2.imread(str(p))
+        if im is None:
+            continue
+        H, W = im.shape[:2]
+        bs = boxes.get(p, [])
+        sides = [max(x1 - x0, y1 - y0) for (x0, y0, x1, y1) in bs] or [W * 0.06]
+        crops = []
+        for _ in range(per_image * 6):
+            side = float(np.mean(sides)) * rng.uniform(1.1, 2.2)
+            a, b, c, d = square(rng.uniform(0, W), rng.uniform(0, H), side, W, H)
+            if c - a < 16 or d - b < 16:
+                continue
+            if any(not (c < x0 or a > x1 or d < y0 or b > y1) for (x0, y0, x1, y1) in bs):
+                continue
+            crops.append(cv2.resize(im[b:d, a:c], (patch, patch)))
+        if not crops:
+            continue
+        X = torch.from_numpy(np.stack(crops).astype(np.float32) / 255).permute(0, 3, 1, 2)
+        with torch.no_grad():
+            s = model(X.to(dev)).softmax(1)[:, 1].cpu().numpy()
+        for i in np.argsort(-s)[:per_image]:
+            if s[i] > 0.3:                     # only genuinely confusing ones
+                found.append(crops[i])
+    rng.shuffle(found)
+    return found[:cap]
 
 
 def metrics(logits, y):
@@ -229,10 +292,19 @@ def metrics(logits, y):
 
 if __name__ == "__main__":
     ap = argparse.ArgumentParser()
-    ap.add_argument("--epochs", type=int, default=30)
+    ap.add_argument("--epochs", type=int, default=45)
     ap.add_argument("--patch", type=int, default=64)
     ap.add_argument("--batch", type=int, default=64)
+    ap.add_argument("--colour-aug", dest="colour_aug", action="store_true", default=True)
+    ap.add_argument("--no-colour-aug", dest="colour_aug", action="store_false")
+    ap.add_argument("--mine", action="store_true", default=True)
+    ap.add_argument("--no-mine", dest="mine", action="store_false")
+    ap.add_argument("--mine-epoch", type=int, default=15)
+    ap.add_argument("--out", default=None)
     args = ap.parse_args()
+    if args.out:
+        OUT = ROOT / "analysis" / args.out
+        CKPT = ROOT / "analysis" / (Path(args.out).stem + ".pt")
 
     torch.manual_seed(SEED)
     dev = "mps" if torch.backends.mps.is_available() else "cpu"
@@ -244,19 +316,39 @@ if __name__ == "__main__":
 
     model = ButtCNN().to(dev)
     n_params = sum(p.numel() for p in model.parameters())
-    w = torch.tensor([1.0, float((Ytr == 0).sum()) / max(1, int(Ytr.sum()))]).to(dev)
     opt = torch.optim.AdamW(model.parameters(), lr=2e-3, weight_decay=1e-4)
     sched = torch.optim.lr_scheduler.CosineAnnealingLR(opt, args.epochs)
     rng = random.Random(SEED)
-    best = None
+    best, mined = None, 0
+
+    def evaluate():
+        model.eval()
+        with torch.no_grad():
+            lo = torch.cat([model(Xva[i:i + 128].to(dev)).cpu()
+                            for i in range(0, len(Xva), 128)])
+        return metrics(lo, Yva)
 
     for ep in range(1, args.epochs + 1):
+        # Midway, add the background crops the model currently finds most
+        # butt-like. These are the errors it actually makes, which is worth far
+        # more than the same number of random negatives.
+        if args.mine and ep == args.mine_epoch:
+            hard = mine_hard_negatives(model, data["mine_paths"], data["boxes"],
+                                       rng, args.patch, dev)
+            if hard:
+                Xh = torch.from_numpy(np.stack(hard).astype(np.float32) / 255).permute(0, 3, 1, 2)
+                Xtr = torch.cat([Xtr, Xh])
+                Ytr = torch.cat([Ytr, torch.zeros(len(Xh), dtype=torch.long)])
+                mined = len(Xh)
+                print(f"  mined {mined} hard negatives at epoch {ep}")
+
+        w = torch.tensor([1.0, float((Ytr == 0).sum()) / max(1, int(Ytr.sum()))]).to(dev)
         model.train()
         perm = torch.randperm(len(Xtr))
         tot = 0.0
         for i in range(0, len(perm), args.batch):
             idx = perm[i:i + args.batch]
-            xb = augment(Xtr[idx].to(dev), rng)
+            xb = augment(Xtr[idx].to(dev), rng, colour=args.colour_aug)
             yb = Ytr[idx].to(dev)
             opt.zero_grad()
             loss = F.cross_entropy(model(xb), yb, weight=w)
@@ -264,11 +356,7 @@ if __name__ == "__main__":
             opt.step()
             tot += float(loss) * len(idx)
         sched.step()
-        model.eval()
-        with torch.no_grad():
-            lo = torch.cat([model(Xva[i:i + 128].to(dev)).cpu()
-                            for i in range(0, len(Xva), 128)])
-        m = metrics(lo, Yva)
+        m = evaluate()
         if best is None or m["f1"] >= best["f1"]:
             best = {**m, "epoch": ep}
             torch.save(model.state_dict(), CKPT)
@@ -276,6 +364,7 @@ if __name__ == "__main__":
             print(f"  ep{ep:3} loss {tot/len(Xtr):.4f}  val {m}")
 
     res = {"params": n_params, "patch": args.patch, "epochs": args.epochs,
+           "colour_aug": args.colour_aug, "hard_negatives_mined": mined,
            "train_pos": int(Ytr.sum()), "train_neg": int((Ytr == 0).sum()),
            "val_pos": int(Yva.sum()), "val_neg": int((Yva == 0).sum()),
            "val_majority_baseline": round(float(max((Yva == 0).float().mean(),

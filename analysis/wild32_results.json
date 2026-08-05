@@ -1,0 +1,231 @@
+{
+ "n_downloaded": 32,
+ "n_evaluated": 21,
+ "n_excluded": 11,
+ "exclusion_reason": "posters/drawings, broken placeholder files, or no determinable ground truth",
+ "per_image": [
+  {
+   "file": "N23__panoramio_294_.jpg",
+   "gt": 0,
+   "yolo": 0.211,
+   "cnn_v1": 1.0,
+   "cnn_v2": 1.0
+  },
+  {
+   "file": "N24__panoramio_296_.jpg",
+   "gt": 0,
+   "yolo": 0.0,
+   "cnn_v1": 0.998,
+   "cnn_v2": 0.997
+  },
+  {
+   "file": "N25__panoramio_608_.jpg",
+   "gt": 0,
+   "yolo": 0.0,
+   "cnn_v1": 0.279,
+   "cnn_v2": 0.977
+  },
+  {
+   "file": "N28_20141018_145012_Richtone_HDR_.jpg",
+   "gt": 0,
+   "yolo": 0.0,
+   "cnn_v1": 0.649,
+   "cnn_v2": 0.995
+  },
+  {
+   "file": "N29_20160928Hockenheim1.jpg",
+   "gt": 0,
+   "yolo": 0.295,
+   "cnn_v1": 0.061,
+   "cnn_v2": 0.949
+  },
+  {
+   "file": "N29_Auenrenaturierung_Chly_Rhy_B.jpg",
+   "gt": 0,
+   "yolo": 0.0,
+   "cnn_v1": 0.008,
+   "cnn_v2": 0.739
+  },
+  {
+   "file": "N30_20160928Hockenheim2.jpg",
+   "gt": 0,
+   "yolo": 0.0,
+   "cnn_v1": 0.254,
+   "cnn_v2": 0.94
+  },
+  {
+   "file": "N31_20160928Hockenheim3.jpg",
+   "gt": 0,
+   "yolo": 0.0,
+   "cnn_v1": 0.332,
+   "cnn_v2": 0.771
+  },
+  {
+   "file": "N31_2023_02_28_14_54_01_Water_dr.jpg",
+   "gt": 0,
+   "yolo": 0.0,
+   "cnn_v1": 0.954,
+   "cnn_v2": 0.999
+  },
+  {
+   "file": "P02__20240516_Cigarette_litter_at_tram.jpg",
+   "gt": 1,
+   "yolo": 0.0,
+   "cnn_v1": 0.993,
+   "cnn_v2": 0.99
+  },
+  {
+   "file": "P03_2008_10_21_10_11_20annajcoopercirc.jpg",
+   "gt": 1,
+   "yolo": 0.143,
+   "cnn_v1": 1.0,
+   "cnn_v2": 0.983
+  },
+  {
+   "file": "P05_2010_06_09_barrierenwanderung_31.jpg",
+   "gt": 1,
+   "yolo": 0.0,
+   "cnn_v1": 1.0,
+   "cnn_v2": 0.836
+  },
+  {
+   "file": "P06_20220824_smoke_free_area_sign_in_t.jpg",
+   "gt": 1,
+   "yolo": 0.227,
+   "cnn_v1": 1.0,
+   "cnn_v2": 0.996
+  },
+  {
+   "file": "P07_500px_photo_48797070_.jpg",
+   "gt": 1,
+   "yolo": 0.102,
+   "cnn_v1": 0.002,
+   "cnn_v2": 0.441
+  },
+  {
+   "file": "P08_500px_photo_48797072_.jpg",
+   "gt": 1,
+   "yolo": 0.0,
+   "cnn_v1": 0.0,
+   "cnn_v2": 0.001
+  },
+  {
+   "file": "P09_A_manhole_cover_19_09_24_in_Istanb.jpg",
+   "gt": 1,
+   "yolo": 0.186,
+   "cnn_v1": 0.999,
+   "cnn_v2": 0.997
+  },
+  {
+   "file": "P11_Andrew_Pons_2015_Unsplash_.jpg",
+   "gt": 1,
+   "yolo": 0.0,
+   "cnn_v1": 0.022,
+   "cnn_v2": 0.494
+  },
+  {
+   "file": "P13_Ash_tray.jpg",
+   "gt": 1,
+   "yolo": 0.241,
+   "cnn_v1": 1.0,
+   "cnn_v2": 0.765
+  },
+  {
+   "file": "P18_Black_and_mucus_filled_lungs_nearb.jpg",
+   "gt": 1,
+   "yolo": 0.325,
+   "cnn_v1": 0.978,
+   "cnn_v2": 0.982
+  },
+  {
+   "file": "P19_Bowl_of_cigarette_butts.jpg",
+   "gt": 1,
+   "yolo": 0.0,
+   "cnn_v1": 0.999,
+   "cnn_v2": 1.0
+  },
+  {
+   "file": "P28_Buchdenkmal_marktplatz_bonn_heming.jpg",
+   "gt": 1,
+   "yolo": 0.0,
+   "cnn_v1": 1.0,
+   "cnn_v2": 0.994
+  }
+ ],
+ "summary": {
+  "yolo": {
+   "@0.1": {
+    "threshold": 0.1,
+    "tp": 6,
+    "fp": 2,
+    "tn": 7,
+    "fn": 6,
+    "precision": 0.75,
+    "recall": 0.5,
+    "f1": 0.6,
+    "accuracy": 0.619
+   },
+   "@0.25": {
+    "threshold": 0.25,
+    "tp": 1,
+    "fp": 1,
+    "tn": 8,
+    "fn": 11,
+    "precision": 0.5,
+    "recall": 0.083,
+    "f1": 0.143,
+    "accuracy": 0.429
+   }
+  },
+  "cnn_v1": {
+   "@0.5": {
+    "threshold": 0.5,
+    "tp": 9,
+    "fp": 4,
+    "tn": 5,
+    "fn": 3,
+    "precision": 0.692,
+    "recall": 0.75,
+    "f1": 0.72,
+    "accuracy": 0.667
+   },
+   "@0.9": {
+    "threshold": 0.9,
+    "tp": 9,
+    "fp": 3,
+    "tn": 6,
+    "fn": 3,
+    "precision": 0.75,
+    "recall": 0.75,
+    "f1": 0.75,
+    "accuracy": 0.714
+   }
+  },
+  "cnn_v2": {
+   "@0.5": {
+    "threshold": 0.5,
+    "tp": 9,
+    "fp": 9,
+    "tn": 0,
+    "fn": 3,
+    "precision": 0.5,
+    "recall": 0.75,
+    "f1": 0.6,
+    "accuracy": 0.429
+   },
+   "@0.9": {
+    "threshold": 0.9,
+    "tp": 7,
+    "fp": 7,
+    "tn": 2,
+    "fn": 5,
+    "precision": 0.5,
+    "recall": 0.583,
+    "f1": 0.538,
+    "accuracy": 0.429
+   }
+  }
+ },
+ "finding": "The v2 changes (colour-invariance augmentation + hard-negative mining) made external performance WORSE, not better: v2 fires on 9/9 negative control images at 0.5. Likely mechanism: mining added 397 negatives, which raised the positive class weight from 2.6 to 3.4 (weight = n_neg/n_pos), biasing the model toward predicting positive; and the aggressive colour augmentation removed the main usable cue without enough positives (492) to learn shape instead. v1 remains the better model on external data.",
+ "caveat": "21 evaluable images: one image is ~4.8 percentage points. Differences below ~10 points are not resolvable."
+}

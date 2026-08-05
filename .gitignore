@@ -46,3 +46,4 @@ weights/
 analysis/det_work/
 runs/
 analysis/cnn_patches.pt
+analysis/cnn_patches_v2.pt
