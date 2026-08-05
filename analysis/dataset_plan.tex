@@ -445,10 +445,183 @@ Keep every test video strictly out of training. Given GPS is recorded, split
 train/test \textbf{by location}, not randomly --- random splits across frames of
 the same site inflate scores badly.
 
+\section{Cheap baselines: Google, OpenAI and Hugging Face models}
+\label{sec:baselines}
+
+Before training anything, it is worth knowing what off-the-shelf models already
+achieve on this data --- both as a performance floor and as an annotation
+accelerator. This can be done for a few dollars if the work is organised
+correctly, and it is easy to spend a hundred times more than necessary by
+organising it badly.
+
+\subsection{What these models are and are not for}
+
+\gap{None of these are the deployed detector.} The drone and buggy need an
+onboard model with millisecond latency and no network. Cloud vision models serve
+three other purposes:
+
+\begin{enumerate}[leftmargin=*,itemsep=1pt]
+\item \textbf{A baseline floor.} If a zero-shot model already finds 80\% of your
+bottles, a custom detector must beat that to justify itself.
+\item \textbf{Auto-labelling.} Pre-annotation that a human corrects is several
+times faster than annotating from scratch --- the main lever on the annotation
+cost of a $10^3$-instance dataset.
+\item \textbf{Adjudication.} A second opinion on ambiguous frames.
+\end{enumerate}
+
+A crucial distinction: \textbf{general vision--language models (GPT, Gemini) are
+not detectors}. They describe an image; they do not reliably produce boxes for
+20-pixel objects. A trial run of GPT-4o over this image set at low detail
+reported ``no waste item'' for 107 of 244 images, including photographs
+containing a plainly visible rusty metal bar. \textbf{Open-vocabulary detectors
+are the right comparison} --- they take a text prompt and return boxes, which is
+exactly the target task.
+
+\subsection{Hugging Face: the free tier that matters}
+
+Models run locally cost nothing per image, which makes them the correct default
+for anything involving video, where frame counts run to the tens of thousands.
+All of the following run on a recent laptop:
+
+\begin{center}
+\begin{tabular}{llp{6.1cm}}
+\toprule
+\textbf{Model} & \textbf{Task} & \textbf{Use here} \\
+\midrule
+OWLv2 & Open-vocab detection & Zero-shot boxes from prompts such as
+``cigarette butt''. Primary baseline. \\
+Grounding DINO & Open-vocab detection & Stronger phrase grounding; cross-check
+against OWLv2. \\
+YOLO-World & Open-vocab detection & Real-time; closest in spirit to what will
+run onboard. \\
+SAM 2 & Segmentation & Turns a box into a polygon --- converts cheap box labels
+into the polygon masks this project already uses. \\
+Florence-2 & Caption + grounding & Small, fast, dense captioning for
+bulk triage. \\
+Qwen2.5-VL & VLM & Local stand-in for GPT/Gemini-class description. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent The highest-value combination is \textbf{Grounding DINO or OWLv2 for
+boxes, then SAM 2 to convert each box to a polygon}, giving pre-annotations in
+the project's existing format at zero marginal cost. Run this over every frame
+of every test video; it is free, so there is no reason to sample.
+
+\subsection{Cost mechanics of the paid APIs}
+
+Measured token counts for this dataset (1024\,px images, 250-token prompt,
+JSON output) give the following for all 244 images:
+
+\begin{center}
+\begin{tabular}{lrrrr}
+\toprule
+\textbf{Model} & \textbf{In/img} & \textbf{Out/img} & \textbf{Standard} & \textbf{Batch ($-50\%$)} \\
+\midrule
+gpt-5.4-mini      & 1136 & 123 & \$0.34 & \textbf{\$0.17} \\
+gpt-4o (detail low) & 300 & 101 & \$0.43 & \$0.21 \\
+gpt-4o (detail high) & 980 & 99 & \$0.84 & \$0.42 \\
+gpt-5.4           & 1136 & 131 & \$1.17 & \$0.59 \\
+Gemini Flash      & 1136 & 130 & \$0.54 & \$0.27 \\
+gpt-5.6-sol       & 1136 & 246 & \$3.19 & \$1.59 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent Six levers, in order of effect:
+
+\begin{enumerate}[leftmargin=*,itemsep=2pt]
+\item \textbf{Batch APIs halve the price.} Both OpenAI and Google discount
+asynchronous batch jobs by 50\%. Offline evaluation has no latency requirement,
+so there is never a reason to pay standard rates for it.
+
+\item \textbf{Google's free tier is genuinely free.} Gemini Flash models are
+available at no cost in AI Studio (order 1{,}500 requests/day). That covers the
+entire 244-image set daily for nothing. \gap{Caveat: free-tier content may be
+used to improve Google's products.} If the dataset is to remain proprietary, use
+the paid tier --- at \$0.27 batched, that is a cheap way to keep it private.
+
+\item \textbf{Downscale before upload.} Images are 12\,MP; models resample them
+anyway. Sending 1024\,px costs the same as sending 4032\,px in tokens but a
+fraction of the bandwidth, and above the model's internal tile limit the extra
+pixels are simply discarded.
+
+\item \textbf{Know which models honour \texttt{detail: low}.} Measured on this
+data: GPT-4o honours it (300 vs.\ 980 tokens); \textbf{GPT-5.4 ignores it
+entirely} (1136 either way); GPT-5.6-sol honours it (445 vs.\ 1136). Requesting
+low detail on a model that ignores it saves nothing and loses accuracy on the
+ones that do not.
+
+\item \textbf{Cascade.} Run the free local model on everything, a cheap API
+model on what it flags, and an expensive model only on disagreements. In
+practice the expensive tier sees 5--10\% of frames.
+
+\item \textbf{Cache every result.} Store raw responses keyed by image hash and
+never re-run the same evaluation. Re-running a finished job is the most common
+way this budget is wasted.
+\end{enumerate}
+
+\subsection{Video without paying for video}
+\label{sec:videocost}
+
+\gap{Do not send raw video to a paid API.} Gemini bills video at roughly
+5{,}800 tokens per second of 720p footage. A single 90\,s clip is about 521{,}000
+tokens --- \$0.78 on Flash, \$0.39 batched --- and the full 13-take suite comes to
+roughly \$5 per evaluation pass on the cheapest model, more on anything larger.
+That is affordable once and ruinous if iterated, and iteration is the entire
+point of an offline test set.
+
+The alternative costs almost nothing and gives strictly more control:
+
+\begin{enumerate}[leftmargin=*,itemsep=1pt]
+\item Extract frames locally with \texttt{ffmpeg} at 1--2\,fps.
+\item Run the local Hugging Face detectors over \emph{every} frame --- free, and
+the only way to measure per-frame tracking stability anyway.
+\item Draw a \textbf{stratified sample of 200 frames} spanning altitude,
+occlusion, surface and lighting, and send only those to the paid APIs.
+\end{enumerate}
+
+\noindent At 200 frames the paid comparison costs \$0.14 (gpt-5.4-mini batched),
+\$0.27 (Gemini Flash batched) or \$0.48 (gpt-5.4 batched) \emph{per model}.
+Comparing all three across the whole test suite is under a dollar --- against
+roughly \$5 per pass for native video on one model alone.
+
+Native video input is still worth one deliberate run, for the questions frames
+cannot answer: temporal consistency, and whether a model tracks an object
+through occlusion. Budget it as a single experiment, not a routine.
+
+\subsection{Suggested comparison protocol}
+
+\begin{center}
+\begin{tabular}{llr}
+\toprule
+\textbf{Stage} & \textbf{Model} & \textbf{Cost} \\
+\midrule
+All frames, all videos & OWLv2 / Grounding DINO / SAM 2, local & \$0 \\
+All 244 stills & Gemini Flash, free tier & \$0 \\
+244 stills, private & Gemini Flash batch & \$0.27 \\
+200-frame stratified sample & gpt-5.4-mini batch & \$0.14 \\
+200-frame sample, second opinion & gpt-5.4 batch & \$0.48 \\
+Disagreements only ($\approx$20 frames) & gpt-5.6-sol & $<$\$0.15 \\
+One native-video run & Gemini Flash batch, 1 take & \$0.39 \\
+\midrule
+\textbf{Total per full evaluation pass} & & \textbf{$\approx$\$1.45} \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent Score every model on the same held-out frames with the same metric,
+broken down by altitude and occlusion. The interesting output is not a
+leaderboard but a \textbf{map of where each model fails}, which tells you which
+conditions the training set most needs to cover.
+
 \section{Suggested order of work}
 
 \begin{enumerate}[leftmargin=*,itemsep=1pt]
 \item Freeze the label vocabulary; fix the existing typo/language labels.
+\item Run the free local baseline (Section~\ref{sec:baselines}) over the
+existing 244 images. It costs nothing, and if an off-the-shelf detector already
+handles a class well, that class needs less new data than the others.
 \item Fly one altitude-descent test video. It costs an afternoon and tells you
 the real per-class detection ceiling before you invest in bulk capture.
 \item Decide the mission profile from that measurement (Section~\ref{sec:gsd}
