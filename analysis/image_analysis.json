@@ -1,0 +1,3805 @@
+{
+  "batch_id": "batch_6a734b8d4f1481909c0fa01408bbc6ca",
+  "errors": {},
+  "model": "gpt-4o",
+  "results": {
+    "metals/rusty_metal_piece/450C5168-5CA1-49A5-BB98-825733A0ACA9.jpg": {
+      "caption": "The image shows a gravel and rock-strewn surface under bright sunlight.",
+      "condition": "N/A",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "rocks",
+        "soil",
+        "gravel"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "metals/rusty_metal_piece/5CAC03A2-53A5-4582-B35D-8FFED90C679C.jpg": {
+      "caption": "The image shows a mix of gravel and grass under bright sunlight with no visible waste items.",
+      "condition": "no waste items to assess",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "grass"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "metals/rusty_metal_piece/F9D1E7A1-F9F9-4FE2-914E-07693E0BCDEA.jpg": {
+      "caption": "The image shows a gravel path with rocks and grass under bright sunlight, with no visible waste items.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "rocks",
+        "grass"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "miscellaneous/chair/291FC76E-5EE4-4E2D-B910-6FC4FFFC77D8.jpg": {
+      "caption": "A folding chair lies partially covered in grass next to a gravel surface.",
+      "condition": "worn and possibly rusted",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "metal",
+      "objects": [
+        "folding chair",
+        "grass",
+        "gravel"
+      ],
+      "occlusion": "partial",
+      "primary_object": "folding chair",
+      "surface": "grass"
+    },
+    "miscellaneous/chair/6C2C3813-8F7D-47BE-83EA-655DED6E38DB.jpg": {
+      "caption": "A folding chair lies on a wooden board amidst tall grass in bright sunlight.",
+      "condition": "worn and partially buried in grass",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "metal",
+      "objects": [
+        "folding chair",
+        "wooden board",
+        "grass"
+      ],
+      "occlusion": "partial",
+      "primary_object": "folding chair",
+      "surface": "grass"
+    },
+    "miscellaneous/chair/B5296087-7065-455C-AD77-14CA730EECF6.jpg": {
+      "caption": "A folded chair is placed on a wooden board amidst tall grass in bright sunlight.",
+      "condition": "worn but intact",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "chair",
+        "wooden board",
+        "grass"
+      ],
+      "occlusion": "none",
+      "primary_object": "chair",
+      "surface": "grass"
+    },
+    "miscellaneous/chair/B9E28B83-14D4-43ED-926A-63C126BA04CF.jpg": {
+      "caption": "A plastic sheet partially rests on grass with gravel and dandelions around it in bright sunlight.",
+      "condition": "dirt and slight weathering",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic sheet",
+        "grass",
+        "gravel",
+        "dandelions"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic sheet",
+      "surface": "grass"
+    },
+    "miscellaneous/cigarette_butt/2158.jpg": {
+      "caption": "A cigarette butt lies partially buried among grass and soil under bright sunlight.",
+      "condition": "slightly weathered, some dirt",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "grass",
+        "soil"
+      ],
+      "occlusion": "partial",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/5CF94367-811C-44F7-86FC-2B74F27CC61D.jpg": {
+      "caption": "A gravel path bordered by grass and plants, with no waste items visible.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "grass",
+        "plants",
+        "soil"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "miscellaneous/cigarette_butt/IMG_1740.jpg": {
+      "caption": "A cigarette butt is lying on soil mixed with gravel and small plants in bright sunlight.",
+      "condition": "slightly worn and dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "soil",
+        "small plants",
+        "gravel"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_1741.jpg": {
+      "caption": "A cigarette butt is lying on soil with gravel and small plants under bright sunlight.",
+      "condition": "slightly worn and dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "paper",
+      "objects": [
+        "cigarette butt",
+        "soil",
+        "gravel",
+        "small plants"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_1742.jpg": {
+      "caption": "A cigarette butt lies on the soil among grass and small rocks under bright sunlight.",
+      "condition": "slightly worn and charred",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "grass",
+        "soil",
+        "small rocks"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_1744.jpg": {
+      "caption": "A cigarette butt lies on soil surrounded by grass and small pebbles in bright sunlight.",
+      "condition": "slightly worn",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "grass",
+        "soil",
+        "pebbles",
+        "shadow"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_1747.jpg": {
+      "caption": "A cigarette butt lies on the soil among some small plants and twigs in bright sunlight.",
+      "condition": "worn and partially covered in dirt",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "soil",
+        "plants",
+        "twigs"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_1748.jpg": {
+      "caption": "A cigarette butt rests on dry soil surrounded by twigs and small green plants.",
+      "condition": "slightly weathered",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "paper",
+      "objects": [
+        "cigarette butt",
+        "dry soil",
+        "twigs",
+        "small green plants"
+      ],
+      "occlusion": "partial",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_1749.jpg": {
+      "caption": "A cigarette butt is lying on soil surrounded by small plants and twigs in bright sunlight.",
+      "condition": "slightly worn with some dirt",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "soil",
+        "small plants",
+        "twigs"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_1750.jpg": {
+      "caption": "A cigarette butt lies on soil surrounded by grass and twigs in bright sunlight.",
+      "condition": "worn and slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "grass",
+        "soil",
+        "twigs",
+        "leaves"
+      ],
+      "occlusion": "partial",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_1751.jpg": {
+      "caption": "A cigarette butt lies partially obscured among young green plants on dry soil.",
+      "condition": "slightly worn",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "green plants",
+        "dry soil",
+        "dry twigs",
+        "dry leaves"
+      ],
+      "occlusion": "partial",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_1752.jpg": {
+      "caption": "A cigarette butt is lying on dry grass and soil in bright sunlight.",
+      "condition": "worn and slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "dry grass",
+        "soil",
+        "small plants"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_1753.jpg": {
+      "caption": "A cigarette butt lies on dry, sunlit soil among some plants and dried grass.",
+      "condition": "worn and partially buried",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "soil",
+        "dry grass",
+        "green plant"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_1754.jpg": {
+      "caption": "A cigarette butt is partially visible among dry leaves and plants on the soil.",
+      "condition": "slightly dirty and worn",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "dry leaves",
+        "twigs",
+        "green plants",
+        "soil"
+      ],
+      "occlusion": "partial",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_1755.jpg": {
+      "caption": "A cigarette butt lies on a patch of soil surrounded by grass and dry leaves.",
+      "condition": "some dirt on the cigarette butt",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "dirt",
+        "grass",
+        "twigs",
+        "leaves"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_1756.jpg": {
+      "caption": "A cigarette butt lies on soil with some grass and twigs visible under bright sunlight.",
+      "condition": "slightly worn",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "soil",
+        "grass",
+        "twigs"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_1757.jpg": {
+      "caption": "A cigarette butt lies on soil among dead leaves and a small plant in bright sunlight.",
+      "condition": "slightly worn",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "dead leaves",
+        "soil",
+        "small plant"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_1758.jpg": {
+      "caption": "A cigarette butt is partially buried in the soil, surrounded by small plants and twigs.",
+      "condition": "slightly worn but intact",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "soil",
+        "plants",
+        "twigs"
+      ],
+      "occlusion": "partial",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_1759.jpg": {
+      "caption": "A cigarette butt is lying on soil with some grass and twigs around it in bright sunlight.",
+      "condition": "slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "soil",
+        "grass",
+        "twigs"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_1760.jpg": {
+      "caption": "A cigarette butt lies on gravel in bright sunlight, surrounded by small plants and debris.",
+      "condition": "worn and dirty",
+      "count": 2,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "gravel",
+        "small plants",
+        "sticks",
+        "soil"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "gravel"
+    },
+    "miscellaneous/cigarette_butt/IMG_1762.jpg": {
+      "caption": "A cigarette butt lies on dry soil surrounded by leaves and twigs.",
+      "condition": "worn and dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "leaves",
+        "twigs",
+        "soil"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_1763.jpg": {
+      "caption": "A cigarette butt is lying on the soil among dried leaves and sticks in bright sunlight.",
+      "condition": "worn and slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "soil",
+        "leaves",
+        "sticks"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_1765.jpg": {
+      "caption": "A cigarette butt lies on dry grass in bright sunlight with some green leaves nearby.",
+      "condition": "worn and dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "dry grass",
+        "green leaves"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "grass"
+    },
+    "miscellaneous/cigarette_butt/IMG_1766.jpg": {
+      "caption": "A cigarette butt lies on dry grass and soil under bright sunlight.",
+      "condition": "worn and partially ashed",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "dry grass",
+        "soil",
+        "rocks"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_2029.jpg": {
+      "caption": "A cigarette butt is lying on soil with scattered grass under bright sunlight.",
+      "condition": "slightly worn",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "soil",
+        "grass"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_2150.jpg": {
+      "caption": "Two cigarette butts lie on soil and grass under bright sunlight.",
+      "condition": "worn and dirty",
+      "count": 2,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "grass",
+        "soil",
+        "pebbles"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_2151.jpg": {
+      "caption": "The image shows grass with soil patches under bright sunlight, with no visible waste items.",
+      "condition": "N/A",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "soil"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "grass"
+    },
+    "miscellaneous/cigarette_butt/IMG_2152.jpg": {
+      "caption": "A cigarette butt is lying on the soil surrounded by grass under bright sunlight.",
+      "condition": "slightly worn and dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "grass",
+        "soil"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_2153.jpg": {
+      "caption": "Two cigarette butts rest on soil and grass under bright sunlight.",
+      "condition": "slightly worn and dirty",
+      "count": 2,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butts",
+        "grass",
+        "soil",
+        "twigs",
+        "small stones"
+      ],
+      "occlusion": "partial",
+      "primary_object": "cigarette butts",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_2158.jpg": {
+      "caption": "A cigarette butt lies partially concealed among grass and soil under bright sunlight.",
+      "condition": "worn and slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "grass",
+        "soil"
+      ],
+      "occlusion": "partial",
+      "primary_object": "cigarette butt",
+      "surface": "grass"
+    },
+    "miscellaneous/cigarette_butt/IMG_2159.jpg": {
+      "caption": "A cigarette butt is partially visible on a patch of grass under bright sunlight.",
+      "condition": "slightly worn, some dirt",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "grass",
+        "soil"
+      ],
+      "occlusion": "partial",
+      "primary_object": "cigarette butt",
+      "surface": "grass"
+    },
+    "miscellaneous/cigarette_butt/IMG_2160.jpg": {
+      "caption": "A cigarette butt lies on grass under bright sunlight.",
+      "condition": "partially crushed and slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "grass",
+        "soil"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "grass"
+    },
+    "miscellaneous/cigarette_butt/IMG_2239.jpg": {
+      "caption": "A discarded cigarette pack is lying on the grass in bright sunlight.",
+      "condition": "worn and slightly damaged",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "paper",
+      "objects": [
+        "cigarette pack",
+        "grass"
+      ],
+      "occlusion": "partial",
+      "primary_object": "cigarette pack",
+      "surface": "grass"
+    },
+    "miscellaneous/cigarette_butt/IMG_2240.jpg": {
+      "caption": "A discarded cigarette pack lies on patchy grass and dirt under bright sunlight.",
+      "condition": "worn and slightly crushed",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "paper",
+      "objects": [
+        "cigarette pack",
+        "grass",
+        "dirt"
+      ],
+      "occlusion": "partial",
+      "primary_object": "cigarette pack",
+      "surface": "grass"
+    },
+    "miscellaneous/cigarette_butt/IMG_2241.jpg": {
+      "caption": "A cigarette pack lies discarded on grass in bright sunlight.",
+      "condition": "worn and slightly crumpled",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "paper",
+      "objects": [
+        "cigarette pack",
+        "grass"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette pack",
+      "surface": "grass"
+    },
+    "miscellaneous/cigarette_butt/IMG_2242.jpg": {
+      "caption": "A cigarette pack is discarded on the grass next to a pavement under bright sunlight.",
+      "condition": "slightly worn and bent",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "paper",
+      "objects": [
+        "cigarette pack",
+        "grass",
+        "pavement"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette pack",
+      "surface": "grass"
+    },
+    "miscellaneous/cigarette_butt/IMG_2243.jpg": {
+      "caption": "An aluminum can is lying on the grass near a paved path in bright sunlight.",
+      "condition": "slightly worn with minor dirt",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "metal",
+      "objects": [
+        "aluminum can",
+        "grass",
+        "path",
+        "shoes"
+      ],
+      "occlusion": "none",
+      "primary_object": "aluminum can",
+      "surface": "grass"
+    },
+    "miscellaneous/cigarette_butt/IMG_2244.jpg": {
+      "caption": "A cigarette pack lies on green grass under bright sunlight.",
+      "condition": "worn and slightly damaged",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "paper",
+      "objects": [
+        "cigarette pack",
+        "grass"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette pack",
+      "surface": "grass"
+    },
+    "miscellaneous/cigarette_butt/IMG_2247.jpg": {
+      "caption": "A plastic bag is lying on grass next to an asphalt path under bright sunlight.",
+      "condition": "slightly crumpled with minor dirt",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bag",
+        "grass",
+        "asphalt",
+        "shoes"
+      ],
+      "occlusion": "none",
+      "primary_object": "plastic bag",
+      "surface": "grass"
+    },
+    "miscellaneous/cigarette_butt/IMG_2723.jpg": {
+      "caption": "The image shows a patch of grass and soil under bright sunlight with no visible waste items.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "soil",
+        "small pebbles"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_2724.jpg": {
+      "caption": "A cigarette butt is lying partially hidden among grass and gravel in bright sunlight.",
+      "condition": "worn and slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "grass",
+        "gravel",
+        "soil"
+      ],
+      "occlusion": "partial",
+      "primary_object": "cigarette butt",
+      "surface": "gravel"
+    },
+    "miscellaneous/cigarette_butt/IMG_2727.jpg": {
+      "caption": "A cigarette butt lies on soil and grass under bright sunlight.",
+      "condition": "slightly worn",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "grass",
+        "soil",
+        "pebbles"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_2728.jpg": {
+      "caption": "A small piece of plastic is partially covered by grass on the soil under overcast lighting.",
+      "condition": "slightly dirty",
+      "count": 1,
+      "lighting": "overcast",
+      "material": "plastic",
+      "objects": [
+        "piece of plastic",
+        "grass",
+        "soil"
+      ],
+      "occlusion": "partial",
+      "primary_object": "piece of plastic",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_2729.jpg": {
+      "caption": "The image shows grass and gravel on a soil surface under bright sunlight.",
+      "condition": "none",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "gravel",
+        "soil"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_2731.jpg": {
+      "caption": "A cigarette butt lies on the ground among grass and soil.",
+      "condition": "worn with small signs of dirt",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "grass",
+        "soil",
+        "gravel"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_2732.jpg": {
+      "caption": "A cigarette butt lies on a patch of gravel next to some grass.",
+      "condition": "slightly weathered",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "grass",
+        "gravel",
+        "small stone"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "gravel"
+    },
+    "miscellaneous/cigarette_butt/IMG_2733.jpg": {
+      "caption": "A cigarette butt partially embedded in soil and surrounded by grass and gravel.",
+      "condition": "moderate wear and dirt",
+      "count": 1,
+      "lighting": "overcast",
+      "material": "mixed",
+      "objects": [
+        "grass",
+        "gravel",
+        "rocks",
+        "cigarette butt"
+      ],
+      "occlusion": "partial",
+      "primary_object": "cigarette butt",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_2735.jpg": {
+      "caption": "A cigarette butt lies partially hidden among grass and gravel.",
+      "condition": "slightly worn and dirty",
+      "count": 1,
+      "lighting": "overcast",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "grass",
+        "rocks",
+        "gravel"
+      ],
+      "occlusion": "partial",
+      "primary_object": "cigarette butt",
+      "surface": "gravel"
+    },
+    "miscellaneous/cigarette_butt/IMG_2737.jpg": {
+      "caption": "A cigarette butt lies on the grass beside a patch of soil.",
+      "condition": "slightly worn",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "grass",
+        "soil"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "grass"
+    },
+    "miscellaneous/cigarette_butt/IMG_2738.jpg": {
+      "caption": "A cigarette butt is lying partially on grass and partially on concrete.",
+      "condition": "moderate wear with some dirt",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "grass",
+        "concrete",
+        "small plants",
+        "gravel"
+      ],
+      "occlusion": "partial",
+      "primary_object": "cigarette butt",
+      "surface": "concrete"
+    },
+    "miscellaneous/cigarette_butt/IMG_2748.jpg": {
+      "caption": "The image shows a soil surface with straw, a feather, and scattered small litter items.",
+      "condition": "litter appears partially embedded in the soil",
+      "count": 2,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "soil",
+        "straw",
+        "feather",
+        "small litter items"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "miscellaneous/cigarette_butt/IMG_2749.jpg": {
+      "caption": "A cigarette butt is lying on a concrete surface surrounded by small rocks, dried grass, and organic debris.",
+      "condition": "slightly worn and dirty",
+      "count": 1,
+      "lighting": "overcast",
+      "material": "mixed",
+      "objects": [
+        "cigarette butt",
+        "concrete",
+        "small rocks",
+        "dried grass",
+        "organic debris"
+      ],
+      "occlusion": "none",
+      "primary_object": "cigarette butt",
+      "surface": "concrete"
+    },
+    "miscellaneous/cigarette_butt/IMG_2753.jpg": {
+      "caption": "A plastic bottle cap and small plastic fragments are scattered on soil next to concrete.",
+      "condition": "worn and dirty",
+      "count": 3,
+      "lighting": "overcast",
+      "material": "plastic",
+      "objects": [
+        "bottle cap",
+        "concrete",
+        "soil",
+        "grass",
+        "rocks",
+        "twigs"
+      ],
+      "occlusion": "none",
+      "primary_object": "bottle cap",
+      "surface": "soil"
+    },
+    "miscellaneous/grankogler/05AB01AD-C4DC-4907-8892-F9B2854F9FE7.jpg": {
+      "caption": "The image shows a pine cone and some dandelions on a grassy and gravelly surface.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "gravel",
+        "pine cone",
+        "dandelions"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "grass"
+    },
+    "miscellaneous/grankogler/09BEAD6E-A2CF-4224-9BC9-5DE053A08A50.jpg": {
+      "caption": "The image shows a patch of gravel and soil with grass and plants under bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "soil",
+        "grass",
+        "plants"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "miscellaneous/grankogler/0DB6C104-2222-4A59-B311-4EF1C1B17780.jpg": {
+      "caption": "A path with scattered pinecones and surrounding grass in bright sunlight.",
+      "condition": "natural with no wear or damage",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "path",
+        "pinecones",
+        "grass",
+        "gravel",
+        "soil"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "miscellaneous/grankogler/1152637B-C808-4120-86A1-6AB3F9456F73.jpg": {
+      "caption": "The image shows a concrete surface with grass, pinecones, and shadows, with no visible waste items.",
+      "condition": "not applicable",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "pinecones",
+        "concrete",
+        "shadows"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "concrete"
+    },
+    "miscellaneous/grankogler/1893BC8B-EB4C-4AAD-BE60-D7CC300A321C.jpg": {
+      "caption": "The image shows a gravel path with grass and small plants under bright sunlight, with no waste items present.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel path",
+        "grass",
+        "small plants"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "miscellaneous/grankogler/19586C07-AED3-4CAB-9786-5C4FC63278B1.jpg": {
+      "caption": "Several pine cones are scattered on the edge of a concrete path with grass and foliage nearby.",
+      "condition": "natural and undamaged",
+      "count": 7,
+      "lighting": "bright sunlight",
+      "material": "organic",
+      "objects": [
+        "pine cone",
+        "grass",
+        "concrete",
+        "soil",
+        "foliage"
+      ],
+      "occlusion": "none",
+      "primary_object": "pine cone",
+      "surface": "concrete"
+    },
+    "miscellaneous/grankogler/19831F65-E4A5-47E5-8564-3705201E21D7.jpg": {
+      "caption": "The image shows a gravel path with grass alongside it under bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "grass",
+        "soil"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "miscellaneous/grankogler/1A157178-0A45-45C0-995B-F5C0900206F9.jpg": {
+      "caption": "The image shows pine cones scattered among grass and small plants along a path in bright sunlight.",
+      "condition": "natural and intact",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "pine cones",
+        "grass",
+        "small plants",
+        "path"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "grass"
+    },
+    "miscellaneous/grankogler/24B9D9BD-BE82-412D-BCD0-64BCFD25DA20.jpg": {
+      "caption": "Several pine cones lie on a dirt path surrounded by grass in bright sunlight.",
+      "condition": "natural, intact",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "pine cones",
+        "grass",
+        "dirt path",
+        "pine branch"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "dirt"
+    },
+    "miscellaneous/grankogler/2A3DC1E7-10DC-42A1-8F25-0BDDE708ED07.jpg": {
+      "caption": "The image shows a gravel path next to grass with pine cones scattered along the edge.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel path",
+        "grass",
+        "pine cones"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "miscellaneous/grankogler/2A5C4788-3314-4DE1-B3CA-352793682B48.jpg": {
+      "caption": "The image shows pine cones scattered on soil with surrounding grass and green leaves in bright sunlight.",
+      "condition": "none",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "pine cones",
+        "grass",
+        "soil",
+        "green leaves"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "miscellaneous/grankogler/2E72F522-CEC4-4950-A0C2-A69FA0EF6CCB.jpg": {
+      "caption": "Several pine cones are scattered along a gravel path surrounded by grass.",
+      "condition": "pine cones appear dry and scattered",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "organic",
+      "objects": [
+        "pine cones",
+        "path",
+        "grass",
+        "leaves"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "miscellaneous/grankogler/2F0308DB-73D2-45F5-8C5E-5E3B266C7297.jpg": {
+      "caption": "The image shows a gravel path bordered by grass with no visible waste items.",
+      "condition": "natural state, no visible wear or damage",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "grass",
+        "small branch"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "miscellaneous/grankogler/44F075AC-9269-4069-B023-BBD5C3FEB247.jpg": {
+      "caption": "The image shows a gravel path bordered by grass and plants, under bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel path",
+        "grass",
+        "plants"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "miscellaneous/grankogler/461F069D-8C6B-4607-8B73-E43945B4AC68.jpg": {
+      "caption": "A pine cone rests on a gravel path surrounded by grass.",
+      "condition": "dry",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "organic",
+      "objects": [
+        "pine cone",
+        "grass",
+        "gravel",
+        "dirt path"
+      ],
+      "occlusion": "none",
+      "primary_object": "pine cone",
+      "surface": "gravel"
+    },
+    "miscellaneous/grankogler/57667385-6AF9-4B5A-A74D-7C97AB646BC5.jpg": {
+      "caption": "The image shows pinecones on a patchy soil and grass surface in bright sunlight.",
+      "condition": "natural and undisturbed",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "pinecones",
+        "grass",
+        "soil",
+        "small rocks"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "miscellaneous/grankogler/620130DC-9330-47B0-B890-2886769327CD.jpg": {
+      "caption": "Pine cones scattered on a concrete path with grass on the side.",
+      "condition": "N/A",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "pine cones",
+        "grass",
+        "concrete path"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "concrete"
+    },
+    "miscellaneous/grankogler/75BC3CE7-970F-4149-81DD-EF50517A5F02.jpg": {
+      "caption": "The image shows a dirt path with grass, pine cones, small rocks, and green plants under bright sunlight.",
+      "condition": "no signs of wear or damage",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "dirt path",
+        "pine cones",
+        "small rocks",
+        "green plants"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "miscellaneous/grankogler/7930DDD9-8DAB-4975-A130-8F0CBA86FC0D.jpg": {
+      "caption": "Several pine cones are scattered on and beside a gravel path with surrounding grass in bright sunlight.",
+      "condition": "natural, no wear",
+      "count": 9,
+      "lighting": "bright sunlight",
+      "material": "organic",
+      "objects": [
+        "pine cone",
+        "dirt path",
+        "grass",
+        "rocks"
+      ],
+      "occlusion": "none",
+      "primary_object": "pine cone",
+      "surface": "gravel"
+    },
+    "miscellaneous/grankogler/87D3DB9A-102A-4D12-B96D-A5B6AAFCC3B4.jpg": {
+      "caption": "Several pine cones lie scattered on the ground next to a gravel path.",
+      "condition": "pine cones appear intact and naturally scattered",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "pine cones",
+        "grass",
+        "soil",
+        "gravel",
+        "path"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "miscellaneous/grankogler/95581CED-AC39-4064-9D2B-A5084CCBC306.jpg": {
+      "caption": "The image contains an area of gravel and grass with no visible waste items.",
+      "condition": "none",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "grass",
+        "plants"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "miscellaneous/grankogler/A53E340C-56B8-4E48-90C8-D0858895FEFF.jpg": {
+      "caption": "The image shows pine cones scattered on a soil and gravel surface next to green grass under bright sunlight.",
+      "condition": "natural and scattered",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "pine cones",
+        "grass",
+        "soil",
+        "gravel",
+        "greenery"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "miscellaneous/grankogler/ADAFC0F8-CC54-4409-8D81-49BBBE37BA34.jpg": {
+      "caption": "The image shows pinecones on a gravel surface with grass and a bush nearby.",
+      "condition": "natural and intact",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "organic",
+      "objects": [
+        "pinecones",
+        "grass",
+        "gravel",
+        "bush"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "miscellaneous/grankogler/AFD53FFE-6DE9-4F19-9413-4302E579179E.jpg": {
+      "caption": "The image shows a dirt path with scattered pinecones and grass under bright sunlight.",
+      "condition": "natural elements with no visible wear or decay",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "path",
+        "pinecones",
+        "grass",
+        "soil",
+        "rocks"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "miscellaneous/grankogler/B81E0280-DF26-40C7-9051-7DD9359E86EC.jpg": {
+      "caption": "A dirt path with grass and scattered pinecones in bright sunlight.",
+      "condition": "not applicable",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "dirt path",
+        "grass",
+        "pinecones",
+        "small rocks"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "miscellaneous/grankogler/BD972BDC-31AF-44EA-A6CD-F4A62999CCBB.jpg": {
+      "caption": "The image shows several pinecones on a gravel path with surrounding greenery in bright sunlight.",
+      "condition": "none",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "organic",
+      "objects": [
+        "pinecones",
+        "grass",
+        "gravel path",
+        "greenery"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "miscellaneous/grankogler/D7681FA0-8BC3-4B9A-9513-6210FBEBD003.jpg": {
+      "caption": "A path bordered by grass and plants is shown under bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "path",
+        "grass",
+        "soil",
+        "plants"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "miscellaneous/grankogler/E0752D11-C1CF-4BD4-BCD5-9189348E2569.jpg": {
+      "caption": "A dirt path bordered by grass and scattered with natural debris such as leaves, twigs, and pine cones under bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "dirt path",
+        "grass",
+        "leaves",
+        "pine cones",
+        "twigs"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "miscellaneous/grankogler/E8F87470-6EEB-484D-81BA-0EADAF716AC5.jpg": {
+      "caption": "The image shows several pine cones on a mix of grass and gravel under bright sunlight.",
+      "condition": "pine cones are in natural condition on the ground",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "pine cones",
+        "grass",
+        "gravel",
+        "dirt"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "miscellaneous/grankogler/ECB04BEB-A96D-4B91-AEA9-138DB9D851B3.jpg": {
+      "caption": "The image shows a gravel path with grass and pine cones, with no visible waste items.",
+      "condition": "natural state",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "pine cones",
+        "gravel path",
+        "grass",
+        "soil"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "miscellaneous/grankogler/FA2C32C0-C86A-4F5A-9569-3C27DA29C01F.jpg": {
+      "caption": "Several pine cones are scattered on a dirt path surrounded by grass.",
+      "condition": "natural, mixed pine cones and soil",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "pine cones",
+        "dirt path",
+        "grass"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "miscellaneous/grankogler/FDD96DD5-BBE1-498C-BAC0-3E075BE82BF3.jpg": {
+      "caption": "The image shows multiple pinecones on grass and soil next to a concrete path under bright sunlight.",
+      "condition": "no visible waste items",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "pinecones",
+        "grass",
+        "soil",
+        "concrete"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "miscellaneous/krukker/11594E80-D3D1-4AB2-AC61-406DFC3DF2FC.jpg": {
+      "caption": "An area of grass and weeds growing on a gravel surface is shown in bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "weeds",
+        "gravel"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "miscellaneous/krukker/94AFC5C6-547E-48C4-81BD-E4735F9BE96F.jpg": {
+      "caption": "The image shows grass and soil with gravel under bright sunlight, with no visible waste items.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "soil",
+        "shoe"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "miscellaneous/krukker/A3BA4914-51E9-4C7E-ACC5-E0F02D62A0F0.jpg": {
+      "caption": "The image shows a gravel surface with small rocks and patches of grass in bright sunlight, with no visible waste items.",
+      "condition": "none",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "small rocks",
+        "grass"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "miscellaneous/krukker/A90E210E-A688-4CAE-AC6B-3B7A53E003F2.jpg": {
+      "caption": "The image displays grass and weeds growing in soil under bright sunlight.",
+      "condition": "not applicable",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "weeds",
+        "soil"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "miscellaneous/krukker/AD754D62-575D-4D9C-ADC5-A143E6EA894C.jpg": {
+      "caption": "The image shows a gravel and grass surface with shadows under bright sunlight, with no visible waste items.",
+      "condition": "none",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "gravel",
+        "shadow"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "miscellaneous/krukker/FFF1EEDD-2587-4C15-B52A-5BF37CD82B74.jpg": {
+      "caption": "A plastic bottle is partially hidden among grass and plants on the soil.",
+      "condition": "slightly weathered, partially covered by vegetation",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bottle",
+        "plants",
+        "grass",
+        "soil"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic bottle",
+      "surface": "soil"
+    },
+    "miscellaneous/mystery_box/6CB20218-509F-468C-A5B7-F5583A4F98E8.jpg": {
+      "caption": "A plastic bin filled with metal bottle caps and a plastic bottle, next to a green bag on grassy soil in bright sunlight.",
+      "condition": "worn and scattered",
+      "count": 3,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bin",
+        "metal bottle caps",
+        "plastic bottle",
+        "green bag",
+        "grass",
+        "soil"
+      ],
+      "occlusion": "none",
+      "primary_object": "plastic bin",
+      "surface": "grass"
+    },
+    "miscellaneous/mystery_box/8FDB6A4C-9ED3-46BF-AF61-CA16595FFE52.jpg": {
+      "caption": "A plastic crate filled with various metal waste items rests on grass beside a green tarpaulin under bright sunlight.",
+      "condition": "crate is filled with metal items and seems generally intact",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic crate",
+        "metal waste",
+        "plastic bags",
+        "green tarpaulin",
+        "grass",
+        "soil"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic crate filled with metal waste",
+      "surface": "grass"
+    },
+    "miscellaneous/mystery_box/DC50D211-D37F-40B3-B54D-68FEB58461C4.jpg": {
+      "caption": "A plastic container filled with various litter items is lying on grass beside another piece of litter.",
+      "condition": "some wear and dirt visible",
+      "count": 2,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic container",
+        "litter items",
+        "grass",
+        "ground"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic container",
+      "surface": "grass"
+    },
+    "miscellaneous/mystery_box/E9E9A56C-C605-4F19-9D2B-15D3F5E35853.jpg": {
+      "caption": "A plastic basket containing various waste items is placed on the grass next to a soil path.",
+      "condition": "moderate wear with dirt accumulation",
+      "count": 5,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "basket",
+        "grass",
+        "plastic bottles",
+        "soil"
+      ],
+      "occlusion": "partial",
+      "primary_object": "basket",
+      "surface": "soil"
+    },
+    "miscellaneous/thrashbags/1D711064-A5F5-45DC-BD3F-F01C3CBA827B.jpg": {
+      "caption": "The image shows a field of grass with yellow flowers and dandelions under bright sunlight.",
+      "condition": "fresh and healthy vegetation",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "yellow flowers",
+        "dandelions",
+        "fencing wire",
+        "green leaves"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "grass"
+    },
+    "miscellaneous/thrashbags/4871C131-47EA-43F6-BAC2-147BC431E432.jpg": {
+      "caption": "A plastic bag lies partially concealed in tall grass and wildflowers under bright sunlight.",
+      "condition": "worn and slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bag",
+        "grass",
+        "yellow flowers",
+        "dandelions"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic bag",
+      "surface": "grass"
+    },
+    "miscellaneous/thrashbags/67C5F675-27CA-424F-BC8C-F36F6BD4B8A5.jpg": {
+      "caption": "A field of grass with yellow flowers and white dandelions under bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "yellow flowers",
+        "white dandelions",
+        "wire fence"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "grass"
+    },
+    "miscellaneous/thrashbags/7D1EACCF-B7E0-4897-A10F-0A598A5D5C70.jpg": {
+      "caption": "The image shows a grassy field with yellow flowers, dandelions, and a wire fence under bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "yellow flowers",
+        "dandelions",
+        "wire fence"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "grass"
+    },
+    "miscellaneous/unknown_piece/B6FAEF83-1252-4B53-AC30-B15414344D0A.jpg": {
+      "caption": "A worn plastic glove lies on grassy terrain next to gravel, under bright sunlight.",
+      "condition": "worn, slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic glove",
+        "grass",
+        "gravel"
+      ],
+      "occlusion": "none",
+      "primary_object": "plastic glove",
+      "surface": "grass"
+    },
+    "miscellaneous/unknown_piece/D7101843-D6BB-4CDF-AF83-A1E4A813ED50.jpg": {
+      "caption": "A discarded plastic bottle lies on a patch of grass and soil under bright sunlight.",
+      "condition": "partially worn and slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bottle",
+        "grass",
+        "soil",
+        "small rocks"
+      ],
+      "occlusion": "none",
+      "primary_object": "plastic bottle",
+      "surface": "grass"
+    },
+    "miscellaneous/unknown_piece/ECBE9A44-4184-4485-8B2D-B9AC240B2ECD.jpg": {
+      "caption": "A plastic bottle lies on grass next to a gravel path in bright sunlight.",
+      "condition": "slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bottle",
+        "grass",
+        "gravel"
+      ],
+      "occlusion": "none",
+      "primary_object": "plastic bottle",
+      "surface": "grass"
+    },
+    "organic_textiles/dirty_cloth/0C62CAFA-6F17-480E-A792-7B95C860F4DC.jpg": {
+      "caption": "An open outdoor area with gravel and surrounding grass under bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "grass",
+        "bushes",
+        "sky",
+        "utility pole"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "organic_textiles/dirty_cloth/3A3B812F-1650-4B9E-B2B2-FA5DBCE142DE.jpg": {
+      "caption": "A worn piece of textile lies on a gravel surface amidst grass and soil.",
+      "condition": "worn and dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "textile",
+      "objects": [
+        "textile",
+        "gravel",
+        "grass",
+        "soil"
+      ],
+      "occlusion": "none",
+      "primary_object": "textile",
+      "surface": "gravel"
+    },
+    "organic_textiles/dirty_cloth/3FF75A03-9FD4-4CFC-9C21-BD261682EAF6.jpg": {
+      "caption": "The image shows a gravel surface with some grass and dirt under bright sunlight, but no waste items are visible.",
+      "condition": "none",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "grass",
+        "dirt"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "organic_textiles/dirty_cloth/561EAECC-6311-4BD4-A68A-E77BDDC6CBFC.jpg": {
+      "caption": "The image shows a gravel path with adjacent grass and plants in bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "grass",
+        "soil",
+        "plants"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "organic_textiles/dirty_cloth/5D4827A5-318B-4BB7-8790-14AF36D96041.jpg": {
+      "caption": "A gravel area with distant grass and some trash or debris far away under bright sunlight.",
+      "condition": "none",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "grass",
+        "distant trash or debris"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "organic_textiles/dirty_cloth/65ED7CE3-93EC-4E89-AEB0-781E8758A28E.jpg": {
+      "caption": "A crumpled piece of paper is lying on a grassy surface in bright sunlight.",
+      "condition": "crumpled and slightly weathered",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "paper",
+      "objects": [
+        "crumpled paper",
+        "grass"
+      ],
+      "occlusion": "none",
+      "primary_object": "crumpled paper",
+      "surface": "grass"
+    },
+    "organic_textiles/dirty_cloth/7925E56E-C03A-49EF-887A-043FE9958B0A.jpg": {
+      "caption": "A worn shoe is resting on a gravel surface, surrounded by vegetation and railway tracks under bright sunlight.",
+      "condition": "worn and partially covered in dirt",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "textile",
+      "objects": [
+        "shoe",
+        "gravel",
+        "vegetation",
+        "railway tracks"
+      ],
+      "occlusion": "none",
+      "primary_object": "shoe",
+      "surface": "gravel"
+    },
+    "organic_textiles/dirty_cloth/7CAA4D21-3464-4144-B33E-E3F1E0D02324.jpg": {
+      "caption": "A concrete path with scattered debris is bordered by green plants under bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "concrete path",
+        "green plants"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "concrete"
+    },
+    "organic_textiles/dirty_cloth/8189826C-B722-4EF1-8FF2-136A29AE52B8.jpg": {
+      "caption": "A piece of textile is lying on a gravel surface with small rocks scattered around.",
+      "condition": "worn and slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "textile",
+      "objects": [
+        "piece of textile",
+        "gravel",
+        "small rocks",
+        "soil"
+      ],
+      "occlusion": "none",
+      "primary_object": "piece of textile",
+      "surface": "gravel"
+    },
+    "organic_textiles/dirty_cloth/84DEE582-F631-45FC-9437-1092BE7C90C7.jpg": {
+      "caption": "A plastic wrapper is partially visible on gravel with surrounding grass and weeds.",
+      "condition": "slightly worn with some dirt",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic wrapper",
+        "gravel",
+        "grass",
+        "weeds"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic wrapper",
+      "surface": "gravel"
+    },
+    "organic_textiles/dirty_cloth/8D48D1BA-3137-4DA0-A343-EA3FE538A5F8.jpg": {
+      "caption": "The image shows gravel and grass under bright sunlight with no visible waste items.",
+      "condition": "not applicable",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "gravel",
+        "soil"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "organic_textiles/dirty_cloth/93C45AA7-6A78-4D45-B5E7-330473F0295A.jpg": {
+      "caption": "A patch of gravel with scattered pebbles under bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "pebble",
+        "gravel",
+        "soil",
+        "grass"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "organic_textiles/dirty_cloth/A1159253-21D4-4032-AF02-B4EF00935CC5.jpg": {
+      "caption": "A piece of black textile scrap is lying on a gravel surface with some small plants around.",
+      "condition": "worn and frayed",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "textile",
+      "objects": [
+        "textile scrap",
+        "gravel",
+        "soil",
+        "small plants"
+      ],
+      "occlusion": "partial",
+      "primary_object": "textile scrap",
+      "surface": "gravel"
+    },
+    "organic_textiles/dirty_cloth/C5386BFC-CC65-4E32-BDCF-15E8195A7956.jpg": {
+      "caption": "A worn piece of textile cloth fragment rests on a rocky soil surface with scattered grass and stones under bright sunlight.",
+      "condition": "worn and dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "textile",
+      "objects": [
+        "textile cloth fragment",
+        "grass",
+        "rocks",
+        "soil"
+      ],
+      "occlusion": "partial",
+      "primary_object": "textile cloth fragment",
+      "surface": "soil"
+    },
+    "organic_textiles/dirty_cloth/D2D60AAB-60C6-4208-9BF1-44C19F8EDC09.jpg": {
+      "caption": "A gravel path with dandelions and grass under bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "gravel path",
+        "dandelions",
+        "trees",
+        "fence",
+        "sky"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "organic_textiles/dirty_cloth/DE4D31A9-D36B-4570-A513-E72EE14B0263.jpg": {
+      "caption": "A single garbage bag is on a gravel area surrounded by grass and bushes, with railroad tracks visible in the background.",
+      "condition": "slightly worn and dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "textile",
+      "objects": [
+        "garbage bag",
+        "grass",
+        "bushes",
+        "railroad tracks",
+        "gravel"
+      ],
+      "occlusion": "none",
+      "primary_object": "garbage bag",
+      "surface": "gravel"
+    },
+    "organic_textiles/dirty_cloth/DEE626BC-B9AC-4690-ADC1-21893C5B8CE3.jpg": {
+      "caption": "A piece of fabric lies on a gravel surface under bright sunlight.",
+      "condition": "worn and dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "textile",
+      "objects": [
+        "fabric piece",
+        "gravel",
+        "grass"
+      ],
+      "occlusion": "none",
+      "primary_object": "fabric piece",
+      "surface": "gravel"
+    },
+    "organic_textiles/dirty_cloth/F20DEEC1-F636-4B79-84CB-C96BE7A62C3D.jpg": {
+      "caption": "The image shows a gravel area with grass and bushes under bright sunlight, with no noticeable waste items.",
+      "condition": "not applicable",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "grass",
+        "bushes",
+        "sky",
+        "electric pole"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "organic_textiles/dirty_cloth/F971EE29-49C1-4A8C-9631-3576FDB29CCD.jpg": {
+      "caption": "The image shows a gravel surface with grass and plants under bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "grass",
+        "plants"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "organic_textiles/dirty_cloth/FF4CD43E-DD83-4344-8C2D-1B234158BCC6.jpg": {
+      "caption": "The image shows a soil surface with small pebbles, fallen leaves, and plant debris under shadowy lighting.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "shadow",
+      "material": "unknown",
+      "objects": [
+        "soil",
+        "pebbles",
+        "fallen leaves",
+        "plant debris"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "organic_textiles/gloves/05BE0D5F-A8C4-4252-958D-5748844F7AE0.jpg": {
+      "caption": "A textile glove is partially visible on the grass amid foliage.",
+      "condition": "slightly worn",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "textile",
+      "objects": [
+        "glove",
+        "grass",
+        "leaves",
+        "soil"
+      ],
+      "occlusion": "partial",
+      "primary_object": "glove",
+      "surface": "grass"
+    },
+    "organic_textiles/gloves/26FE030A-6032-42EA-ADAB-E0199A423A9C.jpg": {
+      "caption": "A plastic bottle cap lies on a grassy surface, with a shoe partially visible.",
+      "condition": "slightly weathered",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bottle cap",
+        "grass",
+        "shoe",
+        "dandelions"
+      ],
+      "occlusion": "none",
+      "primary_object": "plastic bottle cap",
+      "surface": "grass"
+    },
+    "organic_textiles/gloves/A26A6DBC-0428-4BB2-BB62-9727796E82F8.jpg": {
+      "caption": "A field of grass and plants is illuminated by bright sunlight with no visible waste items.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "plants"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "grass"
+    },
+    "organic_textiles/gloves/BDA61FB0-5594-4089-91F1-0B758F35EA1B.jpg": {
+      "caption": "The image shows a patch of grass and wildflowers under bright sunlight.",
+      "condition": "N/A",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "green plants",
+        "wildflowers",
+        "soil"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "grass"
+    },
+    "organic_textiles/gloves/E7D94548-4168-40C8-BE07-69E13F1FD7D9.jpg": {
+      "caption": "A black glove is discarded on a patch of grass with dandelions under bright sunlight.",
+      "condition": "slightly worn",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "textile",
+      "objects": [
+        "glove",
+        "grass",
+        "dandelions"
+      ],
+      "occlusion": "none",
+      "primary_object": "glove",
+      "surface": "grass"
+    },
+    "organic_textiles/gloves/E84E85EE-21DB-47B8-B18A-FAAB5C3F78B7.jpg": {
+      "caption": "A black glove is partially hidden in grass on a sunny day.",
+      "condition": "slightly worn but intact",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "textile",
+      "objects": [
+        "glove",
+        "grass",
+        "leaves",
+        "soil"
+      ],
+      "occlusion": "partial",
+      "primary_object": "glove",
+      "surface": "grass"
+    },
+    "organic_textiles/gloves/ED886887-0D30-4FC0-827D-B883A1791DF3.jpg": {
+      "caption": "An image of a gravelly soil surface with grass and plants in bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "none",
+      "objects": [
+        "gravel",
+        "grass",
+        "soil",
+        "plants"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "organic_textiles/insect_beetle/C7B22551-DD64-437E-B221-26E1BB3EB308_1_102_o.jpg": {
+      "caption": "A beetle is walking on soil with rocks, pebbles, and some grass visible, under bright sunlight.",
+      "condition": "natural, no signs of human waste",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "beetle",
+        "rocks",
+        "pebbles",
+        "dirt",
+        "grass"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "organic_textiles/insect_beetle/D394CE52-ECE9-4C7B-BE7A-9F7E1B5F9C9D.jpg": {
+      "caption": "The image shows a patch of soil with rocks and grass under bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "rocks",
+        "soil",
+        "grass"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "organic_textiles/insect_beetle/D6FBBC17-C503-4277-BC58-7DD9D3896CA3.jpg": {
+      "caption": "The image shows a beetle on soil surrounded by rocks and grass under bright sunlight.",
+      "condition": "natural outdoor environment",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "rocks",
+        "soil",
+        "grass",
+        "beetle"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "organic_textiles/pebbles/180C83AB-2FC6-4BDD-B2B9-E2BD2F65EEA9_1_102_o.jpg": {
+      "caption": "The image shows a gravel surface in bright sunlight with part of a shoe visible.",
+      "condition": "image mainly shows a gravel surface",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "shoe"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "organic_textiles/pebbles/727A97A5-A215-4A6F-BC28-C6E1E2BC31C6.jpg": {
+      "caption": "The image shows a gravel surface under bright sunlight with no visible waste items.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "small stones"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "organic_textiles/pebbles/A7B9814C-C8A1-4FC4-97CA-898771025268.jpg": {
+      "caption": "The image shows a gravel path with grass on the side, under bright sunlight.",
+      "condition": "none",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "grass",
+        "small rocks"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "organic_textiles/pebbles/BFFE4A28-82E6-4FE0-8BD8-CF0766260650.jpg": {
+      "caption": "The image shows a gravel path bordered by grass under bright sunlight with a shadow visible on one side.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel path",
+        "grass",
+        "shadow"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "packaging/burgerking/20EBB876-EDE8-4A5E-A686-2514A3F3BDEC.jpg": {
+      "caption": "A plastic wrapper is partially hidden among tall grass and dandelions on a sunny day.",
+      "condition": "light wear",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic wrapper",
+        "grass",
+        "dandelions"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic wrapper",
+      "surface": "grass"
+    },
+    "packaging/burgerking/24326C0F-133F-4B95-A983-19ADD10F9B16.jpg": {
+      "caption": "A paper food wrapper lies partially covered by grass and sticks under bright sunlight.",
+      "condition": "dirt on surface, slight wear from being outdoors",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "paper",
+      "objects": [
+        "food wrapper",
+        "grass",
+        "sticks",
+        "leaves"
+      ],
+      "occlusion": "partial",
+      "primary_object": "food wrapper",
+      "surface": "grass"
+    },
+    "packaging/burgerking/4469CF9B-EB9F-4DB8-9B37-9F8D6BE95D00.jpg": {
+      "caption": "A plastic bag is partially hidden among tall grass and dandelions in a sunny outdoor area.",
+      "condition": "slightly crumpled",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bag",
+        "grass",
+        "dandelions",
+        "weeds",
+        "soil",
+        "plants"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic bag",
+      "surface": "grass"
+    },
+    "packaging/burgerking/F798A107-876D-48D0-9F20-C142467DB0D4.jpg": {
+      "caption": "A paper cup is partially obscured by grass and dandelions in a grassy area under bright sunlight.",
+      "condition": "slightly weathered with some dirt",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "paper",
+      "objects": [
+        "paper cup",
+        "grass",
+        "dandelions"
+      ],
+      "occlusion": "partial",
+      "primary_object": "paper cup",
+      "surface": "grass"
+    },
+    "packaging/burgerking/F9BE5F17-7287-47FB-BACA-DE14E986AE6E.jpg": {
+      "caption": "A paper bag lies on a grassy area surrounded by foliage under bright sunlight.",
+      "condition": "slightly worn with some dirt",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "paper",
+      "objects": [
+        "paper bag",
+        "grass",
+        "plants",
+        "foliage"
+      ],
+      "occlusion": "none",
+      "primary_object": "paper bag",
+      "surface": "grass"
+    },
+    "packaging/candy_wrapper/2C02DC91-C31E-4707-8AB0-B6EA9BDEC1AC.jpg": {
+      "caption": "A small piece of colorful litter is partially obscured by grass beside an asphalt road.",
+      "condition": "small and slightly dirty",
+      "count": 1,
+      "lighting": "overcast",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "asphalt",
+        "small colorful litter"
+      ],
+      "occlusion": "partial",
+      "primary_object": "none",
+      "surface": "asphalt"
+    },
+    "packaging/candy_wrapper/66637352-21A9-4BB6-9D1C-90DB588D4239.jpg": {
+      "caption": "A candy wrapper is partially hidden among grass.",
+      "condition": "moderate wear with some dirt accumulation",
+      "count": 1,
+      "lighting": "overcast",
+      "material": "plastic",
+      "objects": [
+        "candy wrapper",
+        "grass",
+        "soil"
+      ],
+      "occlusion": "partial",
+      "primary_object": "candy wrapper",
+      "surface": "grass"
+    },
+    "packaging/candy_wrapper/BF94B731-68F6-41C2-8850-1D4B44FEDBFE.jpg": {
+      "caption": "A candy wrapper is lying on the grass next to a concrete path in bright sunlight.",
+      "condition": "slightly crumpled with some dirt",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "candy wrapper",
+        "grass",
+        "concrete"
+      ],
+      "occlusion": "none",
+      "primary_object": "candy wrapper",
+      "surface": "grass"
+    },
+    "packaging/candy_wrapper/C3C436CF-2A3C-43E5-B10F-8A0A3F8F8733.jpg": {
+      "caption": "A candy wrapper is lying on the grass beside a sidewalk under bright sunlight.",
+      "condition": "slightly worn, some dirt visible",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "candy wrapper",
+        "grass",
+        "sidewalk"
+      ],
+      "occlusion": "none",
+      "primary_object": "candy wrapper",
+      "surface": "grass"
+    },
+    "packaging/cocio/0FC79A8F-45D8-45AB-879E-2CD23277BC90.jpg": {
+      "caption": "A plastic bottle lies on grassy ground under bright sunlight.",
+      "condition": "slightly worn and dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bottle",
+        "grass"
+      ],
+      "occlusion": "none",
+      "primary_object": "plastic bottle",
+      "surface": "grass"
+    },
+    "packaging/cocio/4C4FCEFD-7E0E-4521-B3CE-452B544F4FDC.jpg": {
+      "caption": "A plastic bottle lies on grass near a gravel area under bright sunlight.",
+      "condition": "the bottle is slightly worn but intact, with some dirt",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bottle",
+        "grass",
+        "gravel"
+      ],
+      "occlusion": "none",
+      "primary_object": "plastic bottle",
+      "surface": "grass"
+    },
+    "packaging/cocio/72856E5E-5CCD-4E13-8076-3DFF153E5957.jpg": {
+      "caption": "A plastic bottle lies on grass next to a gravel path in bright sunlight.",
+      "condition": "slightly dirty with some discoloration",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bottle",
+        "grass",
+        "gravel"
+      ],
+      "occlusion": "none",
+      "primary_object": "plastic bottle",
+      "surface": "grass"
+    },
+    "packaging/cocio/9077F88E-3E04-46FB-8E43-200A2C3FD425.jpg": {
+      "caption": "A plastic bottle lies partially hidden in tall grass under bright sunlight.",
+      "condition": "light wear with no visible damage",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bottle",
+        "grass",
+        "soil",
+        "gravel"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic bottle",
+      "surface": "grass"
+    },
+    "packaging/cocio/A8E19D4F-A44C-45CD-B2F8-5BCD98D86388.jpg": {
+      "caption": "A plastic bottle lies on grass in bright sunlight, partially obscured by vegetation.",
+      "condition": "moderate dirt and wear",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bottle",
+        "grass",
+        "gravel"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic bottle",
+      "surface": "grass"
+    },
+    "packaging/cocio/D8503135-35BF-4F0A-AF2F-6C8A0D8DFC18.jpg": {
+      "caption": "A plastic bottle lies on a grassy area under bright sunlight.",
+      "condition": "lightly worn with some dirt",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bottle",
+        "grass",
+        "plants"
+      ],
+      "occlusion": "none",
+      "primary_object": "plastic bottle",
+      "surface": "grass"
+    },
+    "packaging/cocio/E53F3EA6-9186-47A8-B871-82A3CEF13ECA.jpg": {
+      "caption": "A plastic bottle lies on grassy ground in bright sunlight.",
+      "condition": "some wear and dirt visible",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bottle",
+        "grass"
+      ],
+      "occlusion": "none",
+      "primary_object": "plastic bottle",
+      "surface": "grass"
+    },
+    "packaging/gum_package/68ECBDB3-8322-4793-8EC0-E295FEFE857F.jpg": {
+      "caption": "A plastic bottle is partially visible among grass and dandelions next to a dirt path in bright sunlight.",
+      "condition": "appears to be slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bottle",
+        "grass",
+        "dirt path",
+        "dandelions"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic bottle",
+      "surface": "grass"
+    },
+    "packaging/mcdonalds/A3B1DBAE-406B-43CB-91EC-D5DBDB9F12C1.jpg": {
+      "caption": "The image features a patch of green plants and grass growing from soil under bright sunlight with no visible waste items.",
+      "condition": "none",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "none",
+      "objects": [
+        "plants",
+        "grass",
+        "soil"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "packaging/snus/41728D7E-2016-421D-BD6A-21A4515944E1.jpg": {
+      "caption": "A small plastic wrapper lies on a gravel surface under bright sunlight.",
+      "condition": "slightly worn and dusty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "wrapper",
+        "gravel"
+      ],
+      "occlusion": "none",
+      "primary_object": "wrapper",
+      "surface": "gravel"
+    },
+    "packaging/snus/4202942C-752C-4BFF-968A-E2F2C58BD94D.jpg": {
+      "caption": "A gravel surface next to a concrete path under overcast lighting.",
+      "condition": "not applicable",
+      "count": 0,
+      "lighting": "overcast",
+      "material": "unknown",
+      "objects": [
+        "gravel surface",
+        "concrete path"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "packaging/snus/CFBE84EE-C2C0-487C-A283-3C1736E383B1.jpg": {
+      "caption": "The image shows a gravel surface next to a concrete edge with no visible waste items.",
+      "condition": "clean and intact",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel surface",
+        "concrete edge"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "packaging/soda_can/12A84CB1-61D9-40ED-AF26-CE4AD97715CF.jpg": {
+      "caption": "The image shows a gravel path with grass growing alongside it under bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel path",
+        "grass",
+        "small rocks",
+        "shadow"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "packaging/soda_can/29989D9E-317B-4C99-8499-59F905B4019C.jpg": {
+      "caption": "The image shows a gravel path bordered by grass under bright sunlight, with no visible waste items.",
+      "condition": "not applicable",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel path",
+        "grass"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "packaging/soda_can/5873E130-B505-4B37-8B3B-0D02587B44BD.jpg": {
+      "caption": "An aluminum can is partially buried among rocks, gravel, and grass in bright sunlight.",
+      "condition": "worn and partially buried",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "metal",
+      "objects": [
+        "aluminum can",
+        "rocks",
+        "gravel",
+        "grass"
+      ],
+      "occlusion": "partial",
+      "primary_object": "aluminum can",
+      "surface": "gravel"
+    },
+    "packaging/soda_can/78435086-C5A6-4CC2-BB7F-980A8269AC4B.jpg": {
+      "caption": "A plastic wrapper is partially covered by grass and leaves on soil in bright sunlight.",
+      "condition": "slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic wrapper",
+        "grass",
+        "leaves",
+        "soil"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic wrapper",
+      "surface": "soil"
+    },
+    "packaging/soda_can/91193BD6-DE93-40E9-B57E-6DA30E9EC862.jpg": {
+      "caption": "The image shows a gravel path next to a grassy area under bright sunlight.",
+      "condition": "no visible wear or damage",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "grass",
+        "small rocks"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "packaging/soda_can/BE1D5751-F805-4034-A513-9DB6896143BF.jpg": {
+      "caption": "A gravel path with grass on the side under bright sunlight with no waste items visible.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "grass",
+        "soil",
+        "small stones"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "paper/napkins/0205AC66-AFDD-4DA5-9CC5-0D44888089C5.jpg": {
+      "caption": "The image shows grass adjacent to a gravel path with no visible waste items.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "overcast",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "gravel",
+        "small stones"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "paper/napkins/0F64E507-23B5-46A5-8B25-E7E5ED02C628.jpg": {
+      "caption": "A crumpled plastic bag partially hidden among grass and gravel.",
+      "condition": "crumpled and slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bag",
+        "grass",
+        "gravel"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic bag",
+      "surface": "gravel"
+    },
+    "paper/napkins/0FC821EB-ED5B-44E4-A7BB-3ACC06FB1316.jpg": {
+      "caption": "A plastic bottle is partially hidden among grass on a sunlit area with gravel nearby.",
+      "condition": "slight dirt",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bottle",
+        "grass",
+        "gravel"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic bottle",
+      "surface": "grass"
+    },
+    "paper/napkins/17362433-5E6C-4CA1-AAD6-DEB89F9418C4.jpg": {
+      "caption": "A piece of crumpled paper lies partially covered by gravel and plants under bright sunlight.",
+      "condition": "crumpled and slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "paper",
+      "objects": [
+        "crumpled paper",
+        "gravel",
+        "green plants"
+      ],
+      "occlusion": "partial",
+      "primary_object": "crumpled paper",
+      "surface": "gravel"
+    },
+    "paper/napkins/238EF1E8-A73F-411D-A530-35EA67235673.jpg": {
+      "caption": "The image shows grass and gravel with obscured litter partially visible among the grass.",
+      "condition": "unknown",
+      "count": 0,
+      "lighting": "overcast",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "gravel",
+        "litter"
+      ],
+      "occlusion": "partial",
+      "primary_object": "none",
+      "surface": "grass"
+    },
+    "paper/napkins/28B5BAFC-8B90-4397-B183-F8CA5882ABFB.jpg": {
+      "caption": "A piece of crumpled paper lies among green plants on a gravel surface under bright sunlight.",
+      "condition": "slightly crumpled and weathered",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "paper",
+      "objects": [
+        "crumpled paper",
+        "green plants",
+        "gravel"
+      ],
+      "occlusion": "partial",
+      "primary_object": "crumpled paper",
+      "surface": "gravel"
+    },
+    "paper/napkins/3C9252EA-C324-46B4-8505-87868E6EC5C5.jpg": {
+      "caption": "The image shows grass and gravel in bright sunlight with no visible waste items.",
+      "condition": "not applicable",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "gravel",
+        "rocks"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "paper/napkins/4A13CD9B-CA10-43ED-B6C8-887120963D55.jpg": {
+      "caption": "The image shows grass and soil under bright sunlight with no visible waste items.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "soil",
+        "weeds"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "paper/napkins/5464CDE3-8907-4EC5-9620-CFDDC2655C02.jpg": {
+      "caption": "The image shows grass and weeds growing in soil with some gravel present.",
+      "condition": "not applicable",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "weeds",
+        "soil",
+        "gravel"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "paper/napkins/5891FD1A-D7B1-44A5-B5E9-CA8D2144D252.jpg": {
+      "caption": "A plastic bag is partially visible among tall grass on a sunlit, rocky soil surface.",
+      "condition": "lightly soiled",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bag",
+        "grass",
+        "rocks",
+        "soil"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic bag",
+      "surface": "soil"
+    },
+    "paper/napkins/645F850A-2B72-46B2-B5CE-01BFBCE25699.jpg": {
+      "caption": "A piece of cloth is hanging on bushes surrounded by grass under bright sunlight.",
+      "condition": "light wear",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "textile",
+      "objects": [
+        "cloth piece",
+        "bushes",
+        "grass"
+      ],
+      "occlusion": "none",
+      "primary_object": "cloth piece",
+      "surface": "bushes"
+    },
+    "paper/napkins/9C365D98-C2EC-4C99-B334-B291C704695D.jpg": {
+      "caption": "A plastic wrapper lies partially hidden among grass next to a gravel path.",
+      "condition": "slightly dirty, intact",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic wrapper",
+        "grass",
+        "gravel path"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic wrapper",
+      "surface": "gravel"
+    },
+    "paper/napkins/C0D86296-B808-4E8B-95C4-EC84012EF8E7.jpg": {
+      "caption": "A plastic bag is caught in a bush surrounded by green leaves in bright sunlight.",
+      "condition": "some signs of wear",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bag",
+        "bush",
+        "leaves"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic bag",
+      "surface": "bush"
+    },
+    "paper/napkins/DB7DF831-E55C-4596-B0DF-ECDD95D15706.jpg": {
+      "caption": "A pink tissue is caught on tree branches among green leaves in bright sunlight.",
+      "condition": "slightly crumpled but appears clean",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "paper",
+      "objects": [
+        "tissue",
+        "tree branches",
+        "leaves"
+      ],
+      "occlusion": "none",
+      "primary_object": "tissue",
+      "surface": "other"
+    },
+    "paper/napkins/FF696AC4-DA1D-41CF-A87E-D497E3ACD081.jpg": {
+      "caption": "A plastic bag is caught in the branches of a tree beside a gravel road.",
+      "condition": "slightly worn",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bag",
+        "trees",
+        "shrubs",
+        "gravel road",
+        "grass"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic bag",
+      "surface": "trees"
+    },
+    "paper/paper/12AFD99C-F177-47FE-BE46-9A168ADD1E9C.jpg": {
+      "caption": "A plastic bottle is partially hidden among green grass and soil.",
+      "condition": "partially covered by grass",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bottle",
+        "grass",
+        "soil"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic bottle",
+      "surface": "soil"
+    },
+    "paper/paper/1638385B-B07C-4A71-BC5F-F02717C34B67.jpg": {
+      "caption": "The image shows green grass and soil with small stones under bright sunlight, and no waste items are visible.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "soil",
+        "small stones"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "paper/paper/1B7DBE3F-0ADC-443A-8DDF-AA3731E4F136.jpg": {
+      "caption": "The image shows grass and plants growing on soil in bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "soil",
+        "plants"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "paper/paper/25322191-BC6F-45F0-99B8-E39843D9AE19.jpg": {
+      "caption": "A plastic bag partially obscured by grass, lying on soil.",
+      "condition": "slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bag",
+        "grass",
+        "soil"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic bag",
+      "surface": "soil"
+    },
+    "paper/paper/2824786D-0E75-4C9B-8C61-6FC56F342B7D.jpg": {
+      "caption": "A small plastic fragment is partially hidden among grass in bright sunlight.",
+      "condition": "slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic fragment",
+        "grass",
+        "soil"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic fragment",
+      "surface": "grass"
+    },
+    "paper/paper/2A764A8A-1BB4-426B-A97C-8DAE5C78FAC3.jpg": {
+      "caption": "A plastic bag is partially hidden among plants on a sunny day.",
+      "condition": "wrinkled and dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bag",
+        "plants",
+        "soil"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic bag",
+      "surface": "soil"
+    },
+    "paper/paper/2D14A411-7843-4451-B987-743838519AEF.jpg": {
+      "caption": "A small plastic fragment on soil surrounded by grass and vegetation.",
+      "condition": "moderately worn with some dirt",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic fragment",
+        "grass",
+        "soil",
+        "plants"
+      ],
+      "occlusion": "none",
+      "primary_object": "plastic fragment",
+      "surface": "soil"
+    },
+    "paper/paper/40FFAD92-795D-49EF-8D15-340E085666FD.jpg": {
+      "caption": "The image shows a gravel path bordered by grass and weeds in bright sunlight.",
+      "condition": "no notable waste present",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel path",
+        "grass",
+        "weeds",
+        "shadows"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "paper/paper/57846B35-27F5-46E1-8CCA-400929953D62.jpg": {
+      "caption": "A piece of paper lies partially hidden among grass and soil in bright sunlight.",
+      "condition": "slightly crumpled and weathered",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "paper",
+      "objects": [
+        "piece of paper",
+        "grass",
+        "soil",
+        "leaves"
+      ],
+      "occlusion": "partial",
+      "primary_object": "piece of paper",
+      "surface": "grass"
+    },
+    "paper/paper/74E90D63-85D1-4D9F-81A9-ECC862DDD126.jpg": {
+      "caption": "A partially concealed plastic bottle lies on the grass.",
+      "condition": "minor dirt",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bottle",
+        "grass",
+        "soil"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic bottle",
+      "surface": "grass"
+    },
+    "paper/paper/80B9411C-9C46-4D35-B7A6-38B53F2C6198.jpg": {
+      "caption": "The image shows grass and gravel with small rocks in bright sunlight.",
+      "condition": "not applicable",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "gravel",
+        "rocks",
+        "small pieces of debris"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "paper/paper/82D4A1F3-8C5F-497D-96DA-4DC5B7A8BDB1.jpg": {
+      "caption": "The image shows grass and plants under bright sunlight with no visible waste items.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "plants"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "grass"
+    },
+    "paper/paper/96E8D6B8-CEF0-4F50-AC3F-ED05A7F40372.jpg": {
+      "caption": "A gravel path runs alongside bushes and tall grass under bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel path",
+        "green bushes",
+        "tall grass",
+        "trees"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "paper/paper/9D280621-8CE3-4A4E-A206-A579E0415F88.jpg": {
+      "caption": "A plastic wrapper lies partially hidden among grass next to a gravel path.",
+      "condition": "slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic wrapper",
+        "grass",
+        "gravel",
+        "dirt"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic wrapper",
+      "surface": "grass"
+    },
+    "paper/paper/9FC1CD3F-37E5-4A65-B7E7-837786FC1F52.jpg": {
+      "caption": "The image shows a gravel path with grass and plants in the background under bright sunlight, with no waste items visible.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "grass",
+        "plants"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "paper/paper/AF40B408-9640-4ED6-A99C-DA7AA716D30F.jpg": {
+      "caption": "The image shows an area of grass with plants growing, under bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "plants"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "grass"
+    },
+    "paper/paper/C55C81AF-BE86-442C-AEFF-215F28B8E11E.jpg": {
+      "caption": "The image shows a grassy area with dandelions and plants under bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "dandelions",
+        "plants"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "paper/paper/D6781D3F-9821-43FF-8851-031BA55E4DFB.jpg": {
+      "caption": "A plastic straw partially hidden among grass and weeds on a soil surface.",
+      "condition": "slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic straw",
+        "grass",
+        "small rocks",
+        "weeds"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic straw",
+      "surface": "soil"
+    },
+    "paper/paper/D75A0F9F-03BE-42BD-A396-98EE8415E569.jpg": {
+      "caption": "The image shows a patch of grass and gravel on a sunny day with no visible waste items.",
+      "condition": "no visible waste items",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "soil",
+        "gravel"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "paper/paper/DA3211FB-F7CE-47BC-A024-0D2A2570574D.jpg": {
+      "caption": "The image shows grass and a mixture of soil and rocks under bright sunlight.",
+      "condition": "no waste item visible",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "soil",
+        "rocks",
+        "pebbles"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "paper/paper/E7EEC497-32D1-430D-BB2B-9F09E36CBA6A.jpg": {
+      "caption": "A gravel path is bordered by tall grass; no waste items are visible.",
+      "condition": "none",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "gravel path"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "paper/paper/E860BC5B-5EA5-45C4-8870-2A8AA4A27427.jpg": {
+      "caption": "The image shows a gravel area with grass and plants in bright sunlight, but no waste items are visible.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "grass",
+        "plants"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "paper/paper/EB0525F9-0033-4ABE-86C5-D96C187F596E.jpg": {
+      "caption": "The image shows a patch of grass with gravel in bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "gravel"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "paper/paper/F3857983-5168-4ADC-BDFE-E57501D28241.jpg": {
+      "caption": "A single crumpled paper sheet lies on a grassy area next to an asphalt path.",
+      "condition": "slightly crumpled and weathered",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "paper",
+      "objects": [
+        "paper sheet",
+        "grass",
+        "asphalt"
+      ],
+      "occlusion": "none",
+      "primary_object": "paper sheet",
+      "surface": "grass"
+    },
+    "paper/paper/F6C10282-22E3-4166-9BCA-0C2C43CFD121.jpg": {
+      "caption": "The image shows a gravel path bordered by grass under bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "gravel",
+        "soil"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "paper/paper/FBC3915F-DE94-46C2-A16C-A80EBB42917A.jpg": {
+      "caption": "The image shows dense grass and vegetation without any visible waste items.",
+      "condition": "none",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "vegetation",
+        "weeds"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "paper/paper_bag/14C185B3-01A8-465A-B612-43E701FD38EF.jpg": {
+      "caption": "A small piece of litter is barely visible among grass and gravel under bright sunlight.",
+      "condition": "none",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "gravel",
+        "small piece of litter"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "paper/paper_bag/7409762D-FB39-434E-89C2-72C6C0FB08BB.jpg": {
+      "caption": "The image shows a natural environment with plants and bushes under bright sunlight.",
+      "condition": "natural environment with no visible damage",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "soil",
+        "plants",
+        "grass",
+        "bushes"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "paper/paper_bag/985D3873-19D2-4063-8D9F-0073968B0457.jpg": {
+      "caption": "A plastic bottle lies partially occluded by grass on gravel under bright sunlight.",
+      "condition": "slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bottle",
+        "grass",
+        "gravel",
+        "dirt"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic bottle",
+      "surface": "gravel"
+    },
+    "paper/paper_cup/201846A2-0FA4-4B20-9435-8E7EA1179012.jpg": {
+      "caption": "A plastic bag is partially visible among grass and rocks on the soil under bright sunlight.",
+      "condition": "slightly worn",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bag",
+        "grass",
+        "soil",
+        "rocks"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic bag",
+      "surface": "soil"
+    },
+    "paper/paper_cup/EA370BDC-964C-49C2-840A-9FA45DB77779.jpg": {
+      "caption": "A partially hidden plastic bottle is lying on the soil amidst grass and rocks.",
+      "condition": "slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bottle",
+        "grass",
+        "soil",
+        "rocks"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic bottle",
+      "surface": "soil"
+    },
+    "plastics/plastic/03D25FB8-054B-4F05-92F7-2714DEEEE016.jpg": {
+      "caption": "A small piece of red plastic is lying on gravel in bright sunlight.",
+      "condition": "slightly worn and dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "piece of plastic",
+        "gravel",
+        "sand"
+      ],
+      "occlusion": "none",
+      "primary_object": "piece of plastic",
+      "surface": "gravel"
+    },
+    "plastics/plastic/04A093A4-BB63-4E0A-91C9-6183B9100791.jpg": {
+      "caption": "A red plastic straw lies on gravel under bright sunlight.",
+      "condition": "lightly worn",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic straw",
+        "gravel",
+        "small rocks"
+      ],
+      "occlusion": "none",
+      "primary_object": "plastic straw",
+      "surface": "gravel"
+    },
+    "plastics/plastic_bag/4F29855A-6480-4A0B-938E-5545CB66A537.jpg": {
+      "caption": "A plastic bag is partially hidden among grass on a gravel surface under bright sunlight.",
+      "condition": "slightly worn and dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bag",
+        "grass",
+        "gravel"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic bag",
+      "surface": "gravel"
+    },
+    "plastics/plastic_bag/868B6347-04D9-480E-8E2F-891EC929140D.jpg": {
+      "caption": "A plastic bag is lying on grass with some scattered gravel and dandelions around.",
+      "condition": "slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bag",
+        "grass",
+        "gravel",
+        "dandelions"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic bag",
+      "surface": "grass"
+    },
+    "plastics/plastic_bag/A70E66A7-9F9F-42AA-BCFA-1A05EF9DEF87.jpg": {
+      "caption": "A plastic bag lies partially obscured among grass and dandelions in bright sunlight.",
+      "condition": "slightly crumpled plastic bag",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bag",
+        "grass",
+        "rocks",
+        "dandelions"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic bag",
+      "surface": "grass"
+    },
+    "plastics/plastic_bag/AFF74FF8-8582-4EC2-A4F6-E3DB22504139.jpg": {
+      "caption": "A field of grass with yellow flowers and dandelions under bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "yellow flowers",
+        "dandelions",
+        "fencing wire"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "grass"
+    },
+    "plastics/plastic_bottle_piece/435B3DD7-1C3E-4CE8-99D7-A75E19177D12.jpg": {
+      "caption": "A small paper fragment lies on a gravel surface under bright sunlight.",
+      "condition": "worn and slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "paper",
+      "objects": [
+        "paper fragment",
+        "gravel",
+        "small stones"
+      ],
+      "occlusion": "none",
+      "primary_object": "paper fragment",
+      "surface": "gravel"
+    },
+    "plastics/plastic_bottle_piece/5CCF8A29-65F5-44D9-9B96-F387975182FC.jpg": {
+      "caption": "A crumpled can is on a gravel surface in bright sunlight.",
+      "condition": "crumpled and slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "metal",
+      "objects": [
+        "crumpled can",
+        "gravel",
+        "small plants"
+      ],
+      "occlusion": "none",
+      "primary_object": "crumpled can",
+      "surface": "gravel"
+    },
+    "plastics/plastic_box/3066D25A-CF3C-44D4-BA85-24BD3C2A2257.jpg": {
+      "caption": "A plastic container is lying on gravel in front of tall grass in bright sunlight.",
+      "condition": "slightly dirty with visible wear",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic container",
+        "grass",
+        "gravel",
+        "vegetation"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic container",
+      "surface": "gravel"
+    },
+    "plastics/plastic_filaments/1F55B97E-03EF-47A6-87E2-490D69C42C52.jpg": {
+      "caption": "The image shows a patch of grass and gravel with a shadow cast on the ground.",
+      "condition": "no visible waste to assess",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "grass",
+        "shadow"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "plastics/plastic_filaments/36FCC527-E154-4F5A-A906-6869CB102183.jpg": {
+      "caption": "The image shows a gravel path bordered by grass and small rocks under bright sunlight.",
+      "condition": "none",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "grass",
+        "small rocks",
+        "vegetation"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "plastics/plastic_filaments/8502E8CF-C4B6-4B19-BF57-27E644584AF5.jpg": {
+      "caption": "The image shows a gravel path next to grass without any visible waste items.",
+      "condition": "none",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "grass",
+        "soil"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "plastics/plastic_filaments/A128D857-0BFB-44B7-A35B-ADB8F990C927.jpg": {
+      "caption": "A single pink plastic straw is visible on grass beside gravel in bright sunlight.",
+      "condition": "slightly worn with some dirt accumulation",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic straw",
+        "grass",
+        "gravel"
+      ],
+      "occlusion": "none",
+      "primary_object": "plastic straw",
+      "surface": "grass"
+    },
+    "plastics/plastic_filaments/AF411464-B983-44B5-BC0A-76AC469B8B28.jpg": {
+      "caption": "A piece of red plastic is resting on grass with some gravel visible nearby under bright sunlight.",
+      "condition": "slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "piece of red plastic",
+        "grass",
+        "gravel"
+      ],
+      "occlusion": "none",
+      "primary_object": "piece of red plastic",
+      "surface": "grass"
+    },
+    "plastics/plastic_filaments/DAFB6D5D-7F8D-45D5-B12A-28D02D5937A5.jpg": {
+      "caption": "Frayed rope fragments are resting on a gravel surface among rocks and grass under bright sunlight.",
+      "condition": "frayed and tangled",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "textile",
+      "objects": [
+        "rope fragments",
+        "rocks",
+        "grass"
+      ],
+      "occlusion": "partial",
+      "primary_object": "rope fragments",
+      "surface": "gravel"
+    },
+    "plastics/plastic_filaments/DE4BEF87-C34C-4EFF-B7F9-9D0A5DA903BE.jpg": {
+      "caption": "A plastic straw is lying on grass beside a gravel path under bright sunlight.",
+      "condition": "in good condition but slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic straw",
+        "grass",
+        "gravel",
+        "shadow"
+      ],
+      "occlusion": "none",
+      "primary_object": "plastic straw",
+      "surface": "grass"
+    },
+    "plastics/plastic_filaments/E90169CE-5E4C-4D66-8EDA-9C2FCFE99E25.jpg": {
+      "caption": "A small blue plastic fragment is lying on gravel next to grass.",
+      "condition": "no notable wear or damage",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "grass",
+        "small blue plastic fragment"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "plastics/plastic_pieces/3C36CC35-517B-49B8-A969-60D974643088.jpg": {
+      "caption": "A plastic bottle cap lies on the grass amidst gravel and green grass in bright sunlight.",
+      "condition": "slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "bottle cap",
+        "grass",
+        "gravel",
+        "shadow"
+      ],
+      "occlusion": "none",
+      "primary_object": "bottle cap",
+      "surface": "grass"
+    },
+    "plastics/plastic_pieces/4AD5E0EE-5060-42C4-B497-F0C4F89AD068.jpg": {
+      "caption": "The image shows a gravel surface under bright sunlight with no distinct waste items visible.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel surface"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "plastics/plastic_pieces/74F35FA6-77C5-4792-A4CD-A89CC39E2692.jpg": {
+      "caption": "A gravel path bordered by grass under bright sunlight.",
+      "condition": "n/a",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "grass",
+        "gravel",
+        "green plants"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "plastics/plastic_pieces/FE83DB06-AD3C-4E87-9486-99985354BB1A.jpg": {
+      "caption": "A crushed metal can lies on a gravel surface under bright sunlight.",
+      "condition": "crushed and slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "metal",
+      "objects": [
+        "crushed can",
+        "gravel",
+        "small rocks",
+        "patches of grass"
+      ],
+      "occlusion": "none",
+      "primary_object": "crushed can",
+      "surface": "gravel"
+    },
+    "plastics/plastic_wire/AD4D94FD-87B3-4147-A776-42D4AB98EE02.jpg": {
+      "caption": "A plastic straw is partially buried among gravel next to some plants on a sunny day.",
+      "condition": "slightly worn, partially buried",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic straw",
+        "gravel",
+        "plants"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic straw",
+      "surface": "gravel"
+    },
+    "plastics/plastic_wire/AF055665-DDE5-43DD-A2F0-03C169E98DB7.jpg": {
+      "caption": "The image shows a gravel path next to grassy vegetation with flowers and dandelions.",
+      "condition": "N/A",
+      "count": 0,
+      "lighting": "overcast",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "concrete",
+        "grass",
+        "flowers",
+        "dandelions"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "plastics/plastic_wrapper/8C60E899-C6C4-4514-BF57-73ACFD2112CC.jpg": {
+      "caption": "A plastic bottle is partially hidden among the grass and plants in bright sunlight.",
+      "condition": "slightly dirty",
+      "count": 1,
+      "lighting": "bright sunlight",
+      "material": "plastic",
+      "objects": [
+        "plastic bottle",
+        "plants",
+        "grass",
+        "leaves",
+        "soil"
+      ],
+      "occlusion": "partial",
+      "primary_object": "plastic bottle",
+      "surface": "soil"
+    },
+    "plastics/plastic_wrapper/C6FD95AA-DB99-441E-B2D2-8A35BF39FE87.jpg": {
+      "caption": "A discarded detergent package lies partially covered by grass and leaves on the soil.",
+      "condition": "worn and dirty",
+      "count": 1,
+      "lighting": "overcast",
+      "material": "plastic",
+      "objects": [
+        "detergent package",
+        "grass",
+        "dried leaves"
+      ],
+      "occlusion": "partial",
+      "primary_object": "detergent package",
+      "surface": "soil"
+    },
+    "plastics/plastic_wrapper/C70C6A83-12D1-4B13-ADD6-30CA2EEE0AB2.jpg": {
+      "caption": "The image shows a gravel path bordered by grass with no visible waste items.",
+      "condition": "N/A",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "gravel",
+        "grass",
+        "small rocks"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "gravel"
+    },
+    "plastics/plastic_wrapper/D3B77F49-0F5D-47A9-9C24-F5880A07E36A.jpg": {
+      "caption": "The image shows green plants and soil under bright sunlight with no waste items present.",
+      "condition": "no waste item present",
+      "count": 0,
+      "lighting": "bright sunlight",
+      "material": "unknown",
+      "objects": [
+        "green plants",
+        "soil"
+      ],
+      "occlusion": "none",
+      "primary_object": "none",
+      "surface": "soil"
+    },
+    "plastics/plastic_wrapper/E441EE48-24E7-4806-822E-EF960226CFE9.jpg": {
+      "caption": "A candy wrapper lies partially hidden in the grass beside a gravel path bordered by a bush.",
+      "condition": "weathered",
+      "count": 1,
+      "lighting": "overcast",
+      "material": "plastic",
+      "objects": [
+        "candy wrapper",
+        "grass",
+        "gravel",
+        "bush",
+        "leaves"
+      ],
+      "occlusion": "partial",
+      "primary_object": "candy wrapper",
+      "surface": "grass"
+    }
+  }
+}

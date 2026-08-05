@@ -24,3 +24,8 @@
 # Node modules (if applicable)
 node_modules/
 tools/annotator/imgui/
+
+# API keys
+key.txt
+*.key
+analysis/batch/
