@@ -1,0 +1,3257 @@
+{
+ "coco_640": {
+  "model": "yolo11x.pt",
+  "imgsz": 640,
+  "seconds": 47.8,
+  "prompts": null,
+  "rows": {
+   "bottle_cap/26FE030A-6032-42EA-ADAB-E0199A423A9C.jpg": [
+    {
+     "cls": "person",
+     "conf": 0.312,
+     "px": 434.1
+    },
+    {
+     "cls": "fire hydrant",
+     "conf": 0.269,
+     "px": 710.4
+    }
+   ],
+   "bottle_cap/3C36CC35-517B-49B8-A969-60D974643088.jpg": [],
+   "bottle_cap/IMG_2753.jpg": [],
+   "can/5873E130-B505-4B37-8B3B-0D02587B44BD.jpg": [],
+   "can/5CCF8A29-65F5-44D9-9B96-F387975182FC.jpg": [
+    {
+     "cls": "fire hydrant",
+     "conf": 0.38,
+     "px": 512.5
+    },
+    {
+     "cls": "bottle",
+     "conf": 0.223,
+     "px": 507.1
+    }
+   ],
+   "can/FE83DB06-AD3C-4E87-9486-99985354BB1A.jpg": [
+    {
+     "cls": "fire hydrant",
+     "conf": 0.735,
+     "px": 556.1
+    },
+    {
+     "cls": "bottle",
+     "conf": 0.23,
+     "px": 552.7
+    }
+   ],
+   "can/IMG_2243.jpg": [
+    {
+     "cls": "cell phone",
+     "conf": 0.823,
+     "px": 543.3
+    },
+    {
+     "cls": "person",
+     "conf": 0.464,
+     "px": 1444.0
+    }
+   ],
+   "candy_wrapper/66637352-21A9-4BB6-9D1C-90DB588D4239.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.401,
+     "px": 878.4
+    }
+   ],
+   "candy_wrapper/BF94B731-68F6-41C2-8850-1D4B44FEDBFE.jpg": [],
+   "candy_wrapper/C3C436CF-2A3C-43E5-B10F-8A0A3F8F8733.jpg": [],
+   "candy_wrapper/E441EE48-24E7-4806-822E-EF960226CFE9.jpg": [],
+   "chair/291FC76E-5EE4-4E2D-B910-6FC4FFFC77D8.jpg": [
+    {
+     "cls": "boat",
+     "conf": 0.285,
+     "px": 2302.3
+    }
+   ],
+   "chair/6C2C3813-8F7D-47BE-83EA-655DED6E38DB.jpg": [
+    {
+     "cls": "umbrella",
+     "conf": 0.254,
+     "px": 2590.5
+    },
+    {
+     "cls": "umbrella",
+     "conf": 0.175,
+     "px": 1916.7
+    }
+   ],
+   "chair/B5296087-7065-455C-AD77-14CA730EECF6.jpg": [
+    {
+     "cls": "microwave",
+     "conf": 0.233,
+     "px": 2598.5
+    }
+   ],
+   "cigarette_butt/2158.jpg": [],
+   "cigarette_butt/IMG_1740.jpg": [],
+   "cigarette_butt/IMG_1741.jpg": [],
+   "cigarette_butt/IMG_1742.jpg": [],
+   "cigarette_butt/IMG_1744.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.191,
+     "px": 551.3
+    },
+    {
+     "cls": "carrot",
+     "conf": 0.171,
+     "px": 275.5
+    }
+   ],
+   "cigarette_butt/IMG_1747.jpg": [],
+   "cigarette_butt/IMG_1748.jpg": [
+    {
+     "cls": "carrot",
+     "conf": 0.264,
+     "px": 901.7
+    }
+   ],
+   "cigarette_butt/IMG_1749.jpg": [
+    {
+     "cls": "knife",
+     "conf": 0.416,
+     "px": 1039.9
+    },
+    {
+     "cls": "scissors",
+     "conf": 0.177,
+     "px": 1039.8
+    },
+    {
+     "cls": "knife",
+     "conf": 0.151,
+     "px": 1857.6
+    }
+   ],
+   "cigarette_butt/IMG_1750.jpg": [],
+   "cigarette_butt/IMG_1751.jpg": [],
+   "cigarette_butt/IMG_1752.jpg": [
+    {
+     "cls": "knife",
+     "conf": 0.545,
+     "px": 1099.7
+    },
+    {
+     "cls": "knife",
+     "conf": 0.163,
+     "px": 882.1
+    }
+   ],
+   "cigarette_butt/IMG_1753.jpg": [
+    {
+     "cls": "fork",
+     "conf": 0.781,
+     "px": 2717.6
+    }
+   ],
+   "cigarette_butt/IMG_1754.jpg": [],
+   "cigarette_butt/IMG_1755.jpg": [],
+   "cigarette_butt/IMG_1756.jpg": [],
+   "cigarette_butt/IMG_1757.jpg": [],
+   "cigarette_butt/IMG_1758.jpg": [],
+   "cigarette_butt/IMG_1759.jpg": [
+    {
+     "cls": "baseball bat",
+     "conf": 0.154,
+     "px": 832.7
+    }
+   ],
+   "cigarette_butt/IMG_1760.jpg": [],
+   "cigarette_butt/IMG_1762.jpg": [
+    {
+     "cls": "carrot",
+     "conf": 0.188,
+     "px": 1210.2
+    }
+   ],
+   "cigarette_butt/IMG_1763.jpg": [],
+   "cigarette_butt/IMG_1765.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.433,
+     "px": 1164.7
+    }
+   ],
+   "cigarette_butt/IMG_1766.jpg": [],
+   "cigarette_butt/IMG_2029.jpg": [
+    {
+     "cls": "baseball bat",
+     "conf": 0.283,
+     "px": 656.2
+    }
+   ],
+   "cigarette_butt/IMG_2150.jpg": [
+    {
+     "cls": "baseball bat",
+     "conf": 0.291,
+     "px": 734.4
+    }
+   ],
+   "cigarette_butt/IMG_2152.jpg": [],
+   "cigarette_butt/IMG_2153.jpg": [
+    {
+     "cls": "carrot",
+     "conf": 0.503,
+     "px": 939.3
+    },
+    {
+     "cls": "baseball bat",
+     "conf": 0.185,
+     "px": 895.4
+    }
+   ],
+   "cigarette_butt/IMG_2158.jpg": [],
+   "cigarette_butt/IMG_2159.jpg": [
+    {
+     "cls": "frisbee",
+     "conf": 0.501,
+     "px": 1286.0
+    },
+    {
+     "cls": "bird",
+     "conf": 0.308,
+     "px": 1284.6
+    }
+   ],
+   "cigarette_butt/IMG_2160.jpg": [],
+   "cigarette_butt/IMG_2724.jpg": [],
+   "cigarette_butt/IMG_2727.jpg": [],
+   "cigarette_butt/IMG_2731.jpg": [
+    {
+     "cls": "banana",
+     "conf": 0.213,
+     "px": 527.5
+    }
+   ],
+   "cigarette_butt/IMG_2732.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.187,
+     "px": 216.7
+    }
+   ],
+   "cigarette_butt/IMG_2733.jpg": [],
+   "cigarette_butt/IMG_2735.jpg": [
+    {
+     "cls": "teddy bear",
+     "conf": 0.15,
+     "px": 1082.9
+    }
+   ],
+   "cigarette_butt/IMG_2737.jpg": [
+    {
+     "cls": "carrot",
+     "conf": 0.301,
+     "px": 508.4
+    }
+   ],
+   "cigarette_butt/IMG_2738.jpg": [],
+   "cigarette_butt/IMG_2749.jpg": [],
+   "cigarette_pack/IMG_2239.jpg": [
+    {
+     "cls": "book",
+     "conf": 0.257,
+     "px": 2882.7
+    },
+    {
+     "cls": "teddy bear",
+     "conf": 0.166,
+     "px": 1153.9
+    }
+   ],
+   "cigarette_pack/IMG_2240.jpg": [
+    {
+     "cls": "book",
+     "conf": 0.324,
+     "px": 2227.9
+    }
+   ],
+   "cigarette_pack/IMG_2241.jpg": [
+    {
+     "cls": "book",
+     "conf": 0.766,
+     "px": 1260.9
+    }
+   ],
+   "cigarette_pack/IMG_2242.jpg": [
+    {
+     "cls": "book",
+     "conf": 0.285,
+     "px": 670.3
+    },
+    {
+     "cls": "person",
+     "conf": 0.212,
+     "px": 421.9
+    },
+    {
+     "cls": "cell phone",
+     "conf": 0.153,
+     "px": 668.7
+    }
+   ],
+   "cigarette_pack/IMG_2244.jpg": [],
+   "detergent_package/C6FD95AA-DB99-441E-B2D2-8A35BF39FE87.jpg": [
+    {
+     "cls": "stop sign",
+     "conf": 0.404,
+     "px": 1284.7
+    },
+    {
+     "cls": "umbrella",
+     "conf": 0.345,
+     "px": 1290.0
+    }
+   ],
+   "dontknow/0205AC66-AFDD-4DA5-9CC5-0D44888089C5.jpg": [],
+   "dontknow/05AB01AD-C4DC-4907-8892-F9B2854F9FE7.jpg": [],
+   "dontknow/09BEAD6E-A2CF-4224-9BC9-5DE053A08A50.jpg": [],
+   "dontknow/0C62CAFA-6F17-480E-A792-7B95C860F4DC.jpg": [],
+   "dontknow/0DB6C104-2222-4A59-B311-4EF1C1B17780.jpg": [],
+   "dontknow/1152637B-C808-4120-86A1-6AB3F9456F73.jpg": [],
+   "dontknow/11594E80-D3D1-4AB2-AC61-406DFC3DF2FC.jpg": [],
+   "dontknow/12A84CB1-61D9-40ED-AF26-CE4AD97715CF.jpg": [],
+   "dontknow/14C185B3-01A8-465A-B612-43E701FD38EF.jpg": [],
+   "dontknow/1638385B-B07C-4A71-BC5F-F02717C34B67.jpg": [],
+   "dontknow/180C83AB-2FC6-4BDD-B2B9-E2BD2F65EEA9_1_102_o.jpg": [
+    {
+     "cls": "frisbee",
+     "conf": 0.462,
+     "px": 1316.4
+    }
+   ],
+   "dontknow/1893BC8B-EB4C-4AAD-BE60-D7CC300A321C.jpg": [],
+   "dontknow/19831F65-E4A5-47E5-8564-3705201E21D7.jpg": [
+    {
+     "cls": "bird",
+     "conf": 0.185,
+     "px": 286.0
+    }
+   ],
+   "dontknow/1A157178-0A45-45C0-995B-F5C0900206F9.jpg": [],
+   "dontknow/1B7DBE3F-0ADC-443A-8DDF-AA3731E4F136.jpg": [],
+   "dontknow/1D711064-A5F5-45DC-BD3F-F01C3CBA827B.jpg": [],
+   "dontknow/1F55B97E-03EF-47A6-87E2-490D69C42C52.jpg": [],
+   "dontknow/238EF1E8-A73F-411D-A530-35EA67235673.jpg": [],
+   "dontknow/24B9D9BD-BE82-412D-BCD0-64BCFD25DA20.jpg": [
+    {
+     "cls": "bird",
+     "conf": 0.479,
+     "px": 454.1
+    }
+   ],
+   "dontknow/29989D9E-317B-4C99-8499-59F905B4019C.jpg": [],
+   "dontknow/2A3DC1E7-10DC-42A1-8F25-0BDDE708ED07.jpg": [],
+   "dontknow/2A5C4788-3314-4DE1-B3CA-352793682B48.jpg": [],
+   "dontknow/2C02DC91-C31E-4707-8AB0-B6EA9BDEC1AC.jpg": [],
+   "dontknow/2E72F522-CEC4-4950-A0C2-A69FA0EF6CCB.jpg": [
+    {
+     "cls": "bird",
+     "conf": 0.343,
+     "px": 662.4
+    },
+    {
+     "cls": "bird",
+     "conf": 0.328,
+     "px": 539.6
+    }
+   ],
+   "dontknow/2F0308DB-73D2-45F5-8C5E-5E3B266C7297.jpg": [],
+   "dontknow/36FCC527-E154-4F5A-A906-6869CB102183.jpg": [],
+   "dontknow/3C9252EA-C324-46B4-8505-87868E6EC5C5.jpg": [],
+   "dontknow/3FF75A03-9FD4-4CFC-9C21-BD261682EAF6.jpg": [],
+   "dontknow/40FFAD92-795D-49EF-8D15-340E085666FD.jpg": [],
+   "dontknow/4202942C-752C-4BFF-968A-E2F2C58BD94D.jpg": [],
+   "dontknow/44F075AC-9269-4069-B023-BBD5C3FEB247.jpg": [],
+   "dontknow/450C5168-5CA1-49A5-BB98-825733A0ACA9.jpg": [],
+   "dontknow/4A13CD9B-CA10-43ED-B6C8-887120963D55.jpg": [],
+   "dontknow/4AD5E0EE-5060-42C4-B497-F0C4F89AD068.jpg": [],
+   "dontknow/5464CDE3-8907-4EC5-9620-CFDDC2655C02.jpg": [
+    {
+     "cls": "apple",
+     "conf": 0.165,
+     "px": 105.9
+    }
+   ],
+   "dontknow/561EAECC-6311-4BD4-A68A-E77BDDC6CBFC.jpg": [],
+   "dontknow/57667385-6AF9-4B5A-A74D-7C97AB646BC5.jpg": [],
+   "dontknow/5CAC03A2-53A5-4582-B35D-8FFED90C679C.jpg": [],
+   "dontknow/5CF94367-811C-44F7-86FC-2B74F27CC61D.jpg": [],
+   "dontknow/5D4827A5-318B-4BB7-8790-14AF36D96041.jpg": [],
+   "dontknow/620130DC-9330-47B0-B890-2886769327CD.jpg": [],
+   "dontknow/67C5F675-27CA-424F-BC8C-F36F6BD4B8A5.jpg": [
+    {
+     "cls": "bear",
+     "conf": 0.33,
+     "px": 824.4
+    },
+    {
+     "cls": "bear",
+     "conf": 0.162,
+     "px": 670.5
+    }
+   ],
+   "dontknow/727A97A5-A215-4A6F-BC28-C6E1E2BC31C6.jpg": [],
+   "dontknow/7409762D-FB39-434E-89C2-72C6C0FB08BB.jpg": [],
+   "dontknow/74F35FA6-77C5-4792-A4CD-A89CC39E2692.jpg": [],
+   "dontknow/75BC3CE7-970F-4149-81DD-EF50517A5F02.jpg": [
+    {
+     "cls": "zebra",
+     "conf": 0.225,
+     "px": 496.3
+    }
+   ],
+   "dontknow/7CAA4D21-3464-4144-B33E-E3F1E0D02324.jpg": [
+    {
+     "cls": "bird",
+     "conf": 0.509,
+     "px": 523.0
+    }
+   ],
+   "dontknow/7D1EACCF-B7E0-4897-A10F-0A598A5D5C70.jpg": [],
+   "dontknow/80B9411C-9C46-4D35-B7A6-38B53F2C6198.jpg": [],
+   "dontknow/82D4A1F3-8C5F-497D-96DA-4DC5B7A8BDB1.jpg": [
+    {
+     "cls": "bird",
+     "conf": 0.332,
+     "px": 174.5
+    }
+   ],
+   "dontknow/8502E8CF-C4B6-4B19-BF57-27E644584AF5.jpg": [],
+   "dontknow/87D3DB9A-102A-4D12-B96D-A5B6AAFCC3B4.jpg": [
+    {
+     "cls": "bear",
+     "conf": 0.297,
+     "px": 1423.2
+    }
+   ],
+   "dontknow/8D48D1BA-3137-4DA0-A343-EA3FE538A5F8.jpg": [],
+   "dontknow/91193BD6-DE93-40E9-B57E-6DA30E9EC862.jpg": [],
+   "dontknow/93C45AA7-6A78-4D45-B5E7-330473F0295A.jpg": [
+    {
+     "cls": "bear",
+     "conf": 0.162,
+     "px": 1125.1
+    }
+   ],
+   "dontknow/94AFC5C6-547E-48C4-81BD-E4735F9BE96F.jpg": [
+    {
+     "cls": "surfboard",
+     "conf": 0.156,
+     "px": 361.2
+    }
+   ],
+   "dontknow/95581CED-AC39-4064-9D2B-A5084CCBC306.jpg": [],
+   "dontknow/96E8D6B8-CEF0-4F50-AC3F-ED05A7F40372.jpg": [],
+   "dontknow/9FC1CD3F-37E5-4A65-B7E7-837786FC1F52.jpg": [],
+   "dontknow/A26A6DBC-0428-4BB2-BB62-9727796E82F8.jpg": [
+    {
+     "cls": "bear",
+     "conf": 0.312,
+     "px": 476.5
+    }
+   ],
+   "dontknow/A3B1DBAE-406B-43CB-91EC-D5DBDB9F12C1.jpg": [],
+   "dontknow/A3BA4914-51E9-4C7E-ACC5-E0F02D62A0F0.jpg": [],
+   "dontknow/A53E340C-56B8-4E48-90C8-D0858895FEFF.jpg": [
+    {
+     "cls": "bird",
+     "conf": 0.576,
+     "px": 576.3
+    },
+    {
+     "cls": "bird",
+     "conf": 0.249,
+     "px": 491.3
+    }
+   ],
+   "dontknow/A7B9814C-C8A1-4FC4-97CA-898771025268.jpg": [
+    {
+     "cls": "fire hydrant",
+     "conf": 0.199,
+     "px": 359.3
+    }
+   ],
+   "dontknow/A90E210E-A688-4CAE-AC6B-3B7A53E003F2.jpg": [],
+   "dontknow/AD754D62-575D-4D9C-ADC5-A143E6EA894C.jpg": [],
+   "dontknow/ADAFC0F8-CC54-4409-8D81-49BBBE37BA34.jpg": [],
+   "dontknow/AF055665-DDE5-43DD-A2F0-03C169E98DB7.jpg": [],
+   "dontknow/AF40B408-9640-4ED6-A99C-DA7AA716D30F.jpg": [],
+   "dontknow/AFD53FFE-6DE9-4F19-9413-4302E579179E.jpg": [
+    {
+     "cls": "bear",
+     "conf": 0.152,
+     "px": 372.3
+    }
+   ],
+   "dontknow/AFF74FF8-8582-4EC2-A4F6-E3DB22504139.jpg": [],
+   "dontknow/B81E0280-DF26-40C7-9051-7DD9359E86EC.jpg": [],
+   "dontknow/BD972BDC-31AF-44EA-A6CD-F4A62999CCBB.jpg": [],
+   "dontknow/BDA61FB0-5594-4089-91F1-0B758F35EA1B.jpg": [],
+   "dontknow/BE1D5751-F805-4034-A513-9DB6896143BF.jpg": [],
+   "dontknow/BFFE4A28-82E6-4FE0-8BD8-CF0766260650.jpg": [],
+   "dontknow/C55C81AF-BE86-442C-AEFF-215F28B8E11E.jpg": [],
+   "dontknow/C70C6A83-12D1-4B13-ADD6-30CA2EEE0AB2.jpg": [],
+   "dontknow/C7B22551-DD64-437E-B221-26E1BB3EB308_1_102_o.jpg": [],
+   "dontknow/CFBE84EE-C2C0-487C-A283-3C1736E383B1.jpg": [],
+   "dontknow/D2D60AAB-60C6-4208-9BF1-44C19F8EDC09.jpg": [
+    {
+     "cls": "bird",
+     "conf": 0.156,
+     "px": 186.0
+    }
+   ],
+   "dontknow/D394CE52-ECE9-4C7B-BE7A-9F7E1B5F9C9D.jpg": [
+    {
+     "cls": "bird",
+     "conf": 0.324,
+     "px": 446.8
+    }
+   ],
+   "dontknow/D3B77F49-0F5D-47A9-9C24-F5880A07E36A.jpg": [],
+   "dontknow/D6FBBC17-C503-4277-BC58-7DD9D3896CA3.jpg": [
+    {
+     "cls": "carrot",
+     "conf": 0.206,
+     "px": 1136.2
+    }
+   ],
+   "dontknow/D75A0F9F-03BE-42BD-A396-98EE8415E569.jpg": [],
+   "dontknow/D7681FA0-8BC3-4B9A-9513-6210FBEBD003.jpg": [],
+   "dontknow/DA3211FB-F7CE-47BC-A024-0D2A2570574D.jpg": [],
+   "dontknow/E0752D11-C1CF-4BD4-BCD5-9189348E2569.jpg": [],
+   "dontknow/E7EEC497-32D1-430D-BB2B-9F09E36CBA6A.jpg": [],
+   "dontknow/E860BC5B-5EA5-45C4-8870-2A8AA4A27427.jpg": [],
+   "dontknow/E8F87470-6EEB-484D-81BA-0EADAF716AC5.jpg": [],
+   "dontknow/E90169CE-5E4C-4D66-8EDA-9C2FCFE99E25.jpg": [
+    {
+     "cls": "carrot",
+     "conf": 0.153,
+     "px": 198.6
+    }
+   ],
+   "dontknow/EB0525F9-0033-4ABE-86C5-D96C187F596E.jpg": [],
+   "dontknow/ECB04BEB-A96D-4B91-AEA9-138DB9D851B3.jpg": [],
+   "dontknow/ED886887-0D30-4FC0-827D-B883A1791DF3.jpg": [],
+   "dontknow/F20DEEC1-F636-4B79-84CB-C96BE7A62C3D.jpg": [],
+   "dontknow/F6C10282-22E3-4166-9BCA-0C2C43CFD121.jpg": [],
+   "dontknow/F971EE29-49C1-4A8C-9631-3576FDB29CCD.jpg": [],
+   "dontknow/F9D1E7A1-F9F9-4FE2-914E-07693E0BCDEA.jpg": [],
+   "dontknow/FA2C32C0-C86A-4F5A-9569-3C27DA29C01F.jpg": [],
+   "dontknow/FBC3915F-DE94-46C2-A16C-A80EBB42917A.jpg": [],
+   "dontknow/FDD96DD5-BBE1-498C-BAC0-3E075BE82BF3.jpg": [],
+   "dontknow/FF4CD43E-DD83-4344-8C2D-1B234158BCC6.jpg": [],
+   "dontknow/IMG_2151.jpg": [],
+   "dontknow/IMG_2723.jpg": [],
+   "dontknow/IMG_2729.jpg": [],
+   "dontknow/IMG_2748.jpg": [],
+   "glove/05BE0D5F-A8C4-4252-958D-5748844F7AE0.jpg": [],
+   "glove/B6FAEF83-1252-4B53-AC30-B15414344D0A.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.737,
+     "px": 738.4
+    },
+    {
+     "cls": "bottle",
+     "conf": 0.384,
+     "px": 966.4
+    }
+   ],
+   "glove/E7D94548-4168-40C8-BE07-69E13F1FD7D9.jpg": [],
+   "glove/E84E85EE-21DB-47B8-B18A-FAAB5C3F78B7.jpg": [
+    {
+     "cls": "fire hydrant",
+     "conf": 0.623,
+     "px": 1625.7
+    }
+   ],
+   "paper/17362433-5E6C-4CA1-AAD6-DEB89F9418C4.jpg": [],
+   "paper/28B5BAFC-8B90-4397-B183-F8CA5882ABFB.jpg": [
+    {
+     "cls": "apple",
+     "conf": 0.164,
+     "px": 202.5
+    }
+   ],
+   "paper/435B3DD7-1C3E-4CE8-99D7-A75E19177D12.jpg": [
+    {
+     "cls": "fire hydrant",
+     "conf": 0.402,
+     "px": 357.7
+    },
+    {
+     "cls": "bottle",
+     "conf": 0.203,
+     "px": 357.3
+    }
+   ],
+   "paper/57846B35-27F5-46E1-8CCA-400929953D62.jpg": [],
+   "paper/65ED7CE3-93EC-4E89-AEB0-781E8758A28E.jpg": [],
+   "paper/F3857983-5168-4ADC-BDFE-E57501D28241.jpg": [],
+   "paper_bag/F9BE5F17-7287-47FB-BACA-DE14E986AE6E.jpg": [
+    {
+     "cls": "umbrella",
+     "conf": 0.203,
+     "px": 389.1
+    }
+   ],
+   "paper_cup/F798A107-876D-48D0-9F20-C142467DB0D4.jpg": [],
+   "pine_cone/19586C07-AED3-4CAB-9786-5C4FC63278B1.jpg": [],
+   "pine_cone/461F069D-8C6B-4607-8B73-E43945B4AC68.jpg": [],
+   "pine_cone/7930DDD9-8DAB-4975-A130-8F0CBA86FC0D.jpg": [],
+   "plastic_bag/0F64E507-23B5-46A5-8B25-E7E5ED02C628.jpg": [],
+   "plastic_bag/201846A2-0FA4-4B20-9435-8E7EA1179012.jpg": [
+    {
+     "cls": "carrot",
+     "conf": 0.208,
+     "px": 402.5
+    }
+   ],
+   "plastic_bag/25322191-BC6F-45F0-99B8-E39843D9AE19.jpg": [],
+   "plastic_bag/2A764A8A-1BB4-426B-A97C-8DAE5C78FAC3.jpg": [
+    {
+     "cls": "fire hydrant",
+     "conf": 0.271,
+     "px": 1111.0
+    }
+   ],
+   "plastic_bag/4469CF9B-EB9F-4DB8-9B37-9F8D6BE95D00.jpg": [],
+   "plastic_bag/4871C131-47EA-43F6-BAC2-147BC431E432.jpg": [
+    {
+     "cls": "bear",
+     "conf": 0.409,
+     "px": 812.3
+    }
+   ],
+   "plastic_bag/4F29855A-6480-4A0B-938E-5545CB66A537.jpg": [],
+   "plastic_bag/5891FD1A-D7B1-44A5-B5E9-CA8D2144D252.jpg": [],
+   "plastic_bag/868B6347-04D9-480E-8E2F-891EC929140D.jpg": [],
+   "plastic_bag/A70E66A7-9F9F-42AA-BCFA-1A05EF9DEF87.jpg": [
+    {
+     "cls": "teddy bear",
+     "conf": 0.158,
+     "px": 1504.8
+    }
+   ],
+   "plastic_bag/C0D86296-B808-4E8B-95C4-EC84012EF8E7.jpg": [],
+   "plastic_bag/DE4D31A9-D36B-4570-A513-E72EE14B0263.jpg": [],
+   "plastic_bag/FF696AC4-DA1D-41CF-A87E-D497E3ACD081.jpg": [],
+   "plastic_bag/IMG_2247.jpg": [
+    {
+     "cls": "bird",
+     "conf": 0.348,
+     "px": 443.7
+    },
+    {
+     "cls": "person",
+     "conf": 0.24,
+     "px": 926.5
+    },
+    {
+     "cls": "person",
+     "conf": 0.228,
+     "px": 688.2
+    },
+    {
+     "cls": "bottle",
+     "conf": 0.208,
+     "px": 268.6
+    }
+   ],
+   "plastic_bottle/0FC79A8F-45D8-45AB-879E-2CD23277BC90.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.752,
+     "px": 1755.8
+    }
+   ],
+   "plastic_bottle/0FC821EB-ED5B-44E4-A7BB-3ACC06FB1316.jpg": [],
+   "plastic_bottle/12AFD99C-F177-47FE-BE46-9A168ADD1E9C.jpg": [],
+   "plastic_bottle/4C4FCEFD-7E0E-4521-B3CE-452B544F4FDC.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.645,
+     "px": 1295.3
+    }
+   ],
+   "plastic_bottle/68ECBDB3-8322-4793-8EC0-E295FEFE857F.jpg": [
+    {
+     "cls": "frisbee",
+     "conf": 0.552,
+     "px": 281.7
+    }
+   ],
+   "plastic_bottle/72856E5E-5CCD-4E13-8076-3DFF153E5957.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.95,
+     "px": 1063.4
+    }
+   ],
+   "plastic_bottle/74E90D63-85D1-4D9F-81A9-ECC862DDD126.jpg": [],
+   "plastic_bottle/8C60E899-C6C4-4514-BF57-73ACFD2112CC.jpg": [],
+   "plastic_bottle/9077F88E-3E04-46FB-8E43-200A2C3FD425.jpg": [
+    {
+     "cls": "bird",
+     "conf": 0.809,
+     "px": 678.3
+    }
+   ],
+   "plastic_bottle/985D3873-19D2-4063-8D9F-0073968B0457.jpg": [],
+   "plastic_bottle/A8E19D4F-A44C-45CD-B2F8-5BCD98D86388.jpg": [],
+   "plastic_bottle/D7101843-D6BB-4CDF-AF83-A1E4A813ED50.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.793,
+     "px": 1173.1
+    },
+    {
+     "cls": "bottle",
+     "conf": 0.642,
+     "px": 906.6
+    }
+   ],
+   "plastic_bottle/D8503135-35BF-4F0A-AF2F-6C8A0D8DFC18.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.757,
+     "px": 913.7
+    }
+   ],
+   "plastic_bottle/E53F3EA6-9186-47A8-B871-82A3CEF13ECA.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.636,
+     "px": 842.7
+    }
+   ],
+   "plastic_bottle/EA370BDC-964C-49C2-840A-9FA45DB77779.jpg": [],
+   "plastic_bottle/ECBE9A44-4184-4485-8B2D-B9AC240B2ECD.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.536,
+     "px": 624.9
+    }
+   ],
+   "plastic_bottle/FFF1EEDD-2587-4C15-B52A-5BF37CD82B74.jpg": [],
+   "plastic_container/3066D25A-CF3C-44D4-BA85-24BD3C2A2257.jpg": [
+    {
+     "cls": "boat",
+     "conf": 0.409,
+     "px": 1072.8
+    },
+    {
+     "cls": "boat",
+     "conf": 0.183,
+     "px": 728.0
+    }
+   ],
+   "plastic_container/6CB20218-509F-468C-A5B7-F5583A4F98E8.jpg": [],
+   "plastic_container/8FDB6A4C-9ED3-46BF-AF61-CA16595FFE52.jpg": [
+    {
+     "cls": "umbrella",
+     "conf": 0.42,
+     "px": 2369.5
+    }
+   ],
+   "plastic_container/DC50D211-D37F-40B3-B54D-68FEB58461C4.jpg": [],
+   "plastic_container/E9E9A56C-C605-4F19-9D2B-15D3F5E35853.jpg": [
+    {
+     "cls": "boat",
+     "conf": 0.271,
+     "px": 727.1
+    }
+   ],
+   "plastic_piece/03D25FB8-054B-4F05-92F7-2714DEEEE016.jpg": [
+    {
+     "cls": "frisbee",
+     "conf": 0.372,
+     "px": 513.4
+    }
+   ],
+   "plastic_piece/2824786D-0E75-4C9B-8C61-6FC56F342B7D.jpg": [],
+   "plastic_piece/2D14A411-7843-4451-B987-743838519AEF.jpg": [],
+   "plastic_piece/AF411464-B983-44B5-BC0A-76AC469B8B28.jpg": [
+    {
+     "cls": "fire hydrant",
+     "conf": 0.266,
+     "px": 618.5
+    }
+   ],
+   "plastic_piece/B9E28B83-14D4-43ED-926A-63C126BA04CF.jpg": [
+    {
+     "cls": "airplane",
+     "conf": 0.166,
+     "px": 2315.4
+    }
+   ],
+   "plastic_piece/IMG_2728.jpg": [],
+   "plastic_straw/04A093A4-BB63-4E0A-91C9-6183B9100791.jpg": [
+    {
+     "cls": "frisbee",
+     "conf": 0.743,
+     "px": 416.7
+    }
+   ],
+   "plastic_straw/A128D857-0BFB-44B7-A35B-ADB8F990C927.jpg": [],
+   "plastic_straw/AD4D94FD-87B3-4147-A776-42D4AB98EE02.jpg": [],
+   "plastic_straw/D6781D3F-9821-43FF-8851-031BA55E4DFB.jpg": [],
+   "plastic_straw/DE4BEF87-C34C-4EFF-B7F9-9D0A5DA903BE.jpg": [],
+   "plastic_wrapper/20EBB876-EDE8-4A5E-A686-2514A3F3BDEC.jpg": [
+    {
+     "cls": "bird",
+     "conf": 0.287,
+     "px": 474.1
+    }
+   ],
+   "plastic_wrapper/24326C0F-133F-4B95-A983-19ADD10F9B16.jpg": [
+    {
+     "cls": "umbrella",
+     "conf": 0.512,
+     "px": 1770.8
+    }
+   ],
+   "plastic_wrapper/41728D7E-2016-421D-BD6A-21A4515944E1.jpg": [],
+   "plastic_wrapper/78435086-C5A6-4CC2-BB7F-980A8269AC4B.jpg": [],
+   "plastic_wrapper/84DEE582-F631-45FC-9437-1092BE7C90C7.jpg": [],
+   "plastic_wrapper/9C365D98-C2EC-4C99-B334-B291C704695D.jpg": [],
+   "plastic_wrapper/9D280621-8CE3-4A4E-A206-A579E0415F88.jpg": [],
+   "rope/DAFB6D5D-7F8D-45D5-B12A-28D02D5937A5.jpg": [
+    {
+     "cls": "broccoli",
+     "conf": 0.496,
+     "px": 1284.1
+    },
+    {
+     "cls": "broccoli",
+     "conf": 0.151,
+     "px": 1127.0
+    }
+   ],
+   "shoe/7925E56E-C03A-49EF-887A-043FE9958B0A.jpg": [],
+   "textile/3A3B812F-1650-4B9E-B2B2-FA5DBCE142DE.jpg": [
+    {
+     "cls": "broccoli",
+     "conf": 0.178,
+     "px": 280.8
+    }
+   ],
+   "textile/645F850A-2B72-46B2-B5CE-01BFBCE25699.jpg": [],
+   "textile/8189826C-B722-4EF1-8FF2-136A29AE52B8.jpg": [
+    {
+     "cls": "dog",
+     "conf": 0.498,
+     "px": 936.5
+    }
+   ],
+   "textile/A1159253-21D4-4032-AF02-B4EF00935CC5.jpg": [
+    {
+     "cls": "fire hydrant",
+     "conf": 0.186,
+     "px": 3441.9
+    }
+   ],
+   "textile/C5386BFC-CC65-4E32-BDCF-15E8195A7956.jpg": [
+    {
+     "cls": "broccoli",
+     "conf": 0.691,
+     "px": 2137.2
+    },
+    {
+     "cls": "broccoli",
+     "conf": 0.153,
+     "px": 480.4
+    }
+   ],
+   "textile/DEE626BC-B9AC-4690-ADC1-21893C5B8CE3.jpg": [
+    {
+     "cls": "dog",
+     "conf": 0.385,
+     "px": 693.3
+    },
+    {
+     "cls": "bird",
+     "conf": 0.216,
+     "px": 694.5
+    }
+   ],
+   "tissue/DB7DF831-E55C-4596-B0DF-ECDD95D15706.jpg": []
+  }
+ },
+ "coco_1280": {
+  "model": "yolo11x.pt",
+  "imgsz": 1280,
+  "seconds": 117.8,
+  "prompts": null,
+  "rows": {
+   "bottle_cap/26FE030A-6032-42EA-ADAB-E0199A423A9C.jpg": [
+    {
+     "cls": "fire hydrant",
+     "conf": 0.556,
+     "px": 440.8
+    },
+    {
+     "cls": "fire hydrant",
+     "conf": 0.253,
+     "px": 707.4
+    }
+   ],
+   "bottle_cap/3C36CC35-517B-49B8-A969-60D974643088.jpg": [
+    {
+     "cls": "frisbee",
+     "conf": 0.172,
+     "px": 277.0
+    }
+   ],
+   "bottle_cap/IMG_2753.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.214,
+     "px": 441.2
+    },
+    {
+     "cls": "cell phone",
+     "conf": 0.206,
+     "px": 440.7
+    }
+   ],
+   "can/5873E130-B505-4B37-8B3B-0D02587B44BD.jpg": [
+    {
+     "cls": "broccoli",
+     "conf": 0.346,
+     "px": 208.6
+    },
+    {
+     "cls": "teddy bear",
+     "conf": 0.22,
+     "px": 1037.8
+    },
+    {
+     "cls": "broccoli",
+     "conf": 0.169,
+     "px": 176.2
+    }
+   ],
+   "can/5CCF8A29-65F5-44D9-9B96-F387975182FC.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.791,
+     "px": 527.3
+    },
+    {
+     "cls": "train",
+     "conf": 0.383,
+     "px": 528.7
+    }
+   ],
+   "can/FE83DB06-AD3C-4E87-9486-99985354BB1A.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.563,
+     "px": 554.6
+    },
+    {
+     "cls": "fire hydrant",
+     "conf": 0.563,
+     "px": 555.8
+    }
+   ],
+   "can/IMG_2243.jpg": [
+    {
+     "cls": "frisbee",
+     "conf": 0.935,
+     "px": 976.7
+    },
+    {
+     "cls": "book",
+     "conf": 0.834,
+     "px": 542.9
+    },
+    {
+     "cls": "frisbee",
+     "conf": 0.578,
+     "px": 729.9
+    }
+   ],
+   "candy_wrapper/66637352-21A9-4BB6-9D1C-90DB588D4239.jpg": [
+    {
+     "cls": "stop sign",
+     "conf": 0.337,
+     "px": 887.6
+    },
+    {
+     "cls": "dog",
+     "conf": 0.202,
+     "px": 1675.4
+    }
+   ],
+   "candy_wrapper/BF94B731-68F6-41C2-8850-1D4B44FEDBFE.jpg": [
+    {
+     "cls": "cup",
+     "conf": 0.281,
+     "px": 292.7
+    }
+   ],
+   "candy_wrapper/C3C436CF-2A3C-43E5-B10F-8A0A3F8F8733.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.826,
+     "px": 268.7
+    }
+   ],
+   "candy_wrapper/E441EE48-24E7-4806-822E-EF960226CFE9.jpg": [
+    {
+     "cls": "frisbee",
+     "conf": 0.164,
+     "px": 496.9
+    },
+    {
+     "cls": "fire hydrant",
+     "conf": 0.153,
+     "px": 502.8
+    }
+   ],
+   "chair/291FC76E-5EE4-4E2D-B910-6FC4FFFC77D8.jpg": [
+    {
+     "cls": "airplane",
+     "conf": 0.244,
+     "px": 2300.8
+    },
+    {
+     "cls": "bench",
+     "conf": 0.243,
+     "px": 1776.3
+    }
+   ],
+   "chair/6C2C3813-8F7D-47BE-83EA-655DED6E38DB.jpg": [
+    {
+     "cls": "umbrella",
+     "conf": 0.42,
+     "px": 1912.4
+    }
+   ],
+   "chair/B5296087-7065-455C-AD77-14CA730EECF6.jpg": [
+    {
+     "cls": "tv",
+     "conf": 0.291,
+     "px": 2252.3
+    },
+    {
+     "cls": "umbrella",
+     "conf": 0.178,
+     "px": 2013.1
+    }
+   ],
+   "cigarette_butt/2158.jpg": [
+    {
+     "cls": "knife",
+     "conf": 0.192,
+     "px": 1560.0
+    }
+   ],
+   "cigarette_butt/IMG_1740.jpg": [
+    {
+     "cls": "knife",
+     "conf": 0.453,
+     "px": 878.0
+    }
+   ],
+   "cigarette_butt/IMG_1741.jpg": [
+    {
+     "cls": "fork",
+     "conf": 0.222,
+     "px": 650.0
+    }
+   ],
+   "cigarette_butt/IMG_1742.jpg": [],
+   "cigarette_butt/IMG_1744.jpg": [
+    {
+     "cls": "carrot",
+     "conf": 0.293,
+     "px": 273.9
+    },
+    {
+     "cls": "carrot",
+     "conf": 0.278,
+     "px": 557.2
+    }
+   ],
+   "cigarette_butt/IMG_1747.jpg": [
+    {
+     "cls": "knife",
+     "conf": 0.65,
+     "px": 1072.6
+    },
+    {
+     "cls": "knife",
+     "conf": 0.25,
+     "px": 479.2
+    },
+    {
+     "cls": "baseball bat",
+     "conf": 0.24,
+     "px": 1318.3
+    },
+    {
+     "cls": "knife",
+     "conf": 0.212,
+     "px": 534.2
+    },
+    {
+     "cls": "fork",
+     "conf": 0.201,
+     "px": 1317.3
+    }
+   ],
+   "cigarette_butt/IMG_1748.jpg": [
+    {
+     "cls": "tie",
+     "conf": 0.207,
+     "px": 881.1
+    },
+    {
+     "cls": "carrot",
+     "conf": 0.174,
+     "px": 249.0
+    }
+   ],
+   "cigarette_butt/IMG_1749.jpg": [
+    {
+     "cls": "fork",
+     "conf": 0.76,
+     "px": 1184.9
+    },
+    {
+     "cls": "fork",
+     "conf": 0.249,
+     "px": 1884.8
+    },
+    {
+     "cls": "knife",
+     "conf": 0.19,
+     "px": 1037.4
+    },
+    {
+     "cls": "knife",
+     "conf": 0.162,
+     "px": 1646.5
+    }
+   ],
+   "cigarette_butt/IMG_1750.jpg": [
+    {
+     "cls": "knife",
+     "conf": 0.272,
+     "px": 681.0
+    }
+   ],
+   "cigarette_butt/IMG_1751.jpg": [],
+   "cigarette_butt/IMG_1752.jpg": [
+    {
+     "cls": "knife",
+     "conf": 0.509,
+     "px": 1101.7
+    },
+    {
+     "cls": "fork",
+     "conf": 0.2,
+     "px": 1103.0
+    },
+    {
+     "cls": "knife",
+     "conf": 0.191,
+     "px": 673.0
+    },
+    {
+     "cls": "knife",
+     "conf": 0.188,
+     "px": 793.0
+    },
+    {
+     "cls": "scissors",
+     "conf": 0.187,
+     "px": 681.8
+    }
+   ],
+   "cigarette_butt/IMG_1753.jpg": [
+    {
+     "cls": "scissors",
+     "conf": 0.56,
+     "px": 1852.8
+    },
+    {
+     "cls": "knife",
+     "conf": 0.38,
+     "px": 632.6
+    },
+    {
+     "cls": "fork",
+     "conf": 0.277,
+     "px": 2059.2
+    }
+   ],
+   "cigarette_butt/IMG_1754.jpg": [],
+   "cigarette_butt/IMG_1755.jpg": [
+    {
+     "cls": "knife",
+     "conf": 0.261,
+     "px": 1006.8
+    }
+   ],
+   "cigarette_butt/IMG_1756.jpg": [],
+   "cigarette_butt/IMG_1757.jpg": [
+    {
+     "cls": "knife",
+     "conf": 0.256,
+     "px": 821.9
+    }
+   ],
+   "cigarette_butt/IMG_1758.jpg": [
+    {
+     "cls": "knife",
+     "conf": 0.18,
+     "px": 1475.9
+    },
+    {
+     "cls": "carrot",
+     "conf": 0.163,
+     "px": 259.5
+    }
+   ],
+   "cigarette_butt/IMG_1759.jpg": [
+    {
+     "cls": "knife",
+     "conf": 0.215,
+     "px": 896.9
+    }
+   ],
+   "cigarette_butt/IMG_1760.jpg": [],
+   "cigarette_butt/IMG_1762.jpg": [
+    {
+     "cls": "spoon",
+     "conf": 0.591,
+     "px": 1947.3
+    },
+    {
+     "cls": "carrot",
+     "conf": 0.49,
+     "px": 1038.4
+    },
+    {
+     "cls": "scissors",
+     "conf": 0.18,
+     "px": 836.7
+    }
+   ],
+   "cigarette_butt/IMG_1763.jpg": [
+    {
+     "cls": "spoon",
+     "conf": 0.411,
+     "px": 2024.0
+    },
+    {
+     "cls": "carrot",
+     "conf": 0.187,
+     "px": 1351.8
+    },
+    {
+     "cls": "spoon",
+     "conf": 0.16,
+     "px": 1388.2
+    }
+   ],
+   "cigarette_butt/IMG_1765.jpg": [
+    {
+     "cls": "broccoli",
+     "conf": 0.776,
+     "px": 703.1
+    },
+    {
+     "cls": "carrot",
+     "conf": 0.357,
+     "px": 1158.0
+    },
+    {
+     "cls": "fork",
+     "conf": 0.242,
+     "px": 1157.9
+    },
+    {
+     "cls": "broccoli",
+     "conf": 0.189,
+     "px": 722.6
+    },
+    {
+     "cls": "bird",
+     "conf": 0.183,
+     "px": 207.2
+    }
+   ],
+   "cigarette_butt/IMG_1766.jpg": [
+    {
+     "cls": "bird",
+     "conf": 0.554,
+     "px": 1201.9
+    },
+    {
+     "cls": "bird",
+     "conf": 0.474,
+     "px": 644.4
+    },
+    {
+     "cls": "knife",
+     "conf": 0.365,
+     "px": 1529.8
+    },
+    {
+     "cls": "bird",
+     "conf": 0.162,
+     "px": 1137.4
+    },
+    {
+     "cls": "bird",
+     "conf": 0.158,
+     "px": 1532.2
+    }
+   ],
+   "cigarette_butt/IMG_2029.jpg": [
+    {
+     "cls": "cell phone",
+     "conf": 0.242,
+     "px": 606.6
+    }
+   ],
+   "cigarette_butt/IMG_2150.jpg": [
+    {
+     "cls": "baseball bat",
+     "conf": 0.182,
+     "px": 737.7
+    },
+    {
+     "cls": "carrot",
+     "conf": 0.16,
+     "px": 734.3
+    }
+   ],
+   "cigarette_butt/IMG_2152.jpg": [
+    {
+     "cls": "carrot",
+     "conf": 0.277,
+     "px": 853.4
+    }
+   ],
+   "cigarette_butt/IMG_2153.jpg": [
+    {
+     "cls": "carrot",
+     "conf": 0.887,
+     "px": 931.7
+    },
+    {
+     "cls": "knife",
+     "conf": 0.15,
+     "px": 822.1
+    }
+   ],
+   "cigarette_butt/IMG_2158.jpg": [
+    {
+     "cls": "knife",
+     "conf": 0.207,
+     "px": 1561.7
+    }
+   ],
+   "cigarette_butt/IMG_2159.jpg": [
+    {
+     "cls": "bird",
+     "conf": 0.833,
+     "px": 1268.7
+    }
+   ],
+   "cigarette_butt/IMG_2160.jpg": [],
+   "cigarette_butt/IMG_2724.jpg": [
+    {
+     "cls": "bird",
+     "conf": 0.498,
+     "px": 310.5
+    },
+    {
+     "cls": "bottle",
+     "conf": 0.264,
+     "px": 290.8
+    }
+   ],
+   "cigarette_butt/IMG_2727.jpg": [
+    {
+     "cls": "carrot",
+     "conf": 0.309,
+     "px": 1687.2
+    },
+    {
+     "cls": "carrot",
+     "conf": 0.166,
+     "px": 1327.7
+    }
+   ],
+   "cigarette_butt/IMG_2731.jpg": [
+    {
+     "cls": "baseball bat",
+     "conf": 0.164,
+     "px": 537.6
+    }
+   ],
+   "cigarette_butt/IMG_2732.jpg": [],
+   "cigarette_butt/IMG_2733.jpg": [
+    {
+     "cls": "frisbee",
+     "conf": 0.362,
+     "px": 393.8
+    },
+    {
+     "cls": "apple",
+     "conf": 0.167,
+     "px": 268.4
+    }
+   ],
+   "cigarette_butt/IMG_2735.jpg": [
+    {
+     "cls": "carrot",
+     "conf": 0.53,
+     "px": 295.8
+    }
+   ],
+   "cigarette_butt/IMG_2737.jpg": [
+    {
+     "cls": "carrot",
+     "conf": 0.272,
+     "px": 512.3
+    }
+   ],
+   "cigarette_butt/IMG_2738.jpg": [],
+   "cigarette_butt/IMG_2749.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.363,
+     "px": 692.0
+    }
+   ],
+   "cigarette_pack/IMG_2239.jpg": [],
+   "cigarette_pack/IMG_2240.jpg": [
+    {
+     "cls": "book",
+     "conf": 0.341,
+     "px": 2172.4
+    }
+   ],
+   "cigarette_pack/IMG_2241.jpg": [
+    {
+     "cls": "book",
+     "conf": 0.69,
+     "px": 1260.7
+    }
+   ],
+   "cigarette_pack/IMG_2242.jpg": [
+    {
+     "cls": "book",
+     "conf": 0.887,
+     "px": 651.7
+    },
+    {
+     "cls": "sports ball",
+     "conf": 0.366,
+     "px": 410.8
+    }
+   ],
+   "cigarette_pack/IMG_2244.jpg": [
+    {
+     "cls": "book",
+     "conf": 0.632,
+     "px": 1871.1
+    }
+   ],
+   "detergent_package/C6FD95AA-DB99-441E-B2D2-8A35BF39FE87.jpg": [
+    {
+     "cls": "stop sign",
+     "conf": 0.206,
+     "px": 1289.2
+    },
+    {
+     "cls": "frisbee",
+     "conf": 0.19,
+     "px": 1291.1
+    }
+   ],
+   "dontknow/0205AC66-AFDD-4DA5-9CC5-0D44888089C5.jpg": [],
+   "dontknow/05AB01AD-C4DC-4907-8892-F9B2854F9FE7.jpg": [],
+   "dontknow/09BEAD6E-A2CF-4224-9BC9-5DE053A08A50.jpg": [],
+   "dontknow/0C62CAFA-6F17-480E-A792-7B95C860F4DC.jpg": [],
+   "dontknow/0DB6C104-2222-4A59-B311-4EF1C1B17780.jpg": [
+    {
+     "cls": "banana",
+     "conf": 0.231,
+     "px": 588.4
+    }
+   ],
+   "dontknow/1152637B-C808-4120-86A1-6AB3F9456F73.jpg": [],
+   "dontknow/11594E80-D3D1-4AB2-AC61-406DFC3DF2FC.jpg": [],
+   "dontknow/12A84CB1-61D9-40ED-AF26-CE4AD97715CF.jpg": [],
+   "dontknow/14C185B3-01A8-465A-B612-43E701FD38EF.jpg": [],
+   "dontknow/1638385B-B07C-4A71-BC5F-F02717C34B67.jpg": [],
+   "dontknow/180C83AB-2FC6-4BDD-B2B9-E2BD2F65EEA9_1_102_o.jpg": [
+    {
+     "cls": "frisbee",
+     "conf": 0.837,
+     "px": 1010.3
+    }
+   ],
+   "dontknow/1893BC8B-EB4C-4AAD-BE60-D7CC300A321C.jpg": [],
+   "dontknow/19831F65-E4A5-47E5-8564-3705201E21D7.jpg": [],
+   "dontknow/1A157178-0A45-45C0-995B-F5C0900206F9.jpg": [
+    {
+     "cls": "banana",
+     "conf": 0.21,
+     "px": 367.3
+    },
+    {
+     "cls": "orange",
+     "conf": 0.186,
+     "px": 412.7
+    }
+   ],
+   "dontknow/1B7DBE3F-0ADC-443A-8DDF-AA3731E4F136.jpg": [],
+   "dontknow/1D711064-A5F5-45DC-BD3F-F01C3CBA827B.jpg": [],
+   "dontknow/1F55B97E-03EF-47A6-87E2-490D69C42C52.jpg": [
+    {
+     "cls": "frisbee",
+     "conf": 0.192,
+     "px": 210.8
+    }
+   ],
+   "dontknow/238EF1E8-A73F-411D-A530-35EA67235673.jpg": [
+    {
+     "cls": "fire hydrant",
+     "conf": 0.547,
+     "px": 1013.8
+    }
+   ],
+   "dontknow/24B9D9BD-BE82-412D-BCD0-64BCFD25DA20.jpg": [
+    {
+     "cls": "bear",
+     "conf": 0.713,
+     "px": 471.6
+    },
+    {
+     "cls": "bear",
+     "conf": 0.431,
+     "px": 361.6
+    }
+   ],
+   "dontknow/29989D9E-317B-4C99-8499-59F905B4019C.jpg": [],
+   "dontknow/2A3DC1E7-10DC-42A1-8F25-0BDDE708ED07.jpg": [],
+   "dontknow/2A5C4788-3314-4DE1-B3CA-352793682B48.jpg": [],
+   "dontknow/2C02DC91-C31E-4707-8AB0-B6EA9BDEC1AC.jpg": [],
+   "dontknow/2E72F522-CEC4-4950-A0C2-A69FA0EF6CCB.jpg": [],
+   "dontknow/2F0308DB-73D2-45F5-8C5E-5E3B266C7297.jpg": [],
+   "dontknow/36FCC527-E154-4F5A-A906-6869CB102183.jpg": [],
+   "dontknow/3C9252EA-C324-46B4-8505-87868E6EC5C5.jpg": [],
+   "dontknow/3FF75A03-9FD4-4CFC-9C21-BD261682EAF6.jpg": [],
+   "dontknow/40FFAD92-795D-49EF-8D15-340E085666FD.jpg": [],
+   "dontknow/4202942C-752C-4BFF-968A-E2F2C58BD94D.jpg": [],
+   "dontknow/44F075AC-9269-4069-B023-BBD5C3FEB247.jpg": [],
+   "dontknow/450C5168-5CA1-49A5-BB98-825733A0ACA9.jpg": [
+    {
+     "cls": "broccoli",
+     "conf": 0.301,
+     "px": 460.5
+    },
+    {
+     "cls": "carrot",
+     "conf": 0.152,
+     "px": 1126.4
+    }
+   ],
+   "dontknow/4A13CD9B-CA10-43ED-B6C8-887120963D55.jpg": [],
+   "dontknow/4AD5E0EE-5060-42C4-B497-F0C4F89AD068.jpg": [],
+   "dontknow/5464CDE3-8907-4EC5-9620-CFDDC2655C02.jpg": [],
+   "dontknow/561EAECC-6311-4BD4-A68A-E77BDDC6CBFC.jpg": [],
+   "dontknow/57667385-6AF9-4B5A-A74D-7C97AB646BC5.jpg": [],
+   "dontknow/5CAC03A2-53A5-4582-B35D-8FFED90C679C.jpg": [],
+   "dontknow/5CF94367-811C-44F7-86FC-2B74F27CC61D.jpg": [],
+   "dontknow/5D4827A5-318B-4BB7-8790-14AF36D96041.jpg": [
+    {
+     "cls": "airplane",
+     "conf": 0.195,
+     "px": 289.0
+    },
+    {
+     "cls": "airplane",
+     "conf": 0.154,
+     "px": 275.7
+    }
+   ],
+   "dontknow/620130DC-9330-47B0-B890-2886769327CD.jpg": [],
+   "dontknow/67C5F675-27CA-424F-BC8C-F36F6BD4B8A5.jpg": [],
+   "dontknow/727A97A5-A215-4A6F-BC28-C6E1E2BC31C6.jpg": [],
+   "dontknow/7409762D-FB39-434E-89C2-72C6C0FB08BB.jpg": [],
+   "dontknow/74F35FA6-77C5-4792-A4CD-A89CC39E2692.jpg": [],
+   "dontknow/75BC3CE7-970F-4149-81DD-EF50517A5F02.jpg": [],
+   "dontknow/7CAA4D21-3464-4144-B33E-E3F1E0D02324.jpg": [
+    {
+     "cls": "bird",
+     "conf": 0.264,
+     "px": 548.5
+    }
+   ],
+   "dontknow/7D1EACCF-B7E0-4897-A10F-0A598A5D5C70.jpg": [],
+   "dontknow/80B9411C-9C46-4D35-B7A6-38B53F2C6198.jpg": [],
+   "dontknow/82D4A1F3-8C5F-497D-96DA-4DC5B7A8BDB1.jpg": [],
+   "dontknow/8502E8CF-C4B6-4B19-BF57-27E644584AF5.jpg": [],
+   "dontknow/87D3DB9A-102A-4D12-B96D-A5B6AAFCC3B4.jpg": [
+    {
+     "cls": "bird",
+     "conf": 0.224,
+     "px": 509.5
+    }
+   ],
+   "dontknow/8D48D1BA-3137-4DA0-A343-EA3FE538A5F8.jpg": [],
+   "dontknow/91193BD6-DE93-40E9-B57E-6DA30E9EC862.jpg": [],
+   "dontknow/93C45AA7-6A78-4D45-B5E7-330473F0295A.jpg": [
+    {
+     "cls": "fire hydrant",
+     "conf": 0.456,
+     "px": 1087.9
+    }
+   ],
+   "dontknow/94AFC5C6-547E-48C4-81BD-E4735F9BE96F.jpg": [
+    {
+     "cls": "frisbee",
+     "conf": 0.437,
+     "px": 358.2
+    }
+   ],
+   "dontknow/95581CED-AC39-4064-9D2B-A5084CCBC306.jpg": [],
+   "dontknow/96E8D6B8-CEF0-4F50-AC3F-ED05A7F40372.jpg": [],
+   "dontknow/9FC1CD3F-37E5-4A65-B7E7-837786FC1F52.jpg": [],
+   "dontknow/A26A6DBC-0428-4BB2-BB62-9727796E82F8.jpg": [
+    {
+     "cls": "bear",
+     "conf": 0.648,
+     "px": 505.4
+    }
+   ],
+   "dontknow/A3B1DBAE-406B-43CB-91EC-D5DBDB9F12C1.jpg": [],
+   "dontknow/A3BA4914-51E9-4C7E-ACC5-E0F02D62A0F0.jpg": [],
+   "dontknow/A53E340C-56B8-4E48-90C8-D0858895FEFF.jpg": [
+    {
+     "cls": "bear",
+     "conf": 0.602,
+     "px": 527.9
+    },
+    {
+     "cls": "bear",
+     "conf": 0.378,
+     "px": 555.2
+    }
+   ],
+   "dontknow/A7B9814C-C8A1-4FC4-97CA-898771025268.jpg": [],
+   "dontknow/A90E210E-A688-4CAE-AC6B-3B7A53E003F2.jpg": [],
+   "dontknow/AD754D62-575D-4D9C-ADC5-A143E6EA894C.jpg": [],
+   "dontknow/ADAFC0F8-CC54-4409-8D81-49BBBE37BA34.jpg": [],
+   "dontknow/AF055665-DDE5-43DD-A2F0-03C169E98DB7.jpg": [],
+   "dontknow/AF40B408-9640-4ED6-A99C-DA7AA716D30F.jpg": [],
+   "dontknow/AFD53FFE-6DE9-4F19-9413-4302E579179E.jpg": [
+    {
+     "cls": "bear",
+     "conf": 0.774,
+     "px": 375.2
+    },
+    {
+     "cls": "bear",
+     "conf": 0.442,
+     "px": 260.8
+    }
+   ],
+   "dontknow/AFF74FF8-8582-4EC2-A4F6-E3DB22504139.jpg": [],
+   "dontknow/B81E0280-DF26-40C7-9051-7DD9359E86EC.jpg": [],
+   "dontknow/BD972BDC-31AF-44EA-A6CD-F4A62999CCBB.jpg": [],
+   "dontknow/BDA61FB0-5594-4089-91F1-0B758F35EA1B.jpg": [
+    {
+     "cls": "bird",
+     "conf": 0.473,
+     "px": 296.6
+    },
+    {
+     "cls": "bird",
+     "conf": 0.228,
+     "px": 284.5
+    }
+   ],
+   "dontknow/BE1D5751-F805-4034-A513-9DB6896143BF.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.208,
+     "px": 266.5
+    }
+   ],
+   "dontknow/BFFE4A28-82E6-4FE0-8BD8-CF0766260650.jpg": [],
+   "dontknow/C55C81AF-BE86-442C-AEFF-215F28B8E11E.jpg": [
+    {
+     "cls": "banana",
+     "conf": 0.343,
+     "px": 220.9
+    },
+    {
+     "cls": "bird",
+     "conf": 0.262,
+     "px": 219.8
+    }
+   ],
+   "dontknow/C70C6A83-12D1-4B13-ADD6-30CA2EEE0AB2.jpg": [],
+   "dontknow/C7B22551-DD64-437E-B221-26E1BB3EB308_1_102_o.jpg": [
+    {
+     "cls": "bird",
+     "conf": 0.188,
+     "px": 626.8
+    }
+   ],
+   "dontknow/CFBE84EE-C2C0-487C-A283-3C1736E383B1.jpg": [],
+   "dontknow/D2D60AAB-60C6-4208-9BF1-44C19F8EDC09.jpg": [],
+   "dontknow/D394CE52-ECE9-4C7B-BE7A-9F7E1B5F9C9D.jpg": [
+    {
+     "cls": "spoon",
+     "conf": 0.505,
+     "px": 1388.0
+    }
+   ],
+   "dontknow/D3B77F49-0F5D-47A9-9C24-F5880A07E36A.jpg": [],
+   "dontknow/D6FBBC17-C503-4277-BC58-7DD9D3896CA3.jpg": [
+    {
+     "cls": "carrot",
+     "conf": 0.17,
+     "px": 1135.2
+    }
+   ],
+   "dontknow/D75A0F9F-03BE-42BD-A396-98EE8415E569.jpg": [
+    {
+     "cls": "cat",
+     "conf": 0.24,
+     "px": 348.8
+    }
+   ],
+   "dontknow/D7681FA0-8BC3-4B9A-9513-6210FBEBD003.jpg": [],
+   "dontknow/DA3211FB-F7CE-47BC-A024-0D2A2570574D.jpg": [],
+   "dontknow/E0752D11-C1CF-4BD4-BCD5-9189348E2569.jpg": [],
+   "dontknow/E7EEC497-32D1-430D-BB2B-9F09E36CBA6A.jpg": [],
+   "dontknow/E860BC5B-5EA5-45C4-8870-2A8AA4A27427.jpg": [],
+   "dontknow/E8F87470-6EEB-484D-81BA-0EADAF716AC5.jpg": [],
+   "dontknow/E90169CE-5E4C-4D66-8EDA-9C2FCFE99E25.jpg": [
+    {
+     "cls": "carrot",
+     "conf": 0.287,
+     "px": 202.3
+    }
+   ],
+   "dontknow/EB0525F9-0033-4ABE-86C5-D96C187F596E.jpg": [],
+   "dontknow/ECB04BEB-A96D-4B91-AEA9-138DB9D851B3.jpg": [],
+   "dontknow/ED886887-0D30-4FC0-827D-B883A1791DF3.jpg": [],
+   "dontknow/F20DEEC1-F636-4B79-84CB-C96BE7A62C3D.jpg": [
+    {
+     "cls": "bench",
+     "conf": 0.177,
+     "px": 80.1
+    }
+   ],
+   "dontknow/F6C10282-22E3-4166-9BCA-0C2C43CFD121.jpg": [],
+   "dontknow/F971EE29-49C1-4A8C-9631-3576FDB29CCD.jpg": [],
+   "dontknow/F9D1E7A1-F9F9-4FE2-914E-07693E0BCDEA.jpg": [],
+   "dontknow/FA2C32C0-C86A-4F5A-9569-3C27DA29C01F.jpg": [],
+   "dontknow/FBC3915F-DE94-46C2-A16C-A80EBB42917A.jpg": [],
+   "dontknow/FDD96DD5-BBE1-498C-BAC0-3E075BE82BF3.jpg": [
+    {
+     "cls": "sports ball",
+     "conf": 0.222,
+     "px": 86.1
+    },
+    {
+     "cls": "banana",
+     "conf": 0.164,
+     "px": 452.7
+    }
+   ],
+   "dontknow/FF4CD43E-DD83-4344-8C2D-1B234158BCC6.jpg": [],
+   "dontknow/IMG_2151.jpg": [],
+   "dontknow/IMG_2723.jpg": [],
+   "dontknow/IMG_2729.jpg": [],
+   "dontknow/IMG_2748.jpg": [
+    {
+     "cls": "bird",
+     "conf": 0.554,
+     "px": 1268.5
+    }
+   ],
+   "glove/05BE0D5F-A8C4-4252-958D-5748844F7AE0.jpg": [],
+   "glove/B6FAEF83-1252-4B53-AC30-B15414344D0A.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.711,
+     "px": 795.1
+    }
+   ],
+   "glove/E7D94548-4168-40C8-BE07-69E13F1FD7D9.jpg": [
+    {
+     "cls": "bear",
+     "conf": 0.383,
+     "px": 475.0
+    }
+   ],
+   "glove/E84E85EE-21DB-47B8-B18A-FAAB5C3F78B7.jpg": [
+    {
+     "cls": "banana",
+     "conf": 0.277,
+     "px": 637.7
+    },
+    {
+     "cls": "bird",
+     "conf": 0.25,
+     "px": 728.3
+    }
+   ],
+   "paper/17362433-5E6C-4CA1-AAD6-DEB89F9418C4.jpg": [],
+   "paper/28B5BAFC-8B90-4397-B183-F8CA5882ABFB.jpg": [],
+   "paper/435B3DD7-1C3E-4CE8-99D7-A75E19177D12.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.44,
+     "px": 349.7
+    }
+   ],
+   "paper/57846B35-27F5-46E1-8CCA-400929953D62.jpg": [],
+   "paper/65ED7CE3-93EC-4E89-AEB0-781E8758A28E.jpg": [],
+   "paper/F3857983-5168-4ADC-BDFE-E57501D28241.jpg": [],
+   "paper_bag/F9BE5F17-7287-47FB-BACA-DE14E986AE6E.jpg": [
+    {
+     "cls": "frisbee",
+     "conf": 0.267,
+     "px": 388.0
+    },
+    {
+     "cls": "umbrella",
+     "conf": 0.205,
+     "px": 388.0
+    }
+   ],
+   "paper_cup/F798A107-876D-48D0-9F20-C142467DB0D4.jpg": [
+    {
+     "cls": "frisbee",
+     "conf": 0.824,
+     "px": 373.6
+    }
+   ],
+   "pine_cone/19586C07-AED3-4CAB-9786-5C4FC63278B1.jpg": [
+    {
+     "cls": "banana",
+     "conf": 0.184,
+     "px": 570.6
+    }
+   ],
+   "pine_cone/461F069D-8C6B-4607-8B73-E43945B4AC68.jpg": [],
+   "pine_cone/7930DDD9-8DAB-4975-A130-8F0CBA86FC0D.jpg": [],
+   "plastic_bag/0F64E507-23B5-46A5-8B25-E7E5ED02C628.jpg": [],
+   "plastic_bag/201846A2-0FA4-4B20-9435-8E7EA1179012.jpg": [
+    {
+     "cls": "carrot",
+     "conf": 0.559,
+     "px": 379.8
+    },
+    {
+     "cls": "carrot",
+     "conf": 0.241,
+     "px": 764.0
+    },
+    {
+     "cls": "carrot",
+     "conf": 0.172,
+     "px": 411.9
+    },
+    {
+     "cls": "carrot",
+     "conf": 0.166,
+     "px": 918.1
+    }
+   ],
+   "plastic_bag/25322191-BC6F-45F0-99B8-E39843D9AE19.jpg": [],
+   "plastic_bag/2A764A8A-1BB4-426B-A97C-8DAE5C78FAC3.jpg": [
+    {
+     "cls": "bird",
+     "conf": 0.258,
+     "px": 143.1
+    }
+   ],
+   "plastic_bag/4469CF9B-EB9F-4DB8-9B37-9F8D6BE95D00.jpg": [
+    {
+     "cls": "dog",
+     "conf": 0.183,
+     "px": 195.5
+    },
+    {
+     "cls": "dog",
+     "conf": 0.172,
+     "px": 446.0
+    }
+   ],
+   "plastic_bag/4871C131-47EA-43F6-BAC2-147BC431E432.jpg": [],
+   "plastic_bag/4F29855A-6480-4A0B-938E-5545CB66A537.jpg": [],
+   "plastic_bag/5891FD1A-D7B1-44A5-B5E9-CA8D2144D252.jpg": [],
+   "plastic_bag/868B6347-04D9-480E-8E2F-891EC929140D.jpg": [
+    {
+     "cls": "teddy bear",
+     "conf": 0.408,
+     "px": 1054.6
+    },
+    {
+     "cls": "bird",
+     "conf": 0.326,
+     "px": 1010.8
+    }
+   ],
+   "plastic_bag/A70E66A7-9F9F-42AA-BCFA-1A05EF9DEF87.jpg": [
+    {
+     "cls": "bird",
+     "conf": 0.385,
+     "px": 1480.7
+    },
+    {
+     "cls": "teddy bear",
+     "conf": 0.314,
+     "px": 807.6
+    },
+    {
+     "cls": "bird",
+     "conf": 0.153,
+     "px": 645.8
+    }
+   ],
+   "plastic_bag/C0D86296-B808-4E8B-95C4-EC84012EF8E7.jpg": [],
+   "plastic_bag/DE4D31A9-D36B-4570-A513-E72EE14B0263.jpg": [
+    {
+     "cls": "airplane",
+     "conf": 0.232,
+     "px": 210.8
+    }
+   ],
+   "plastic_bag/FF696AC4-DA1D-41CF-A87E-D497E3ACD081.jpg": [
+    {
+     "cls": "umbrella",
+     "conf": 0.218,
+     "px": 317.2
+    }
+   ],
+   "plastic_bag/IMG_2247.jpg": [
+    {
+     "cls": "person",
+     "conf": 0.332,
+     "px": 928.7
+    },
+    {
+     "cls": "frisbee",
+     "conf": 0.25,
+     "px": 765.5
+    },
+    {
+     "cls": "frisbee",
+     "conf": 0.174,
+     "px": 505.3
+    },
+    {
+     "cls": "person",
+     "conf": 0.162,
+     "px": 924.6
+    }
+   ],
+   "plastic_bottle/0FC79A8F-45D8-45AB-879E-2CD23277BC90.jpg": [
+    {
+     "cls": "surfboard",
+     "conf": 0.667,
+     "px": 1740.4
+    }
+   ],
+   "plastic_bottle/0FC821EB-ED5B-44E4-A7BB-3ACC06FB1316.jpg": [],
+   "plastic_bottle/12AFD99C-F177-47FE-BE46-9A168ADD1E9C.jpg": [],
+   "plastic_bottle/4C4FCEFD-7E0E-4521-B3CE-452B544F4FDC.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.609,
+     "px": 1306.5
+    },
+    {
+     "cls": "surfboard",
+     "conf": 0.182,
+     "px": 1305.6
+    }
+   ],
+   "plastic_bottle/68ECBDB3-8322-4793-8EC0-E295FEFE857F.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.359,
+     "px": 461.5
+    },
+    {
+     "cls": "bird",
+     "conf": 0.171,
+     "px": 461.9
+    }
+   ],
+   "plastic_bottle/72856E5E-5CCD-4E13-8076-3DFF153E5957.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.75,
+     "px": 1135.9
+    }
+   ],
+   "plastic_bottle/74E90D63-85D1-4D9F-81A9-ECC862DDD126.jpg": [],
+   "plastic_bottle/8C60E899-C6C4-4514-BF57-73ACFD2112CC.jpg": [],
+   "plastic_bottle/9077F88E-3E04-46FB-8E43-200A2C3FD425.jpg": [
+    {
+     "cls": "frisbee",
+     "conf": 0.333,
+     "px": 666.1
+    },
+    {
+     "cls": "fire hydrant",
+     "conf": 0.209,
+     "px": 666.0
+    }
+   ],
+   "plastic_bottle/985D3873-19D2-4063-8D9F-0073968B0457.jpg": [],
+   "plastic_bottle/A8E19D4F-A44C-45CD-B2F8-5BCD98D86388.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.709,
+     "px": 715.5
+    },
+    {
+     "cls": "fire hydrant",
+     "conf": 0.453,
+     "px": 718.6
+    },
+    {
+     "cls": "bottle",
+     "conf": 0.232,
+     "px": 238.4
+    }
+   ],
+   "plastic_bottle/D7101843-D6BB-4CDF-AF83-A1E4A813ED50.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.452,
+     "px": 928.3
+    }
+   ],
+   "plastic_bottle/D8503135-35BF-4F0A-AF2F-6C8A0D8DFC18.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.674,
+     "px": 893.7
+    }
+   ],
+   "plastic_bottle/E53F3EA6-9186-47A8-B871-82A3CEF13ECA.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.594,
+     "px": 861.3
+    }
+   ],
+   "plastic_bottle/EA370BDC-964C-49C2-840A-9FA45DB77779.jpg": [],
+   "plastic_bottle/ECBE9A44-4184-4485-8B2D-B9AC240B2ECD.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.638,
+     "px": 639.8
+    }
+   ],
+   "plastic_bottle/FFF1EEDD-2587-4C15-B52A-5BF37CD82B74.jpg": [],
+   "plastic_container/3066D25A-CF3C-44D4-BA85-24BD3C2A2257.jpg": [
+    {
+     "cls": "microwave",
+     "conf": 0.218,
+     "px": 724.6
+    }
+   ],
+   "plastic_container/6CB20218-509F-468C-A5B7-F5583A4F98E8.jpg": [
+    {
+     "cls": "book",
+     "conf": 0.212,
+     "px": 1377.5
+    }
+   ],
+   "plastic_container/8FDB6A4C-9ED3-46BF-AF61-CA16595FFE52.jpg": [
+    {
+     "cls": "umbrella",
+     "conf": 0.81,
+     "px": 2102.0
+    }
+   ],
+   "plastic_container/DC50D211-D37F-40B3-B54D-68FEB58461C4.jpg": [
+    {
+     "cls": "book",
+     "conf": 0.186,
+     "px": 1317.6
+    },
+    {
+     "cls": "umbrella",
+     "conf": 0.179,
+     "px": 1311.8
+    }
+   ],
+   "plastic_container/E9E9A56C-C605-4F19-9D2B-15D3F5E35853.jpg": [
+    {
+     "cls": "umbrella",
+     "conf": 0.298,
+     "px": 726.6
+    }
+   ],
+   "plastic_piece/03D25FB8-054B-4F05-92F7-2714DEEEE016.jpg": [
+    {
+     "cls": "fire hydrant",
+     "conf": 0.381,
+     "px": 242.9
+    },
+    {
+     "cls": "bench",
+     "conf": 0.24,
+     "px": 367.1
+    },
+    {
+     "cls": "broccoli",
+     "conf": 0.19,
+     "px": 268.3
+    },
+    {
+     "cls": "bench",
+     "conf": 0.164,
+     "px": 517.0
+    }
+   ],
+   "plastic_piece/2824786D-0E75-4C9B-8C61-6FC56F342B7D.jpg": [],
+   "plastic_piece/2D14A411-7843-4451-B987-743838519AEF.jpg": [],
+   "plastic_piece/AF411464-B983-44B5-BC0A-76AC469B8B28.jpg": [
+    {
+     "cls": "fire hydrant",
+     "conf": 0.307,
+     "px": 613.2
+    }
+   ],
+   "plastic_piece/B9E28B83-14D4-43ED-926A-63C126BA04CF.jpg": [
+    {
+     "cls": "umbrella",
+     "conf": 0.26,
+     "px": 2318.2
+    }
+   ],
+   "plastic_piece/IMG_2728.jpg": [
+    {
+     "cls": "bird",
+     "conf": 0.187,
+     "px": 563.3
+    }
+   ],
+   "plastic_straw/04A093A4-BB63-4E0A-91C9-6183B9100791.jpg": [
+    {
+     "cls": "frisbee",
+     "conf": 0.29,
+     "px": 418.3
+    },
+    {
+     "cls": "bottle",
+     "conf": 0.212,
+     "px": 259.6
+    }
+   ],
+   "plastic_straw/A128D857-0BFB-44B7-A35B-ADB8F990C927.jpg": [
+    {
+     "cls": "frisbee",
+     "conf": 0.234,
+     "px": 303.7
+    }
+   ],
+   "plastic_straw/AD4D94FD-87B3-4147-A776-42D4AB98EE02.jpg": [
+    {
+     "cls": "broccoli",
+     "conf": 0.218,
+     "px": 207.2
+    },
+    {
+     "cls": "broccoli",
+     "conf": 0.186,
+     "px": 368.7
+    }
+   ],
+   "plastic_straw/D6781D3F-9821-43FF-8851-031BA55E4DFB.jpg": [
+    {
+     "cls": "carrot",
+     "conf": 0.373,
+     "px": 1527.2
+    }
+   ],
+   "plastic_straw/DE4BEF87-C34C-4EFF-B7F9-9D0A5DA903BE.jpg": [],
+   "plastic_wrapper/20EBB876-EDE8-4A5E-A686-2514A3F3BDEC.jpg": [
+    {
+     "cls": "frisbee",
+     "conf": 0.161,
+     "px": 471.3
+    }
+   ],
+   "plastic_wrapper/24326C0F-133F-4B95-A983-19ADD10F9B16.jpg": [
+    {
+     "cls": "stop sign",
+     "conf": 0.716,
+     "px": 1763.4
+    }
+   ],
+   "plastic_wrapper/41728D7E-2016-421D-BD6A-21A4515944E1.jpg": [],
+   "plastic_wrapper/78435086-C5A6-4CC2-BB7F-980A8269AC4B.jpg": [],
+   "plastic_wrapper/84DEE582-F631-45FC-9437-1092BE7C90C7.jpg": [],
+   "plastic_wrapper/9C365D98-C2EC-4C99-B334-B291C704695D.jpg": [],
+   "plastic_wrapper/9D280621-8CE3-4A4E-A206-A579E0415F88.jpg": [],
+   "rope/DAFB6D5D-7F8D-45D5-B12A-28D02D5937A5.jpg": [
+    {
+     "cls": "broccoli",
+     "conf": 0.52,
+     "px": 538.0
+    },
+    {
+     "cls": "broccoli",
+     "conf": 0.362,
+     "px": 663.0
+    },
+    {
+     "cls": "broccoli",
+     "conf": 0.307,
+     "px": 408.7
+    },
+    {
+     "cls": "broccoli",
+     "conf": 0.191,
+     "px": 646.5
+    },
+    {
+     "cls": "broccoli",
+     "conf": 0.183,
+     "px": 538.9
+    },
+    {
+     "cls": "broccoli",
+     "conf": 0.17,
+     "px": 348.3
+    }
+   ],
+   "shoe/7925E56E-C03A-49EF-887A-043FE9958B0A.jpg": [
+    {
+     "cls": "umbrella",
+     "conf": 0.16,
+     "px": 312.8
+    }
+   ],
+   "textile/3A3B812F-1650-4B9E-B2B2-FA5DBCE142DE.jpg": [
+    {
+     "cls": "broccoli",
+     "conf": 0.65,
+     "px": 271.5
+    },
+    {
+     "cls": "broccoli",
+     "conf": 0.286,
+     "px": 156.9
+    }
+   ],
+   "textile/645F850A-2B72-46B2-B5CE-01BFBCE25699.jpg": [],
+   "textile/8189826C-B722-4EF1-8FF2-136A29AE52B8.jpg": [
+    {
+     "cls": "dog",
+     "conf": 0.191,
+     "px": 900.6
+    },
+    {
+     "cls": "bear",
+     "conf": 0.178,
+     "px": 899.1
+    }
+   ],
+   "textile/A1159253-21D4-4032-AF02-B4EF00935CC5.jpg": [
+    {
+     "cls": "broccoli",
+     "conf": 0.218,
+     "px": 621.3
+    }
+   ],
+   "textile/C5386BFC-CC65-4E32-BDCF-15E8195A7956.jpg": [
+    {
+     "cls": "broccoli",
+     "conf": 0.589,
+     "px": 1112.7
+    },
+    {
+     "cls": "broccoli",
+     "conf": 0.588,
+     "px": 2122.4
+    },
+    {
+     "cls": "broccoli",
+     "conf": 0.539,
+     "px": 206.6
+    },
+    {
+     "cls": "broccoli",
+     "conf": 0.466,
+     "px": 1471.2
+    },
+    {
+     "cls": "broccoli",
+     "conf": 0.408,
+     "px": 839.8
+    },
+    {
+     "cls": "broccoli",
+     "conf": 0.387,
+     "px": 457.9
+    },
+    {
+     "cls": "broccoli",
+     "conf": 0.27,
+     "px": 494.4
+    },
+    {
+     "cls": "broccoli",
+     "conf": 0.184,
+     "px": 484.5
+    },
+    {
+     "cls": "broccoli",
+     "conf": 0.162,
+     "px": 185.4
+    }
+   ],
+   "textile/DEE626BC-B9AC-4690-ADC1-21893C5B8CE3.jpg": [
+    {
+     "cls": "dog",
+     "conf": 0.303,
+     "px": 683.8
+    }
+   ],
+   "tissue/DB7DF831-E55C-4596-B0DF-ECDD95D15706.jpg": [
+    {
+     "cls": "vase",
+     "conf": 0.295,
+     "px": 2078.3
+    }
+   ]
+  }
+ },
+ "world_640": {
+  "model": "yolov8x-worldv2.pt",
+  "imgsz": 640,
+  "seconds": 45.7,
+  "prompts": [
+   "cigarette butt",
+   "cigarette",
+   "plastic bottle",
+   "bottle",
+   "can",
+   "plastic bag",
+   "wrapper",
+   "food wrapper",
+   "paper",
+   "paper cup",
+   "drinking straw",
+   "bottle cap",
+   "glove",
+   "cloth",
+   "shoe",
+   "chair",
+   "cardboard",
+   "trash",
+   "litter"
+  ],
+  "rows": {
+   "bottle_cap/26FE030A-6032-42EA-ADAB-E0199A423A9C.jpg": [],
+   "bottle_cap/3C36CC35-517B-49B8-A969-60D974643088.jpg": [],
+   "bottle_cap/IMG_2753.jpg": [],
+   "can/5873E130-B505-4B37-8B3B-0D02587B44BD.jpg": [],
+   "can/5CCF8A29-65F5-44D9-9B96-F387975182FC.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.626,
+     "px": 479.2
+    }
+   ],
+   "can/FE83DB06-AD3C-4E87-9486-99985354BB1A.jpg": [],
+   "can/IMG_2243.jpg": [
+    {
+     "cls": "shoe",
+     "conf": 0.154,
+     "px": 733.4
+    }
+   ],
+   "candy_wrapper/66637352-21A9-4BB6-9D1C-90DB588D4239.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.234,
+     "px": 896.1
+    }
+   ],
+   "candy_wrapper/BF94B731-68F6-41C2-8850-1D4B44FEDBFE.jpg": [],
+   "candy_wrapper/C3C436CF-2A3C-43E5-B10F-8A0A3F8F8733.jpg": [],
+   "candy_wrapper/E441EE48-24E7-4806-822E-EF960226CFE9.jpg": [],
+   "chair/291FC76E-5EE4-4E2D-B910-6FC4FFFC77D8.jpg": [
+    {
+     "cls": "chair",
+     "conf": 0.156,
+     "px": 1774.4
+    }
+   ],
+   "chair/6C2C3813-8F7D-47BE-83EA-655DED6E38DB.jpg": [
+    {
+     "cls": "chair",
+     "conf": 0.413,
+     "px": 1924.3
+    },
+    {
+     "cls": "chair",
+     "conf": 0.199,
+     "px": 1920.5
+    }
+   ],
+   "chair/B5296087-7065-455C-AD77-14CA730EECF6.jpg": [
+    {
+     "cls": "cardboard",
+     "conf": 0.215,
+     "px": 3522.0
+    },
+    {
+     "cls": "cardboard",
+     "conf": 0.154,
+     "px": 2624.6
+    }
+   ],
+   "cigarette_butt/2158.jpg": [],
+   "cigarette_butt/IMG_1740.jpg": [],
+   "cigarette_butt/IMG_1741.jpg": [],
+   "cigarette_butt/IMG_1742.jpg": [],
+   "cigarette_butt/IMG_1744.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.62,
+     "px": 547.2
+    }
+   ],
+   "cigarette_butt/IMG_1747.jpg": [],
+   "cigarette_butt/IMG_1748.jpg": [],
+   "cigarette_butt/IMG_1749.jpg": [],
+   "cigarette_butt/IMG_1750.jpg": [],
+   "cigarette_butt/IMG_1751.jpg": [],
+   "cigarette_butt/IMG_1752.jpg": [],
+   "cigarette_butt/IMG_1753.jpg": [],
+   "cigarette_butt/IMG_1754.jpg": [],
+   "cigarette_butt/IMG_1755.jpg": [],
+   "cigarette_butt/IMG_1756.jpg": [],
+   "cigarette_butt/IMG_1757.jpg": [],
+   "cigarette_butt/IMG_1758.jpg": [],
+   "cigarette_butt/IMG_1759.jpg": [],
+   "cigarette_butt/IMG_1760.jpg": [],
+   "cigarette_butt/IMG_1762.jpg": [],
+   "cigarette_butt/IMG_1763.jpg": [],
+   "cigarette_butt/IMG_1765.jpg": [
+    {
+     "cls": "plastic bottle",
+     "conf": 0.406,
+     "px": 1175.5
+    },
+    {
+     "cls": "bottle",
+     "conf": 0.153,
+     "px": 1178.1
+    }
+   ],
+   "cigarette_butt/IMG_1766.jpg": [],
+   "cigarette_butt/IMG_2029.jpg": [],
+   "cigarette_butt/IMG_2150.jpg": [],
+   "cigarette_butt/IMG_2152.jpg": [],
+   "cigarette_butt/IMG_2153.jpg": [],
+   "cigarette_butt/IMG_2158.jpg": [],
+   "cigarette_butt/IMG_2159.jpg": [],
+   "cigarette_butt/IMG_2160.jpg": [],
+   "cigarette_butt/IMG_2724.jpg": [],
+   "cigarette_butt/IMG_2727.jpg": [],
+   "cigarette_butt/IMG_2731.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.205,
+     "px": 524.0
+    }
+   ],
+   "cigarette_butt/IMG_2732.jpg": [],
+   "cigarette_butt/IMG_2733.jpg": [],
+   "cigarette_butt/IMG_2735.jpg": [],
+   "cigarette_butt/IMG_2737.jpg": [],
+   "cigarette_butt/IMG_2738.jpg": [],
+   "cigarette_butt/IMG_2749.jpg": [],
+   "cigarette_pack/IMG_2239.jpg": [
+    {
+     "cls": "cardboard",
+     "conf": 0.184,
+     "px": 2890.5
+    }
+   ],
+   "cigarette_pack/IMG_2240.jpg": [
+    {
+     "cls": "cardboard",
+     "conf": 0.189,
+     "px": 2215.4
+    }
+   ],
+   "cigarette_pack/IMG_2241.jpg": [],
+   "cigarette_pack/IMG_2242.jpg": [],
+   "cigarette_pack/IMG_2244.jpg": [
+    {
+     "cls": "cardboard",
+     "conf": 0.163,
+     "px": 1875.8
+    }
+   ],
+   "detergent_package/C6FD95AA-DB99-441E-B2D2-8A35BF39FE87.jpg": [],
+   "dontknow/0205AC66-AFDD-4DA5-9CC5-0D44888089C5.jpg": [],
+   "dontknow/05AB01AD-C4DC-4907-8892-F9B2854F9FE7.jpg": [],
+   "dontknow/09BEAD6E-A2CF-4224-9BC9-5DE053A08A50.jpg": [],
+   "dontknow/0C62CAFA-6F17-480E-A792-7B95C860F4DC.jpg": [],
+   "dontknow/0DB6C104-2222-4A59-B311-4EF1C1B17780.jpg": [],
+   "dontknow/1152637B-C808-4120-86A1-6AB3F9456F73.jpg": [],
+   "dontknow/11594E80-D3D1-4AB2-AC61-406DFC3DF2FC.jpg": [],
+   "dontknow/12A84CB1-61D9-40ED-AF26-CE4AD97715CF.jpg": [],
+   "dontknow/14C185B3-01A8-465A-B612-43E701FD38EF.jpg": [],
+   "dontknow/1638385B-B07C-4A71-BC5F-F02717C34B67.jpg": [],
+   "dontknow/180C83AB-2FC6-4BDD-B2B9-E2BD2F65EEA9_1_102_o.jpg": [
+    {
+     "cls": "shoe",
+     "conf": 0.327,
+     "px": 1070.6
+    }
+   ],
+   "dontknow/1893BC8B-EB4C-4AAD-BE60-D7CC300A321C.jpg": [],
+   "dontknow/19831F65-E4A5-47E5-8564-3705201E21D7.jpg": [],
+   "dontknow/1A157178-0A45-45C0-995B-F5C0900206F9.jpg": [],
+   "dontknow/1B7DBE3F-0ADC-443A-8DDF-AA3731E4F136.jpg": [],
+   "dontknow/1D711064-A5F5-45DC-BD3F-F01C3CBA827B.jpg": [],
+   "dontknow/1F55B97E-03EF-47A6-87E2-490D69C42C52.jpg": [],
+   "dontknow/238EF1E8-A73F-411D-A530-35EA67235673.jpg": [],
+   "dontknow/24B9D9BD-BE82-412D-BCD0-64BCFD25DA20.jpg": [],
+   "dontknow/29989D9E-317B-4C99-8499-59F905B4019C.jpg": [],
+   "dontknow/2A3DC1E7-10DC-42A1-8F25-0BDDE708ED07.jpg": [],
+   "dontknow/2A5C4788-3314-4DE1-B3CA-352793682B48.jpg": [],
+   "dontknow/2C02DC91-C31E-4707-8AB0-B6EA9BDEC1AC.jpg": [],
+   "dontknow/2E72F522-CEC4-4950-A0C2-A69FA0EF6CCB.jpg": [],
+   "dontknow/2F0308DB-73D2-45F5-8C5E-5E3B266C7297.jpg": [],
+   "dontknow/36FCC527-E154-4F5A-A906-6869CB102183.jpg": [],
+   "dontknow/3C9252EA-C324-46B4-8505-87868E6EC5C5.jpg": [],
+   "dontknow/3FF75A03-9FD4-4CFC-9C21-BD261682EAF6.jpg": [],
+   "dontknow/40FFAD92-795D-49EF-8D15-340E085666FD.jpg": [],
+   "dontknow/4202942C-752C-4BFF-968A-E2F2C58BD94D.jpg": [],
+   "dontknow/44F075AC-9269-4069-B023-BBD5C3FEB247.jpg": [],
+   "dontknow/450C5168-5CA1-49A5-BB98-825733A0ACA9.jpg": [],
+   "dontknow/4A13CD9B-CA10-43ED-B6C8-887120963D55.jpg": [],
+   "dontknow/4AD5E0EE-5060-42C4-B497-F0C4F89AD068.jpg": [],
+   "dontknow/5464CDE3-8907-4EC5-9620-CFDDC2655C02.jpg": [],
+   "dontknow/561EAECC-6311-4BD4-A68A-E77BDDC6CBFC.jpg": [],
+   "dontknow/57667385-6AF9-4B5A-A74D-7C97AB646BC5.jpg": [],
+   "dontknow/5CAC03A2-53A5-4582-B35D-8FFED90C679C.jpg": [],
+   "dontknow/5CF94367-811C-44F7-86FC-2B74F27CC61D.jpg": [],
+   "dontknow/5D4827A5-318B-4BB7-8790-14AF36D96041.jpg": [],
+   "dontknow/620130DC-9330-47B0-B890-2886769327CD.jpg": [],
+   "dontknow/67C5F675-27CA-424F-BC8C-F36F6BD4B8A5.jpg": [],
+   "dontknow/727A97A5-A215-4A6F-BC28-C6E1E2BC31C6.jpg": [],
+   "dontknow/7409762D-FB39-434E-89C2-72C6C0FB08BB.jpg": [],
+   "dontknow/74F35FA6-77C5-4792-A4CD-A89CC39E2692.jpg": [],
+   "dontknow/75BC3CE7-970F-4149-81DD-EF50517A5F02.jpg": [],
+   "dontknow/7CAA4D21-3464-4144-B33E-E3F1E0D02324.jpg": [],
+   "dontknow/7D1EACCF-B7E0-4897-A10F-0A598A5D5C70.jpg": [],
+   "dontknow/80B9411C-9C46-4D35-B7A6-38B53F2C6198.jpg": [],
+   "dontknow/82D4A1F3-8C5F-497D-96DA-4DC5B7A8BDB1.jpg": [],
+   "dontknow/8502E8CF-C4B6-4B19-BF57-27E644584AF5.jpg": [],
+   "dontknow/87D3DB9A-102A-4D12-B96D-A5B6AAFCC3B4.jpg": [],
+   "dontknow/8D48D1BA-3137-4DA0-A343-EA3FE538A5F8.jpg": [],
+   "dontknow/91193BD6-DE93-40E9-B57E-6DA30E9EC862.jpg": [],
+   "dontknow/93C45AA7-6A78-4D45-B5E7-330473F0295A.jpg": [],
+   "dontknow/94AFC5C6-547E-48C4-81BD-E4735F9BE96F.jpg": [
+    {
+     "cls": "shoe",
+     "conf": 0.374,
+     "px": 403.0
+    }
+   ],
+   "dontknow/95581CED-AC39-4064-9D2B-A5084CCBC306.jpg": [],
+   "dontknow/96E8D6B8-CEF0-4F50-AC3F-ED05A7F40372.jpg": [],
+   "dontknow/9FC1CD3F-37E5-4A65-B7E7-837786FC1F52.jpg": [],
+   "dontknow/A26A6DBC-0428-4BB2-BB62-9727796E82F8.jpg": [],
+   "dontknow/A3B1DBAE-406B-43CB-91EC-D5DBDB9F12C1.jpg": [],
+   "dontknow/A3BA4914-51E9-4C7E-ACC5-E0F02D62A0F0.jpg": [],
+   "dontknow/A53E340C-56B8-4E48-90C8-D0858895FEFF.jpg": [],
+   "dontknow/A7B9814C-C8A1-4FC4-97CA-898771025268.jpg": [],
+   "dontknow/A90E210E-A688-4CAE-AC6B-3B7A53E003F2.jpg": [],
+   "dontknow/AD754D62-575D-4D9C-ADC5-A143E6EA894C.jpg": [],
+   "dontknow/ADAFC0F8-CC54-4409-8D81-49BBBE37BA34.jpg": [],
+   "dontknow/AF055665-DDE5-43DD-A2F0-03C169E98DB7.jpg": [],
+   "dontknow/AF40B408-9640-4ED6-A99C-DA7AA716D30F.jpg": [],
+   "dontknow/AFD53FFE-6DE9-4F19-9413-4302E579179E.jpg": [],
+   "dontknow/AFF74FF8-8582-4EC2-A4F6-E3DB22504139.jpg": [],
+   "dontknow/B81E0280-DF26-40C7-9051-7DD9359E86EC.jpg": [],
+   "dontknow/BD972BDC-31AF-44EA-A6CD-F4A62999CCBB.jpg": [],
+   "dontknow/BDA61FB0-5594-4089-91F1-0B758F35EA1B.jpg": [],
+   "dontknow/BE1D5751-F805-4034-A513-9DB6896143BF.jpg": [],
+   "dontknow/BFFE4A28-82E6-4FE0-8BD8-CF0766260650.jpg": [],
+   "dontknow/C55C81AF-BE86-442C-AEFF-215F28B8E11E.jpg": [],
+   "dontknow/C70C6A83-12D1-4B13-ADD6-30CA2EEE0AB2.jpg": [],
+   "dontknow/C7B22551-DD64-437E-B221-26E1BB3EB308_1_102_o.jpg": [],
+   "dontknow/CFBE84EE-C2C0-487C-A283-3C1736E383B1.jpg": [],
+   "dontknow/D2D60AAB-60C6-4208-9BF1-44C19F8EDC09.jpg": [],
+   "dontknow/D394CE52-ECE9-4C7B-BE7A-9F7E1B5F9C9D.jpg": [],
+   "dontknow/D3B77F49-0F5D-47A9-9C24-F5880A07E36A.jpg": [],
+   "dontknow/D6FBBC17-C503-4277-BC58-7DD9D3896CA3.jpg": [],
+   "dontknow/D75A0F9F-03BE-42BD-A396-98EE8415E569.jpg": [],
+   "dontknow/D7681FA0-8BC3-4B9A-9513-6210FBEBD003.jpg": [],
+   "dontknow/DA3211FB-F7CE-47BC-A024-0D2A2570574D.jpg": [],
+   "dontknow/E0752D11-C1CF-4BD4-BCD5-9189348E2569.jpg": [],
+   "dontknow/E7EEC497-32D1-430D-BB2B-9F09E36CBA6A.jpg": [],
+   "dontknow/E860BC5B-5EA5-45C4-8870-2A8AA4A27427.jpg": [],
+   "dontknow/E8F87470-6EEB-484D-81BA-0EADAF716AC5.jpg": [],
+   "dontknow/E90169CE-5E4C-4D66-8EDA-9C2FCFE99E25.jpg": [],
+   "dontknow/EB0525F9-0033-4ABE-86C5-D96C187F596E.jpg": [],
+   "dontknow/ECB04BEB-A96D-4B91-AEA9-138DB9D851B3.jpg": [],
+   "dontknow/ED886887-0D30-4FC0-827D-B883A1791DF3.jpg": [],
+   "dontknow/F20DEEC1-F636-4B79-84CB-C96BE7A62C3D.jpg": [],
+   "dontknow/F6C10282-22E3-4166-9BCA-0C2C43CFD121.jpg": [],
+   "dontknow/F971EE29-49C1-4A8C-9631-3576FDB29CCD.jpg": [],
+   "dontknow/F9D1E7A1-F9F9-4FE2-914E-07693E0BCDEA.jpg": [],
+   "dontknow/FA2C32C0-C86A-4F5A-9569-3C27DA29C01F.jpg": [],
+   "dontknow/FBC3915F-DE94-46C2-A16C-A80EBB42917A.jpg": [],
+   "dontknow/FDD96DD5-BBE1-498C-BAC0-3E075BE82BF3.jpg": [],
+   "dontknow/FF4CD43E-DD83-4344-8C2D-1B234158BCC6.jpg": [],
+   "dontknow/IMG_2151.jpg": [],
+   "dontknow/IMG_2723.jpg": [],
+   "dontknow/IMG_2729.jpg": [],
+   "dontknow/IMG_2748.jpg": [],
+   "glove/05BE0D5F-A8C4-4252-958D-5748844F7AE0.jpg": [],
+   "glove/B6FAEF83-1252-4B53-AC30-B15414344D0A.jpg": [],
+   "glove/E7D94548-4168-40C8-BE07-69E13F1FD7D9.jpg": [],
+   "glove/E84E85EE-21DB-47B8-B18A-FAAB5C3F78B7.jpg": [],
+   "paper/17362433-5E6C-4CA1-AAD6-DEB89F9418C4.jpg": [],
+   "paper/28B5BAFC-8B90-4397-B183-F8CA5882ABFB.jpg": [],
+   "paper/435B3DD7-1C3E-4CE8-99D7-A75E19177D12.jpg": [],
+   "paper/57846B35-27F5-46E1-8CCA-400929953D62.jpg": [],
+   "paper/65ED7CE3-93EC-4E89-AEB0-781E8758A28E.jpg": [],
+   "paper/F3857983-5168-4ADC-BDFE-E57501D28241.jpg": [],
+   "paper_bag/F9BE5F17-7287-47FB-BACA-DE14E986AE6E.jpg": [],
+   "paper_cup/F798A107-876D-48D0-9F20-C142467DB0D4.jpg": [],
+   "pine_cone/19586C07-AED3-4CAB-9786-5C4FC63278B1.jpg": [],
+   "pine_cone/461F069D-8C6B-4607-8B73-E43945B4AC68.jpg": [],
+   "pine_cone/7930DDD9-8DAB-4975-A130-8F0CBA86FC0D.jpg": [],
+   "plastic_bag/0F64E507-23B5-46A5-8B25-E7E5ED02C628.jpg": [],
+   "plastic_bag/201846A2-0FA4-4B20-9435-8E7EA1179012.jpg": [],
+   "plastic_bag/25322191-BC6F-45F0-99B8-E39843D9AE19.jpg": [],
+   "plastic_bag/2A764A8A-1BB4-426B-A97C-8DAE5C78FAC3.jpg": [],
+   "plastic_bag/4469CF9B-EB9F-4DB8-9B37-9F8D6BE95D00.jpg": [],
+   "plastic_bag/4871C131-47EA-43F6-BAC2-147BC431E432.jpg": [],
+   "plastic_bag/4F29855A-6480-4A0B-938E-5545CB66A537.jpg": [],
+   "plastic_bag/5891FD1A-D7B1-44A5-B5E9-CA8D2144D252.jpg": [],
+   "plastic_bag/868B6347-04D9-480E-8E2F-891EC929140D.jpg": [],
+   "plastic_bag/A70E66A7-9F9F-42AA-BCFA-1A05EF9DEF87.jpg": [],
+   "plastic_bag/C0D86296-B808-4E8B-95C4-EC84012EF8E7.jpg": [],
+   "plastic_bag/DE4D31A9-D36B-4570-A513-E72EE14B0263.jpg": [],
+   "plastic_bag/FF696AC4-DA1D-41CF-A87E-D497E3ACD081.jpg": [],
+   "plastic_bag/IMG_2247.jpg": [
+    {
+     "cls": "shoe",
+     "conf": 0.34,
+     "px": 846.4
+    },
+    {
+     "cls": "shoe",
+     "conf": 0.334,
+     "px": 759.6
+    }
+   ],
+   "plastic_bottle/0FC79A8F-45D8-45AB-879E-2CD23277BC90.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.824,
+     "px": 1781.0
+    }
+   ],
+   "plastic_bottle/0FC821EB-ED5B-44E4-A7BB-3ACC06FB1316.jpg": [],
+   "plastic_bottle/12AFD99C-F177-47FE-BE46-9A168ADD1E9C.jpg": [],
+   "plastic_bottle/4C4FCEFD-7E0E-4521-B3CE-452B544F4FDC.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.562,
+     "px": 1294.7
+    },
+    {
+     "cls": "bottle cap",
+     "conf": 0.315,
+     "px": 1296.9
+    }
+   ],
+   "plastic_bottle/68ECBDB3-8322-4793-8EC0-E295FEFE857F.jpg": [],
+   "plastic_bottle/72856E5E-5CCD-4E13-8076-3DFF153E5957.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.604,
+     "px": 1056.4
+    }
+   ],
+   "plastic_bottle/74E90D63-85D1-4D9F-81A9-ECC862DDD126.jpg": [],
+   "plastic_bottle/8C60E899-C6C4-4514-BF57-73ACFD2112CC.jpg": [],
+   "plastic_bottle/9077F88E-3E04-46FB-8E43-200A2C3FD425.jpg": [],
+   "plastic_bottle/985D3873-19D2-4063-8D9F-0073968B0457.jpg": [],
+   "plastic_bottle/A8E19D4F-A44C-45CD-B2F8-5BCD98D86388.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.832,
+     "px": 711.4
+    }
+   ],
+   "plastic_bottle/D7101843-D6BB-4CDF-AF83-A1E4A813ED50.jpg": [],
+   "plastic_bottle/D8503135-35BF-4F0A-AF2F-6C8A0D8DFC18.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.737,
+     "px": 877.9
+    }
+   ],
+   "plastic_bottle/E53F3EA6-9186-47A8-B871-82A3CEF13ECA.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.796,
+     "px": 826.9
+    }
+   ],
+   "plastic_bottle/EA370BDC-964C-49C2-840A-9FA45DB77779.jpg": [],
+   "plastic_bottle/ECBE9A44-4184-4485-8B2D-B9AC240B2ECD.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.32,
+     "px": 640.8
+    }
+   ],
+   "plastic_bottle/FFF1EEDD-2587-4C15-B52A-5BF37CD82B74.jpg": [],
+   "plastic_container/3066D25A-CF3C-44D4-BA85-24BD3C2A2257.jpg": [],
+   "plastic_container/6CB20218-509F-468C-A5B7-F5583A4F98E8.jpg": [],
+   "plastic_container/8FDB6A4C-9ED3-46BF-AF61-CA16595FFE52.jpg": [
+    {
+     "cls": "cardboard",
+     "conf": 0.179,
+     "px": 2379.0
+    }
+   ],
+   "plastic_container/DC50D211-D37F-40B3-B54D-68FEB58461C4.jpg": [],
+   "plastic_container/E9E9A56C-C605-4F19-9D2B-15D3F5E35853.jpg": [
+    {
+     "cls": "can",
+     "conf": 0.208,
+     "px": 734.4
+    }
+   ],
+   "plastic_piece/03D25FB8-054B-4F05-92F7-2714DEEEE016.jpg": [],
+   "plastic_piece/2824786D-0E75-4C9B-8C61-6FC56F342B7D.jpg": [],
+   "plastic_piece/2D14A411-7843-4451-B987-743838519AEF.jpg": [],
+   "plastic_piece/AF411464-B983-44B5-BC0A-76AC469B8B28.jpg": [],
+   "plastic_piece/B9E28B83-14D4-43ED-926A-63C126BA04CF.jpg": [
+    {
+     "cls": "chair",
+     "conf": 0.206,
+     "px": 1747.5
+    }
+   ],
+   "plastic_piece/IMG_2728.jpg": [],
+   "plastic_straw/04A093A4-BB63-4E0A-91C9-6183B9100791.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.285,
+     "px": 352.6
+    }
+   ],
+   "plastic_straw/A128D857-0BFB-44B7-A35B-ADB8F990C927.jpg": [],
+   "plastic_straw/AD4D94FD-87B3-4147-A776-42D4AB98EE02.jpg": [],
+   "plastic_straw/D6781D3F-9821-43FF-8851-031BA55E4DFB.jpg": [],
+   "plastic_straw/DE4BEF87-C34C-4EFF-B7F9-9D0A5DA903BE.jpg": [],
+   "plastic_wrapper/20EBB876-EDE8-4A5E-A686-2514A3F3BDEC.jpg": [],
+   "plastic_wrapper/24326C0F-133F-4B95-A983-19ADD10F9B16.jpg": [],
+   "plastic_wrapper/41728D7E-2016-421D-BD6A-21A4515944E1.jpg": [],
+   "plastic_wrapper/78435086-C5A6-4CC2-BB7F-980A8269AC4B.jpg": [],
+   "plastic_wrapper/84DEE582-F631-45FC-9437-1092BE7C90C7.jpg": [],
+   "plastic_wrapper/9C365D98-C2EC-4C99-B334-B291C704695D.jpg": [],
+   "plastic_wrapper/9D280621-8CE3-4A4E-A206-A579E0415F88.jpg": [],
+   "rope/DAFB6D5D-7F8D-45D5-B12A-28D02D5937A5.jpg": [],
+   "shoe/7925E56E-C03A-49EF-887A-043FE9958B0A.jpg": [],
+   "textile/3A3B812F-1650-4B9E-B2B2-FA5DBCE142DE.jpg": [],
+   "textile/645F850A-2B72-46B2-B5CE-01BFBCE25699.jpg": [],
+   "textile/8189826C-B722-4EF1-8FF2-136A29AE52B8.jpg": [],
+   "textile/A1159253-21D4-4032-AF02-B4EF00935CC5.jpg": [],
+   "textile/C5386BFC-CC65-4E32-BDCF-15E8195A7956.jpg": [],
+   "textile/DEE626BC-B9AC-4690-ADC1-21893C5B8CE3.jpg": [],
+   "tissue/DB7DF831-E55C-4596-B0DF-ECDD95D15706.jpg": []
+  }
+ },
+ "world_1280": {
+  "model": "yolov8x-worldv2.pt",
+  "imgsz": 1280,
+  "seconds": 140.1,
+  "prompts": [
+   "cigarette butt",
+   "cigarette",
+   "plastic bottle",
+   "bottle",
+   "can",
+   "plastic bag",
+   "wrapper",
+   "food wrapper",
+   "paper",
+   "paper cup",
+   "drinking straw",
+   "bottle cap",
+   "glove",
+   "cloth",
+   "shoe",
+   "chair",
+   "cardboard",
+   "trash",
+   "litter"
+  ],
+  "rows": {
+   "bottle_cap/26FE030A-6032-42EA-ADAB-E0199A423A9C.jpg": [
+    {
+     "cls": "shoe",
+     "conf": 0.707,
+     "px": 324.6
+    },
+    {
+     "cls": "bottle",
+     "conf": 0.24,
+     "px": 322.3
+    },
+    {
+     "cls": "glove",
+     "conf": 0.17,
+     "px": 442.3
+    }
+   ],
+   "bottle_cap/3C36CC35-517B-49B8-A969-60D974643088.jpg": [],
+   "bottle_cap/IMG_2753.jpg": [],
+   "can/5873E130-B505-4B37-8B3B-0D02587B44BD.jpg": [],
+   "can/5CCF8A29-65F5-44D9-9B96-F387975182FC.jpg": [],
+   "can/FE83DB06-AD3C-4E87-9486-99985354BB1A.jpg": [],
+   "can/IMG_2243.jpg": [
+    {
+     "cls": "shoe",
+     "conf": 0.471,
+     "px": 776.2
+    },
+    {
+     "cls": "shoe",
+     "conf": 0.271,
+     "px": 1016.6
+    }
+   ],
+   "candy_wrapper/66637352-21A9-4BB6-9D1C-90DB588D4239.jpg": [],
+   "candy_wrapper/BF94B731-68F6-41C2-8850-1D4B44FEDBFE.jpg": [],
+   "candy_wrapper/C3C436CF-2A3C-43E5-B10F-8A0A3F8F8733.jpg": [],
+   "candy_wrapper/E441EE48-24E7-4806-822E-EF960226CFE9.jpg": [],
+   "chair/291FC76E-5EE4-4E2D-B910-6FC4FFFC77D8.jpg": [
+    {
+     "cls": "shoe",
+     "conf": 0.154,
+     "px": 1712.3
+    }
+   ],
+   "chair/6C2C3813-8F7D-47BE-83EA-655DED6E38DB.jpg": [
+    {
+     "cls": "chair",
+     "conf": 0.323,
+     "px": 1766.4
+    }
+   ],
+   "chair/B5296087-7065-455C-AD77-14CA730EECF6.jpg": [],
+   "cigarette_butt/2158.jpg": [],
+   "cigarette_butt/IMG_1740.jpg": [],
+   "cigarette_butt/IMG_1741.jpg": [],
+   "cigarette_butt/IMG_1742.jpg": [],
+   "cigarette_butt/IMG_1744.jpg": [],
+   "cigarette_butt/IMG_1747.jpg": [],
+   "cigarette_butt/IMG_1748.jpg": [],
+   "cigarette_butt/IMG_1749.jpg": [],
+   "cigarette_butt/IMG_1750.jpg": [],
+   "cigarette_butt/IMG_1751.jpg": [],
+   "cigarette_butt/IMG_1752.jpg": [],
+   "cigarette_butt/IMG_1753.jpg": [],
+   "cigarette_butt/IMG_1754.jpg": [],
+   "cigarette_butt/IMG_1755.jpg": [],
+   "cigarette_butt/IMG_1756.jpg": [],
+   "cigarette_butt/IMG_1757.jpg": [],
+   "cigarette_butt/IMG_1758.jpg": [],
+   "cigarette_butt/IMG_1759.jpg": [],
+   "cigarette_butt/IMG_1760.jpg": [],
+   "cigarette_butt/IMG_1762.jpg": [],
+   "cigarette_butt/IMG_1763.jpg": [],
+   "cigarette_butt/IMG_1765.jpg": [],
+   "cigarette_butt/IMG_1766.jpg": [],
+   "cigarette_butt/IMG_2029.jpg": [],
+   "cigarette_butt/IMG_2150.jpg": [],
+   "cigarette_butt/IMG_2152.jpg": [],
+   "cigarette_butt/IMG_2153.jpg": [],
+   "cigarette_butt/IMG_2158.jpg": [],
+   "cigarette_butt/IMG_2159.jpg": [],
+   "cigarette_butt/IMG_2160.jpg": [],
+   "cigarette_butt/IMG_2724.jpg": [],
+   "cigarette_butt/IMG_2727.jpg": [],
+   "cigarette_butt/IMG_2731.jpg": [],
+   "cigarette_butt/IMG_2732.jpg": [],
+   "cigarette_butt/IMG_2733.jpg": [],
+   "cigarette_butt/IMG_2735.jpg": [],
+   "cigarette_butt/IMG_2737.jpg": [],
+   "cigarette_butt/IMG_2738.jpg": [],
+   "cigarette_butt/IMG_2749.jpg": [],
+   "cigarette_pack/IMG_2239.jpg": [],
+   "cigarette_pack/IMG_2240.jpg": [],
+   "cigarette_pack/IMG_2241.jpg": [
+    {
+     "cls": "cardboard",
+     "conf": 0.164,
+     "px": 1256.6
+    }
+   ],
+   "cigarette_pack/IMG_2242.jpg": [],
+   "cigarette_pack/IMG_2244.jpg": [],
+   "detergent_package/C6FD95AA-DB99-441E-B2D2-8A35BF39FE87.jpg": [],
+   "dontknow/0205AC66-AFDD-4DA5-9CC5-0D44888089C5.jpg": [],
+   "dontknow/05AB01AD-C4DC-4907-8892-F9B2854F9FE7.jpg": [],
+   "dontknow/09BEAD6E-A2CF-4224-9BC9-5DE053A08A50.jpg": [],
+   "dontknow/0C62CAFA-6F17-480E-A792-7B95C860F4DC.jpg": [],
+   "dontknow/0DB6C104-2222-4A59-B311-4EF1C1B17780.jpg": [],
+   "dontknow/1152637B-C808-4120-86A1-6AB3F9456F73.jpg": [],
+   "dontknow/11594E80-D3D1-4AB2-AC61-406DFC3DF2FC.jpg": [],
+   "dontknow/12A84CB1-61D9-40ED-AF26-CE4AD97715CF.jpg": [],
+   "dontknow/14C185B3-01A8-465A-B612-43E701FD38EF.jpg": [],
+   "dontknow/1638385B-B07C-4A71-BC5F-F02717C34B67.jpg": [],
+   "dontknow/180C83AB-2FC6-4BDD-B2B9-E2BD2F65EEA9_1_102_o.jpg": [
+    {
+     "cls": "shoe",
+     "conf": 0.512,
+     "px": 1080.8
+    }
+   ],
+   "dontknow/1893BC8B-EB4C-4AAD-BE60-D7CC300A321C.jpg": [],
+   "dontknow/19831F65-E4A5-47E5-8564-3705201E21D7.jpg": [],
+   "dontknow/1A157178-0A45-45C0-995B-F5C0900206F9.jpg": [],
+   "dontknow/1B7DBE3F-0ADC-443A-8DDF-AA3731E4F136.jpg": [],
+   "dontknow/1D711064-A5F5-45DC-BD3F-F01C3CBA827B.jpg": [],
+   "dontknow/1F55B97E-03EF-47A6-87E2-490D69C42C52.jpg": [],
+   "dontknow/238EF1E8-A73F-411D-A530-35EA67235673.jpg": [],
+   "dontknow/24B9D9BD-BE82-412D-BCD0-64BCFD25DA20.jpg": [],
+   "dontknow/29989D9E-317B-4C99-8499-59F905B4019C.jpg": [],
+   "dontknow/2A3DC1E7-10DC-42A1-8F25-0BDDE708ED07.jpg": [],
+   "dontknow/2A5C4788-3314-4DE1-B3CA-352793682B48.jpg": [],
+   "dontknow/2C02DC91-C31E-4707-8AB0-B6EA9BDEC1AC.jpg": [],
+   "dontknow/2E72F522-CEC4-4950-A0C2-A69FA0EF6CCB.jpg": [],
+   "dontknow/2F0308DB-73D2-45F5-8C5E-5E3B266C7297.jpg": [],
+   "dontknow/36FCC527-E154-4F5A-A906-6869CB102183.jpg": [],
+   "dontknow/3C9252EA-C324-46B4-8505-87868E6EC5C5.jpg": [],
+   "dontknow/3FF75A03-9FD4-4CFC-9C21-BD261682EAF6.jpg": [],
+   "dontknow/40FFAD92-795D-49EF-8D15-340E085666FD.jpg": [],
+   "dontknow/4202942C-752C-4BFF-968A-E2F2C58BD94D.jpg": [],
+   "dontknow/44F075AC-9269-4069-B023-BBD5C3FEB247.jpg": [],
+   "dontknow/450C5168-5CA1-49A5-BB98-825733A0ACA9.jpg": [],
+   "dontknow/4A13CD9B-CA10-43ED-B6C8-887120963D55.jpg": [],
+   "dontknow/4AD5E0EE-5060-42C4-B497-F0C4F89AD068.jpg": [],
+   "dontknow/5464CDE3-8907-4EC5-9620-CFDDC2655C02.jpg": [],
+   "dontknow/561EAECC-6311-4BD4-A68A-E77BDDC6CBFC.jpg": [],
+   "dontknow/57667385-6AF9-4B5A-A74D-7C97AB646BC5.jpg": [],
+   "dontknow/5CAC03A2-53A5-4582-B35D-8FFED90C679C.jpg": [],
+   "dontknow/5CF94367-811C-44F7-86FC-2B74F27CC61D.jpg": [],
+   "dontknow/5D4827A5-318B-4BB7-8790-14AF36D96041.jpg": [
+    {
+     "cls": "chair",
+     "conf": 0.282,
+     "px": 286.6
+    }
+   ],
+   "dontknow/620130DC-9330-47B0-B890-2886769327CD.jpg": [],
+   "dontknow/67C5F675-27CA-424F-BC8C-F36F6BD4B8A5.jpg": [],
+   "dontknow/727A97A5-A215-4A6F-BC28-C6E1E2BC31C6.jpg": [],
+   "dontknow/7409762D-FB39-434E-89C2-72C6C0FB08BB.jpg": [],
+   "dontknow/74F35FA6-77C5-4792-A4CD-A89CC39E2692.jpg": [],
+   "dontknow/75BC3CE7-970F-4149-81DD-EF50517A5F02.jpg": [],
+   "dontknow/7CAA4D21-3464-4144-B33E-E3F1E0D02324.jpg": [],
+   "dontknow/7D1EACCF-B7E0-4897-A10F-0A598A5D5C70.jpg": [],
+   "dontknow/80B9411C-9C46-4D35-B7A6-38B53F2C6198.jpg": [],
+   "dontknow/82D4A1F3-8C5F-497D-96DA-4DC5B7A8BDB1.jpg": [],
+   "dontknow/8502E8CF-C4B6-4B19-BF57-27E644584AF5.jpg": [],
+   "dontknow/87D3DB9A-102A-4D12-B96D-A5B6AAFCC3B4.jpg": [],
+   "dontknow/8D48D1BA-3137-4DA0-A343-EA3FE538A5F8.jpg": [],
+   "dontknow/91193BD6-DE93-40E9-B57E-6DA30E9EC862.jpg": [],
+   "dontknow/93C45AA7-6A78-4D45-B5E7-330473F0295A.jpg": [],
+   "dontknow/94AFC5C6-547E-48C4-81BD-E4735F9BE96F.jpg": [],
+   "dontknow/95581CED-AC39-4064-9D2B-A5084CCBC306.jpg": [],
+   "dontknow/96E8D6B8-CEF0-4F50-AC3F-ED05A7F40372.jpg": [],
+   "dontknow/9FC1CD3F-37E5-4A65-B7E7-837786FC1F52.jpg": [],
+   "dontknow/A26A6DBC-0428-4BB2-BB62-9727796E82F8.jpg": [],
+   "dontknow/A3B1DBAE-406B-43CB-91EC-D5DBDB9F12C1.jpg": [],
+   "dontknow/A3BA4914-51E9-4C7E-ACC5-E0F02D62A0F0.jpg": [],
+   "dontknow/A53E340C-56B8-4E48-90C8-D0858895FEFF.jpg": [],
+   "dontknow/A7B9814C-C8A1-4FC4-97CA-898771025268.jpg": [],
+   "dontknow/A90E210E-A688-4CAE-AC6B-3B7A53E003F2.jpg": [],
+   "dontknow/AD754D62-575D-4D9C-ADC5-A143E6EA894C.jpg": [],
+   "dontknow/ADAFC0F8-CC54-4409-8D81-49BBBE37BA34.jpg": [],
+   "dontknow/AF055665-DDE5-43DD-A2F0-03C169E98DB7.jpg": [],
+   "dontknow/AF40B408-9640-4ED6-A99C-DA7AA716D30F.jpg": [],
+   "dontknow/AFD53FFE-6DE9-4F19-9413-4302E579179E.jpg": [],
+   "dontknow/AFF74FF8-8582-4EC2-A4F6-E3DB22504139.jpg": [],
+   "dontknow/B81E0280-DF26-40C7-9051-7DD9359E86EC.jpg": [],
+   "dontknow/BD972BDC-31AF-44EA-A6CD-F4A62999CCBB.jpg": [],
+   "dontknow/BDA61FB0-5594-4089-91F1-0B758F35EA1B.jpg": [],
+   "dontknow/BE1D5751-F805-4034-A513-9DB6896143BF.jpg": [],
+   "dontknow/BFFE4A28-82E6-4FE0-8BD8-CF0766260650.jpg": [],
+   "dontknow/C55C81AF-BE86-442C-AEFF-215F28B8E11E.jpg": [],
+   "dontknow/C70C6A83-12D1-4B13-ADD6-30CA2EEE0AB2.jpg": [],
+   "dontknow/C7B22551-DD64-437E-B221-26E1BB3EB308_1_102_o.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.226,
+     "px": 344.5
+    }
+   ],
+   "dontknow/CFBE84EE-C2C0-487C-A283-3C1736E383B1.jpg": [],
+   "dontknow/D2D60AAB-60C6-4208-9BF1-44C19F8EDC09.jpg": [],
+   "dontknow/D394CE52-ECE9-4C7B-BE7A-9F7E1B5F9C9D.jpg": [],
+   "dontknow/D3B77F49-0F5D-47A9-9C24-F5880A07E36A.jpg": [
+    {
+     "cls": "chair",
+     "conf": 0.177,
+     "px": 233.4
+    }
+   ],
+   "dontknow/D6FBBC17-C503-4277-BC58-7DD9D3896CA3.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.296,
+     "px": 719.8
+    }
+   ],
+   "dontknow/D75A0F9F-03BE-42BD-A396-98EE8415E569.jpg": [],
+   "dontknow/D7681FA0-8BC3-4B9A-9513-6210FBEBD003.jpg": [],
+   "dontknow/DA3211FB-F7CE-47BC-A024-0D2A2570574D.jpg": [],
+   "dontknow/E0752D11-C1CF-4BD4-BCD5-9189348E2569.jpg": [],
+   "dontknow/E7EEC497-32D1-430D-BB2B-9F09E36CBA6A.jpg": [],
+   "dontknow/E860BC5B-5EA5-45C4-8870-2A8AA4A27427.jpg": [],
+   "dontknow/E8F87470-6EEB-484D-81BA-0EADAF716AC5.jpg": [],
+   "dontknow/E90169CE-5E4C-4D66-8EDA-9C2FCFE99E25.jpg": [],
+   "dontknow/EB0525F9-0033-4ABE-86C5-D96C187F596E.jpg": [],
+   "dontknow/ECB04BEB-A96D-4B91-AEA9-138DB9D851B3.jpg": [],
+   "dontknow/ED886887-0D30-4FC0-827D-B883A1791DF3.jpg": [],
+   "dontknow/F20DEEC1-F636-4B79-84CB-C96BE7A62C3D.jpg": [],
+   "dontknow/F6C10282-22E3-4166-9BCA-0C2C43CFD121.jpg": [],
+   "dontknow/F971EE29-49C1-4A8C-9631-3576FDB29CCD.jpg": [],
+   "dontknow/F9D1E7A1-F9F9-4FE2-914E-07693E0BCDEA.jpg": [],
+   "dontknow/FA2C32C0-C86A-4F5A-9569-3C27DA29C01F.jpg": [],
+   "dontknow/FBC3915F-DE94-46C2-A16C-A80EBB42917A.jpg": [],
+   "dontknow/FDD96DD5-BBE1-498C-BAC0-3E075BE82BF3.jpg": [],
+   "dontknow/FF4CD43E-DD83-4344-8C2D-1B234158BCC6.jpg": [],
+   "dontknow/IMG_2151.jpg": [],
+   "dontknow/IMG_2723.jpg": [],
+   "dontknow/IMG_2729.jpg": [],
+   "dontknow/IMG_2748.jpg": [],
+   "glove/05BE0D5F-A8C4-4252-958D-5748844F7AE0.jpg": [],
+   "glove/B6FAEF83-1252-4B53-AC30-B15414344D0A.jpg": [],
+   "glove/E7D94548-4168-40C8-BE07-69E13F1FD7D9.jpg": [],
+   "glove/E84E85EE-21DB-47B8-B18A-FAAB5C3F78B7.jpg": [],
+   "paper/17362433-5E6C-4CA1-AAD6-DEB89F9418C4.jpg": [],
+   "paper/28B5BAFC-8B90-4397-B183-F8CA5882ABFB.jpg": [],
+   "paper/435B3DD7-1C3E-4CE8-99D7-A75E19177D12.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.345,
+     "px": 333.7
+    }
+   ],
+   "paper/57846B35-27F5-46E1-8CCA-400929953D62.jpg": [],
+   "paper/65ED7CE3-93EC-4E89-AEB0-781E8758A28E.jpg": [],
+   "paper/F3857983-5168-4ADC-BDFE-E57501D28241.jpg": [],
+   "paper_bag/F9BE5F17-7287-47FB-BACA-DE14E986AE6E.jpg": [
+    {
+     "cls": "shoe",
+     "conf": 0.374,
+     "px": 406.2
+    }
+   ],
+   "paper_cup/F798A107-876D-48D0-9F20-C142467DB0D4.jpg": [],
+   "pine_cone/19586C07-AED3-4CAB-9786-5C4FC63278B1.jpg": [],
+   "pine_cone/461F069D-8C6B-4607-8B73-E43945B4AC68.jpg": [],
+   "pine_cone/7930DDD9-8DAB-4975-A130-8F0CBA86FC0D.jpg": [],
+   "plastic_bag/0F64E507-23B5-46A5-8B25-E7E5ED02C628.jpg": [],
+   "plastic_bag/201846A2-0FA4-4B20-9435-8E7EA1179012.jpg": [],
+   "plastic_bag/25322191-BC6F-45F0-99B8-E39843D9AE19.jpg": [],
+   "plastic_bag/2A764A8A-1BB4-426B-A97C-8DAE5C78FAC3.jpg": [],
+   "plastic_bag/4469CF9B-EB9F-4DB8-9B37-9F8D6BE95D00.jpg": [],
+   "plastic_bag/4871C131-47EA-43F6-BAC2-147BC431E432.jpg": [],
+   "plastic_bag/4F29855A-6480-4A0B-938E-5545CB66A537.jpg": [],
+   "plastic_bag/5891FD1A-D7B1-44A5-B5E9-CA8D2144D252.jpg": [],
+   "plastic_bag/868B6347-04D9-480E-8E2F-891EC929140D.jpg": [],
+   "plastic_bag/A70E66A7-9F9F-42AA-BCFA-1A05EF9DEF87.jpg": [],
+   "plastic_bag/C0D86296-B808-4E8B-95C4-EC84012EF8E7.jpg": [],
+   "plastic_bag/DE4D31A9-D36B-4570-A513-E72EE14B0263.jpg": [],
+   "plastic_bag/FF696AC4-DA1D-41CF-A87E-D497E3ACD081.jpg": [],
+   "plastic_bag/IMG_2247.jpg": [
+    {
+     "cls": "shoe",
+     "conf": 0.552,
+     "px": 751.7
+    },
+    {
+     "cls": "shoe",
+     "conf": 0.242,
+     "px": 775.4
+    }
+   ],
+   "plastic_bottle/0FC79A8F-45D8-45AB-879E-2CD23277BC90.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.875,
+     "px": 1743.1
+    },
+    {
+     "cls": "plastic bottle",
+     "conf": 0.864,
+     "px": 1744.7
+    }
+   ],
+   "plastic_bottle/0FC821EB-ED5B-44E4-A7BB-3ACC06FB1316.jpg": [],
+   "plastic_bottle/12AFD99C-F177-47FE-BE46-9A168ADD1E9C.jpg": [],
+   "plastic_bottle/4C4FCEFD-7E0E-4521-B3CE-452B544F4FDC.jpg": [],
+   "plastic_bottle/68ECBDB3-8322-4793-8EC0-E295FEFE857F.jpg": [],
+   "plastic_bottle/72856E5E-5CCD-4E13-8076-3DFF153E5957.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.483,
+     "px": 1043.7
+    },
+    {
+     "cls": "plastic bottle",
+     "conf": 0.205,
+     "px": 1048.9
+    }
+   ],
+   "plastic_bottle/74E90D63-85D1-4D9F-81A9-ECC862DDD126.jpg": [],
+   "plastic_bottle/8C60E899-C6C4-4514-BF57-73ACFD2112CC.jpg": [],
+   "plastic_bottle/9077F88E-3E04-46FB-8E43-200A2C3FD425.jpg": [],
+   "plastic_bottle/985D3873-19D2-4063-8D9F-0073968B0457.jpg": [],
+   "plastic_bottle/A8E19D4F-A44C-45CD-B2F8-5BCD98D86388.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.6,
+     "px": 666.0
+    }
+   ],
+   "plastic_bottle/D7101843-D6BB-4CDF-AF83-A1E4A813ED50.jpg": [],
+   "plastic_bottle/D8503135-35BF-4F0A-AF2F-6C8A0D8DFC18.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.854,
+     "px": 897.0
+    }
+   ],
+   "plastic_bottle/E53F3EA6-9186-47A8-B871-82A3CEF13ECA.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.852,
+     "px": 836.0
+    }
+   ],
+   "plastic_bottle/EA370BDC-964C-49C2-840A-9FA45DB77779.jpg": [],
+   "plastic_bottle/ECBE9A44-4184-4485-8B2D-B9AC240B2ECD.jpg": [
+    {
+     "cls": "bottle",
+     "conf": 0.675,
+     "px": 634.7
+    }
+   ],
+   "plastic_bottle/FFF1EEDD-2587-4C15-B52A-5BF37CD82B74.jpg": [],
+   "plastic_container/3066D25A-CF3C-44D4-BA85-24BD3C2A2257.jpg": [],
+   "plastic_container/6CB20218-509F-468C-A5B7-F5583A4F98E8.jpg": [
+    {
+     "cls": "cardboard",
+     "conf": 0.159,
+     "px": 1347.6
+    }
+   ],
+   "plastic_container/8FDB6A4C-9ED3-46BF-AF61-CA16595FFE52.jpg": [],
+   "plastic_container/DC50D211-D37F-40B3-B54D-68FEB58461C4.jpg": [
+    {
+     "cls": "cardboard",
+     "conf": 0.15,
+     "px": 1324.2
+    }
+   ],
+   "plastic_container/E9E9A56C-C605-4F19-9D2B-15D3F5E35853.jpg": [
+    {
+     "cls": "can",
+     "conf": 0.349,
+     "px": 724.3
+    }
+   ],
+   "plastic_piece/03D25FB8-054B-4F05-92F7-2714DEEEE016.jpg": [],
+   "plastic_piece/2824786D-0E75-4C9B-8C61-6FC56F342B7D.jpg": [],
+   "plastic_piece/2D14A411-7843-4451-B987-743838519AEF.jpg": [],
+   "plastic_piece/AF411464-B983-44B5-BC0A-76AC469B8B28.jpg": [],
+   "plastic_piece/B9E28B83-14D4-43ED-926A-63C126BA04CF.jpg": [
+    {
+     "cls": "shoe",
+     "conf": 0.205,
+     "px": 1662.9
+    }
+   ],
+   "plastic_piece/IMG_2728.jpg": [],
+   "plastic_straw/04A093A4-BB63-4E0A-91C9-6183B9100791.jpg": [],
+   "plastic_straw/A128D857-0BFB-44B7-A35B-ADB8F990C927.jpg": [],
+   "plastic_straw/AD4D94FD-87B3-4147-A776-42D4AB98EE02.jpg": [],
+   "plastic_straw/D6781D3F-9821-43FF-8851-031BA55E4DFB.jpg": [],
+   "plastic_straw/DE4BEF87-C34C-4EFF-B7F9-9D0A5DA903BE.jpg": [],
+   "plastic_wrapper/20EBB876-EDE8-4A5E-A686-2514A3F3BDEC.jpg": [],
+   "plastic_wrapper/24326C0F-133F-4B95-A983-19ADD10F9B16.jpg": [],
+   "plastic_wrapper/41728D7E-2016-421D-BD6A-21A4515944E1.jpg": [],
+   "plastic_wrapper/78435086-C5A6-4CC2-BB7F-980A8269AC4B.jpg": [],
+   "plastic_wrapper/84DEE582-F631-45FC-9437-1092BE7C90C7.jpg": [],
+   "plastic_wrapper/9C365D98-C2EC-4C99-B334-B291C704695D.jpg": [],
+   "plastic_wrapper/9D280621-8CE3-4A4E-A206-A579E0415F88.jpg": [],
+   "rope/DAFB6D5D-7F8D-45D5-B12A-28D02D5937A5.jpg": [],
+   "shoe/7925E56E-C03A-49EF-887A-043FE9958B0A.jpg": [
+    {
+     "cls": "chair",
+     "conf": 0.255,
+     "px": 315.1
+    }
+   ],
+   "textile/3A3B812F-1650-4B9E-B2B2-FA5DBCE142DE.jpg": [],
+   "textile/645F850A-2B72-46B2-B5CE-01BFBCE25699.jpg": [],
+   "textile/8189826C-B722-4EF1-8FF2-136A29AE52B8.jpg": [],
+   "textile/A1159253-21D4-4032-AF02-B4EF00935CC5.jpg": [],
+   "textile/C5386BFC-CC65-4E32-BDCF-15E8195A7956.jpg": [],
+   "textile/DEE626BC-B9AC-4690-ADC1-21893C5B8CE3.jpg": [],
+   "tissue/DB7DF831-E55C-4596-B0DF-ECDD95D15706.jpg": []
+  }
+ }
+}
