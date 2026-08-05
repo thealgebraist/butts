@@ -1,0 +1,388 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2.4cm]{geometry}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{float}
+\usepackage[colorlinks=true,linkcolor=black,urlcolor=blue]{hyperref}
+
+\definecolor{warn}{RGB}{176,0,32}
+\definecolor{ok}{RGB}{0,110,60}
+\newcommand{\gap}[1]{\textcolor{warn}{\textbf{#1}}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\small Waste-detection dataset plan}
+\lhead{\small\thepage}
+\setlength{\headheight}{14pt}
+
+\title{\textbf{Building a Training Set for Drone-and-Buggy Litter Detection}\\[2mm]
+\large Gap analysis of the current image set and a capture plan}
+\author{}
+\date{\today}
+
+\begin{document}
+\maketitle
+\thispagestyle{fancy}
+
+\section*{Summary}
+
+The target system is a three-stage pipeline: a 4K drone scans from high altitude,
+descends for a low-altitude pass, and a ground buggy with a camera and arm
+retrieves the objects. Each stage sees objects at a completely different scale,
+from a completely different angle, and the current image set supports
+\emph{none of them}.
+
+Three findings drive everything below.
+
+\begin{enumerate}[leftmargin=*]
+\item \gap{There is no aerial imagery at all.} All 244 images are handheld
+iPhone photographs taken from roughly waist height. The directory scaffold for
+aerial, occlusion, lighting and weather variation exists but contains only 27
+\texttt{.gitkeep} placeholder files and zero images.
+
+\item \gap{Detecting cigarette butts from 20\,m is not possible with a 4K
+camera.} This is a physical limit, not a model-quality problem
+(Section~\ref{sec:gsd}). At 20\,m a butt spans about 3 pixels. No amount of
+training fixes that. The mission profile has to be restructured around what each
+altitude can actually resolve.
+
+\item \gap{The set is too small and too unbalanced to train on.} After
+classification, 107 of 244 images contain no identifiable object, and 13 of the
+23 classes have five examples or fewer. Useful object detection needs on the
+order of $10^3$ instances per class, not $10^0$.
+\end{enumerate}
+
+The good news is that the hard part --- knowing what the target objects look like
+in situ, and a working manual polygon annotation workflow --- already exists and
+should be preserved.
+
+\section{What the dataset currently is}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{lr}
+\toprule
+\textbf{Property} & \textbf{Value} \\
+\midrule
+Images & 244 \\
+Capture device & iPhone SE (3rd gen), 242/244 \\
+Resolution & $4032\times3024$ (12\,MP), 240/244 \\
+Images with GPS EXIF & 242 \\
+Viewpoint & Handheld, ground level, near-nadir \\
+Altitudes represented & One ($\approx$1.2\,m handheld) \\
+Manually annotated files & 100 \\
+Manual polygons & 331 \\
+--- of which are background (rock, grass, road, sky) & 205 \\
+--- of which are waste objects & 126 \\
+Classes after auto-classification & 23 (+ \texttt{dontknow}) \\
+\bottomrule
+\end{tabular}
+\caption{Current state. Every image comes from a single camera at a single
+height, which means the model cannot learn scale or viewpoint invariance from
+this data.}
+\end{table}
+
+\noindent Class distribution is severely long-tailed:
+
+\begin{center}
+\begin{tabular}{lr@{\hskip 1.2cm}lr}
+\toprule
+\textbf{Class} & \textbf{n} & \textbf{Class} & \textbf{n} \\
+\midrule
+\texttt{dontknow} (no object found) & 107 & \texttt{glove} & 4 \\
+\texttt{cigarette\_butt} & 39 & \texttt{candy\_wrapper} & 4 \\
+\texttt{plastic\_bottle} & 17 & \texttt{can} & 4 \\
+\texttt{plastic\_bag} & 14 & \texttt{pine\_cone} & 3 \\
+\texttt{plastic\_wrapper} & 7 & \texttt{chair} & 3 \\
+\texttt{textile}, \texttt{plastic\_piece}, \texttt{paper} & 6 each & \texttt{bottle\_cap} & 3 \\
+\texttt{straw}, \texttt{container}, \texttt{cig\_pack} & 5 each & 6 further classes & 1 each \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section{The resolution limit sets the mission profile}
+\label{sec:gsd}
+
+Ground sample distance (GSD) is how much real-world length one pixel covers:
+\[
+\mathrm{GSD} = \frac{2h\tan(\theta/2)}{W}
+\]
+for altitude $h$, horizontal field of view $\theta$, and image width $W$ pixels.
+For a 4K sensor ($W=3840$) with a typical 24\,mm-equivalent drone lens
+($\theta \approx 73^\circ$):
+
+\begin{table}[H]
+\centering
+\begin{tabular}{rrr rrrrr}
+\toprule
+\textbf{Alt.} & \textbf{Swath} & \textbf{GSD} & \multicolumn{5}{c}{\textbf{Object size in pixels (longest dimension)}} \\
+\cmidrule(l){4-8}
+(m) & (m) & (mm/px) & Cig.\ butt & Cap & Wrapper & Bottle & Chair \\
+\midrule
+20   & 29.6 & 7.71 & \gap{3.2}  & \gap{3.9}  & \gap{7.8}  & 32     & 104 \\
+10   & 14.8 & 3.85 & \gap{6.5}  & \gap{7.8}  & \gap{15.6} & 65     & 208 \\
+5    & 7.4  & 1.93 & \gap{13.0} & \gap{15.6} & 31         & 130    & 415 \\
+2    & 3.0  & 0.77 & 32         & 39         & 78         & 324    & 1038 \\
+1    & 1.5  & 0.39 & 65         & 78         & 156        & 649    & 2076 \\
+0.2  & 0.3  & 0.08 & 324        & 389        & 778        & 3243   & 10379 \\
+\bottomrule
+\end{tabular}
+\caption{Red entries fall below roughly 20\,px, the practical floor at which
+small-object detectors still work. A cigarette butt is about $8\times25$\,mm.}
+\end{table}
+
+\noindent Inverting this gives the \textbf{maximum altitude at which each object
+class is still detectable} (20\,px threshold):
+
+\begin{center}
+\begin{tabular}{lr}
+\toprule
+\textbf{Object} & \textbf{Max.\ altitude} \\
+\midrule
+Cigarette butt & 3.2\,m \\
+Bottle cap     & 3.9\,m \\
+Wrapper        & 7.8\,m \\
+Plastic bottle & 32\,m \\
+Chair / large debris & 100\,m+ \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{Consequence for the planned mission}
+
+The proposed profile --- scan at 20\,m, then 1--2\,m, then buggy --- needs one
+correction: \textbf{the 20\,m pass cannot be a litter-detection pass}. It should
+be re-scoped as a \emph{survey} pass that produces:
+\begin{itemize}[leftmargin=*,itemsep=1pt]
+\item detections of large items only (bottles, bags, cans, furniture);
+\item a terrain/surface map (grass vs.\ gravel vs.\ asphalt) used to prioritise;
+\item a coverage plan for the low pass.
+\end{itemize}
+
+Small-object detection has to happen on the \textbf{1--2\,m pass}, where a butt
+is 32--65\,px. Note the cost: at 2\,m the swath is only 3\,m wide, so covering
+one hectare takes roughly 3.3\,km of flight track. Budget the low pass over
+prioritised regions, not the whole area --- which is exactly what the high pass
+should be producing.
+
+A useful lever: if the drone can carry a longer lens or crop-zoom, the 20\,m pass
+gains proportional resolution. Doubling focal length halves GSD and halves the
+required low-pass coverage. Worth testing before committing to a flight plan.
+
+\section{What needs to be captured}
+
+Targets below assume a detector trained per class. Quantities are
+\emph{annotated object instances}, not images; one image can carry many.
+
+\subsection{Altitude and viewpoint coverage}
+
+\begin{center}
+\begin{tabular}{llll}
+\toprule
+\textbf{Tier} & \textbf{Height} & \textbf{Angle} & \textbf{Purpose} \\
+\midrule
+Buggy-low   & 0.2\,m & 0--30$^\circ$ oblique & Final approach, arm alignment \\
+Buggy-high  & 1\,m   & nadir + 45$^\circ$    & Buggy search/navigation \\
+Drone-low   & 2\,m   & nadir                 & Primary small-object detection \\
+Drone-low   & 5\,m   & nadir + 30$^\circ$    & Transition scale \\
+Drone-high  & 10\,m  & nadir                 & Large-object detection \\
+Drone-high  & 20\,m+ & nadir                 & Survey, terrain prioritisation \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent \textbf{The single most valuable capture method} is the
+\emph{altitude ladder}: place a known object, then photograph the identical
+scene at 0.2, 1, 2, 5, 10 and 20\,m without moving anything. This yields exact
+cross-scale correspondence, lets you measure empirically where each class stops
+being detectable, and supports scale-augmentation training. Repeat per surface
+type. Roughly 50 ladders would transform the dataset's usefulness.
+
+Angles matter because the buggy sees objects obliquely while the drone sees them
+from directly above --- these look nothing alike. Every class needs both.
+
+\subsection{Occlusion}
+
+Currently unrepresented as a labelled axis. Capture each class at four levels,
+and \textbf{record the occlusion fraction in the annotation} so it can be
+evaluated separately:
+
+\begin{center}
+\begin{tabular}{ll}
+\toprule
+\textbf{Level} & \textbf{Definition} \\
+\midrule
+None    & Fully visible against surface \\
+Light   & $<25\%$ hidden; grass blades crossing the object \\
+Partial & 25--60\% hidden; in grass tufts, under leaf edges \\
+Heavy   & $>60\%$ hidden; only a fragment protrudes \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Occluders to cover explicitly: tall grass, cut grass, dead leaves, loose soil,
+gravel, twigs/pine needles, puddles, and \emph{other litter} (overlapping
+objects, which the pipeline will meet in dumping hot-spots).
+
+\subsection{Surface, lighting, weather}
+
+Backgrounds already present are gravel, soil and grass. Missing and needed:
+asphalt, concrete/paving, sand, wood chip, leaf litter, and short mown lawn.
+Surface matters more than usual here because low-contrast pairings are the hard
+cases --- a beige butt on gravel, a clear bottle on wet asphalt.
+
+Lighting in the current set is 230/244 bright sunlight. Required additions:
+overcast, deep shadow, dappled shade under trees, golden hour with long shadows,
+and dawn/dusk. Add wet-surface and post-rain conditions. If night operation is
+intended, capture under drone illumination.
+
+\subsection{Negatives}
+
+The 107 \texttt{dontknow} images are an asset, not waste --- they are
+\textbf{hard negatives}: real ground with no litter. Keep them as explicitly
+labelled empty frames. Add deliberate confusers: pine cones, stones, leaves,
+bark, dog waste, twigs, mushrooms, and flowers, all of which resemble litter at
+low pixel counts. Target 20--30\% of the final set as negatives.
+
+\subsection{Volume targets}
+
+\begin{center}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Class tier} & \textbf{Instances (minimum)} & \textbf{Instances (comfortable)} \\
+\midrule
+Priority (cigarette butt, bottle, can, wrapper, bag) & 1{,}000 & 3{,}000 \\
+Secondary (cup, cap, straw, glove, textile, paper)   & 500     & 1{,}500 \\
+Rare / large (chair, crate, furniture)               & 200     & 500 \\
+Hard negatives (empty ground, confusers)             & 2{,}000 & 5{,}000 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+Each priority-class instance count should be spread across the altitude tiers,
+not concentrated at one height. A practical rule: no more than 40\% of a class's
+instances from any single altitude tier.
+
+\section{Annotation requirements}
+
+The existing polygon workflow is sound and should continue --- polygons are worth
+the extra effort here because they support segmentation, and grasp planning for
+the arm needs object outline, not just a box.
+
+Changes needed:
+
+\begin{enumerate}[leftmargin=*,itemsep=2pt]
+\item \gap{Fix the label vocabulary.} Current labels mix Danish and English
+(\texttt{serviet}, \texttt{krukker}, \texttt{grankogler}) and contain typos and
+truncations (\texttt{dirty\_clot}, \texttt{dirt\_r}, \texttt{bottle\_},
+\texttt{gra}, \texttt{1}, \texttt{2}). Freeze a controlled vocabulary and
+validate against it at annotation time.
+
+\item \gap{Separate background from object classes.} 205 of 331 polygons label
+terrain (rock, grass, road, sky). These are useful for a segmentation task but
+must not be mixed into the detector's object classes.
+
+\item \textbf{Record per-instance metadata}: altitude, camera angle, occlusion
+level, surface, lighting. Without these the evaluation in Section~\ref{sec:test}
+cannot be broken down, and you will not know \emph{where} the model fails.
+
+\item \textbf{Add a scale reference} to capture sessions --- a coloured marker of
+known size in frame lets you verify GSD and recover real object dimensions,
+which the arm needs for grasp sizing.
+
+\item \textbf{Verify a sample by hand.} Spot-checks during this analysis found
+manual labels that disagree with the imagery (one \texttt{paper} polygon
+contains a drinking straw; \texttt{dirty\_cloth} is most likely automotive
+carpet). Budget a second-pass review.
+\end{enumerate}
+
+\section{Test videos for offline evaluation}
+\label{sec:test}
+
+Video is the right evaluation medium because the deployed system sees motion,
+motion blur and repeated views of the same object --- and because a video lets
+you measure \emph{tracking consistency}, which single images cannot.
+
+\textbf{General recording rules.} Record 4K at 30\,fps, in the highest-quality
+codec available, with stabilisation \emph{off} for at least half the takes (the
+model must tolerate real vibration). Log altitude, speed and GPS. Before each
+take, place a known object set and photograph a ground-truth layout map, so every
+object in the scene has a known identity and position. Keep takes to 60--90\,s.
+
+\subsection*{Required takes}
+
+\begin{longtable}{p{3.4cm}p{4.1cm}p{7.3cm}}
+\toprule
+\textbf{Take} & \textbf{Profile} & \textbf{What it measures} \\
+\midrule
+\endhead
+Altitude descent & Hover, descend 20\,m$\rightarrow$1\,m over a fixed seeded plot & The empirical detection threshold per class. The altitude at which each object first appears is the single most useful number you can collect. \\
+\addlinespace
+High survey lawn & 20\,m, 3\,m/s, straight transects & Large-object recall and false-positive rate over open ground. \\
+\addlinespace
+Low sweep & 2\,m, 1\,m/s, parallel tracks with 20\% overlap & Primary small-object detection performance; also validates that the swath/overlap plan actually achieves full coverage. \\
+\addlinespace
+Speed sweep & 2\,m at 0.5, 1, 2, 4\,m/s & Where motion blur breaks detection --- sets the operational speed limit. \\
+\addlinespace
+Occlusion plot & 2\,m over a plot seeded at all four occlusion levels & Recall as a function of occlusion; the number to quote when scoping expectations. \\
+\addlinespace
+Surface transition & 2\,m crossing grass$\rightarrow$gravel$\rightarrow$asphalt & Background-shift robustness within a single continuous clip. \\
+\addlinespace
+Lighting series & Same plot at dawn, noon, overcast, dusk, wet & Illumination sensitivity with all else held constant. \\
+\addlinespace
+Buggy approach & 1\,m$\rightarrow$0.2\,m driving toward a target & The handoff: does the object stay tracked as it grows and the angle flattens? \\
+\addlinespace
+Buggy patrol & 0.5\,m, continuous drive through a seeded area & End-to-end ground-stage recall and duplicate-detection behaviour. \\
+\addlinespace
+Grasp approach & 0.2\,m static, arm entering frame & Whether detection survives occlusion \emph{by the robot's own arm} --- a failure mode that is easy to forget and fatal in practice. \\
+\addlinespace
+Confuser plot & 2\,m and 0.5\,m over pine cones, stones, leaves only & False-positive rate on a scene containing zero litter. \\
+\addlinespace
+Empty control & Each altitude over verified-clean ground & Baseline false-positive rate. Any detection here is an error, which makes this the cheapest take to score. \\
+\bottomrule
+\end{longtable}
+
+\noindent \textbf{Seeded plots.} Lay out a $5\times5$\,m plot with a known
+inventory --- e.g.\ 20 cigarette butts, 5 bottles, 5 cans, 10 wrappers, 3 bags
+--- at recorded positions. Because the count is known exactly, recall can be
+computed without annotating every frame. Build three plots: sparse (realistic),
+dense (hot-spot), and confuser-heavy.
+
+\subsection*{Scoring the videos}
+
+Annotate every $N$-th frame (10--30) rather than all frames, and report
+precision/recall broken down by altitude, occlusion level, surface and class ---
+aggregate numbers will hide exactly the failures that matter. Track two
+video-specific metrics: \textbf{re-detection stability} (fraction of frames in
+which an object, once seen, stays detected) and \textbf{time-to-first-detection}
+during descent.
+
+Keep every test video strictly out of training. Given GPS is recorded, split
+train/test \textbf{by location}, not randomly --- random splits across frames of
+the same site inflate scores badly.
+
+\section{Suggested order of work}
+
+\begin{enumerate}[leftmargin=*,itemsep=1pt]
+\item Freeze the label vocabulary; fix the existing typo/language labels.
+\item Fly one altitude-descent test video. It costs an afternoon and tells you
+the real per-class detection ceiling before you invest in bulk capture.
+\item Decide the mission profile from that measurement (Section~\ref{sec:gsd}
+gives the prediction; the flight gives the truth).
+\item Bulk-capture the altitude ladders across surfaces and lighting.
+\item Annotate with the extended per-instance metadata.
+\item Record the full test-video suite; keep it sealed from training.
+\end{enumerate}
+
+\vspace{4mm}
+\noindent\rule{\linewidth}{0.4pt}\\
+{\small Figures in Sections 1--2 are computed from the current repository
+contents and from the stated 4K/24\,mm-equivalent camera assumption; substitute
+the real lens parameters when the airframe is chosen, as GSD scales linearly
+with focal length.}
+
+\end{document}

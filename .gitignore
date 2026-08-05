@@ -29,3 +29,8 @@ tools/annotator/imgui/
 key.txt
 *.key
 analysis/batch/
+
+# LaTeX build artifacts
+*.log
+*.out
+*.toc
