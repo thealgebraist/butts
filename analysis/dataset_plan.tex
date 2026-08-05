@@ -44,11 +44,12 @@ iPhone photographs taken from roughly waist height. The directory scaffold for
 aerial, occlusion, lighting and weather variation exists but contains only 27
 \texttt{.gitkeep} placeholder files and zero images.
 
-\item \gap{Detecting cigarette butts from 20\,m is not possible with a 4K
-camera.} This is a physical limit, not a model-quality problem
-(Section~\ref{sec:gsd}). At 20\,m a butt spans about 3 pixels. No amount of
-training fixes that. The mission profile has to be restructured around what each
-altitude can actually resolve.
+\item \gap{Detecting cigarette butts from 20\,m is not possible with the Neo 2.}
+This is a physical limit, not a model-quality problem (Section~\ref{sec:gsd}).
+The Neo 2's 16.5\,mm-equivalent lens is very wide, so at 20\,m a butt spans
+about \emph{two} pixels, and even a plastic bottle is marginal. Butts require
+flying at 1.5--2\,m; the survey pass should drop from 20\,m to 10--12\,m. No
+amount of training changes these numbers.
 
 \item \gap{The set is too small and too unbalanced to train on.} After
 classification, 107 of 244 images contain no identifiable object, and 13 of the
@@ -112,66 +113,119 @@ Ground sample distance (GSD) is how much real-world length one pixel covers:
 \mathrm{GSD} = \frac{2h\tan(\theta/2)}{W}
 \]
 for altitude $h$, horizontal field of view $\theta$, and image width $W$ pixels.
-For a 4K sensor ($W=3840$) with a typical 24\,mm-equivalent drone lens
-($\theta \approx 73^\circ$):
+
+\subsection{Numbers for the DJI Neo 2}
+
+The available airframe is a DJI Neo 2: 1/2-inch 12\,MP CMOS, \textbf{16.5\,mm
+equivalent focal length}, f/2.2, FOV quoted as $119.8^\circ$, 4K video at
+$3840\times2160$ up to 100\,fps, 2-axis (tilt/roll) mechanical gimbal, downward
+infrared plus forward LiDAR obstacle sensing.
+
+This lens is \emph{much wider} than a typical drone camera, which is good for
+coverage and bad for resolving small objects. Taking the 16.5\,mm equivalent
+gives a horizontal FOV of $95^\circ$; reading DJI's quoted $119.8^\circ$ as a
+16:9 diagonal gives $113^\circ$. DJI generally quotes FOV before dewarping, so
+the truth sits between --- the table uses $95^\circ$ and the text notes the
+pessimistic case.
 
 \begin{table}[H]
 \centering
-\begin{tabular}{rrr rrrrr}
+\begin{tabular}{rrr rrrr}
 \toprule
-\textbf{Alt.} & \textbf{Swath} & \textbf{GSD} & \multicolumn{5}{c}{\textbf{Object size in pixels (longest dimension)}} \\
-\cmidrule(l){4-8}
-(m) & (m) & (mm/px) & Cig.\ butt & Cap & Wrapper & Bottle & Chair \\
+\textbf{Alt.} & \textbf{Swath} & \textbf{GSD} & \multicolumn{4}{c}{\textbf{Object size in pixels (longest dimension)}} \\
+\cmidrule(l){4-7}
+(m) & (m) & (mm/px) & Cig.\ butt & Cap & Wrapper & Bottle \\
 \midrule
-20   & 29.6 & 7.71 & \gap{3.2}  & \gap{3.9}  & \gap{7.8}  & 32     & 104 \\
-10   & 14.8 & 3.85 & \gap{6.5}  & \gap{7.8}  & \gap{15.6} & 65     & 208 \\
-5    & 7.4  & 1.93 & \gap{13.0} & \gap{15.6} & 31         & 130    & 415 \\
-2    & 3.0  & 0.77 & 32         & 39         & 78         & 324    & 1038 \\
-1    & 1.5  & 0.39 & 65         & 78         & 156        & 649    & 2076 \\
-0.2  & 0.3  & 0.08 & 324        & 389        & 778        & 3243   & 10379 \\
+20   & 43.6 & 11.36 & \gap{2.2}  & \gap{2.6}  & \gap{5.3}  & \gap{22} \\
+10   & 21.8 & 5.68  & \gap{4.4}  & \gap{5.3}  & \gap{10.6} & 44 \\
+5    & 10.9 & 2.84  & \gap{8.8}  & \gap{10.6} & 21         & 88 \\
+3    & 6.5  & 1.70  & \gap{14.7} & \gap{17.6} & 35         & 147 \\
+2    & 4.4  & 1.14  & 22         & 26         & 53         & 220 \\
+1    & 2.2  & 0.57  & 44         & 53         & 106        & 440 \\
+0.5  & 1.1  & 0.28  & 88         & 106        & 211        & 880 \\
 \bottomrule
 \end{tabular}
-\caption{Red entries fall below roughly 20\,px, the practical floor at which
-small-object detectors still work. A cigarette butt is about $8\times25$\,mm.}
+\caption{DJI Neo 2, 4K, $95^\circ$ horizontal FOV. Red entries fall below
+roughly 20\,px, the practical floor at which small-object detectors still work.
+A cigarette butt is about $8\times25$\,mm.}
 \end{table}
 
 \noindent Inverting this gives the \textbf{maximum altitude at which each object
-class is still detectable} (20\,px threshold):
+class is still detectable} (20\,px threshold). The second column is the
+pessimistic $113^\circ$ reading --- plan against it:
 
 \begin{center}
-\begin{tabular}{lr}
+\begin{tabular}{lrr}
 \toprule
-\textbf{Object} & \textbf{Max.\ altitude} \\
+\textbf{Object} & \textbf{Max.\ alt.\ ($95^\circ$)} & \textbf{Max.\ alt.\ ($113^\circ$)} \\
 \midrule
-Cigarette butt & 3.2\,m \\
-Bottle cap     & 3.9\,m \\
-Wrapper        & 7.8\,m \\
-Plastic bottle & 32\,m \\
-Chair / large debris & 100\,m+ \\
+Cigarette butt & 2.2\,m & 1.6\,m \\
+Bottle cap     & 2.6\,m & 1.9\,m \\
+Wrapper        & 5.3\,m & 3.8\,m \\
+Plastic bottle & 22\,m  & 16\,m \\
+Chair / large debris & 70\,m+ & 50\,m+ \\
 \bottomrule
 \end{tabular}
 \end{center}
 
-\subsection*{Consequence for the planned mission}
+\noindent These ceilings are roughly \textbf{30\% lower than for a conventional
+24\,mm-equivalent drone camera}, purely because of the wide lens. The practical
+consequences are specific:
+
+\begin{itemize}[leftmargin=*,itemsep=2pt]
+\item \gap{Cigarette butts require flying at 2\,m or below} --- realistically
+1.5\,m to keep margin. That is a low, slow pass demanding good altitude hold;
+the Neo 2's downward IR and LiDAR make it feasible, but it is the binding
+constraint on the whole mission.
+\item \gap{Even plastic bottles are marginal at 20\,m} (16--22\,px). The high
+survey pass should be flown at \textbf{10--12\,m, not 20\,m}, if it is expected
+to detect anything at all.
+\item The wide lens partly compensates: at 2\,m the swath is 4.4\,m, versus
+3.0\,m for a 24\,mm lens. With 20\% overlap that is $\approx$2.9\,km of track per
+hectare instead of 3.3\,km --- still substantial, so the low pass must be
+targeted rather than exhaustive.
+\end{itemize}
+
+\subsection*{Revised mission profile}
 
 The proposed profile --- scan at 20\,m, then 1--2\,m, then buggy --- needs one
 correction: \textbf{the 20\,m pass cannot be a litter-detection pass}. It should
-be re-scoped as a \emph{survey} pass that produces:
-\begin{itemize}[leftmargin=*,itemsep=1pt]
-\item detections of large items only (bottles, bags, cans, furniture);
-\item a terrain/surface map (grass vs.\ gravel vs.\ asphalt) used to prioritise;
-\item a coverage plan for the low pass.
+be re-scoped as a \emph{survey} pass, flown lower than planned:
+
+\begin{center}
+\begin{tabular}{llp{7.4cm}}
+\toprule
+\textbf{Pass} & \textbf{Altitude} & \textbf{Role} \\
+\midrule
+Survey  & 10--12\,m & Large items (bottles, bags, cans, furniture); terrain and
+surface map; produces the priority regions for the next pass. Not a
+small-object pass. \\
+\addlinespace
+Detection & 1.5--2\,m & Primary small-object detection. Slow, targeted at
+regions flagged by the survey pass. \\
+\addlinespace
+Buggy & 0.2--1\,m & Approach, identification, grasp. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent Two Neo-2-specific cautions for the low pass:
+
+\begin{itemize}[leftmargin=*,itemsep=2pt]
+\item \textbf{Downwash.} The Neo 2 is a very light airframe, and at 1.5--2\,m
+its prop wash may physically move cigarette butts, wrappers and dry leaves.
+This corrupts both detection and the ground truth of a seeded test plot. Test
+it explicitly before building a protocol on top of it: hover at 2\,m over a
+seeded plot and compare before/after layouts.
+\item \textbf{2-axis gimbal.} Tilt and roll are stabilised; \emph{yaw is not}.
+Expect residual rotational shake, worse in wind and worse at low altitude in
+ground effect. Fly the low pass in calm conditions and keep speed down.
 \end{itemize}
 
-Small-object detection has to happen on the \textbf{1--2\,m pass}, where a butt
-is 32--65\,px. Note the cost: at 2\,m the swath is only 3\,m wide, so covering
-one hectare takes roughly 3.3\,km of flight track. Budget the low pass over
-prioritised regions, not the whole area --- which is exactly what the high pass
-should be producing.
-
-A useful lever: if the drone can carry a longer lens or crop-zoom, the 20\,m pass
-gains proportional resolution. Doubling focal length halves GSD and halves the
-required low-pass coverage. Worth testing before committing to a flight plan.
+\noindent A useful lever: the 4K/100\,fps mode allows a much shorter effective
+exposure per frame. For a fixed ground speed this cuts motion blur
+substantially, which matters more here than frame rate itself --- blur is what
+destroys a 22-pixel object.
 
 \section{What needs to be captured}
 
@@ -307,11 +361,35 @@ Video is the right evaluation medium because the deployed system sees motion,
 motion blur and repeated views of the same object --- and because a video lets
 you measure \emph{tracking consistency}, which single images cannot.
 
-\textbf{General recording rules.} Record 4K at 30\,fps, in the highest-quality
-codec available, with stabilisation \emph{off} for at least half the takes (the
-model must tolerate real vibration). Log altitude, speed and GPS. Before each
-take, place a known object set and photograph a ground-truth layout map, so every
-object in the scene has a known identity and position. Keep takes to 60--90\,s.
+\subsection*{Neo 2 recording settings}
+
+\begin{center}
+\begin{tabular}{lp{9.2cm}}
+\toprule
+\textbf{Setting} & \textbf{Value and reason} \\
+\midrule
+Resolution & 4K $3840\times2160$. Never 1080p --- halving resolution doubles
+the minimum detectable object size. \\
+Frame rate & 60\,fps normally; \textbf{100\,fps} for all moving takes. The
+shorter exposure is what preserves small objects, not the frame count. \\
+Bitrate/codec & Highest available (80\,Mbps). Compression artefacts and
+20-pixel objects interact badly. \\
+Colour & Standard profile, not D-Log, unless you will apply the identical
+transform at inference. \\
+Gimbal & Nadir ($-90^\circ$) for survey and sweep takes; $-45^\circ$ for the
+oblique set. \\
+Stabilisation & Record at least a third of takes with EIS off, so the model
+sees the real vibration signature it will meet in deployment. \\
+Flight & Calm conditions for low passes. Log altitude, speed and GPS for
+every take. \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\noindent\textbf{Before each take}, place a known object set and photograph a
+ground-truth layout map from directly above, so every object in the scene has a
+known identity and position. Keep takes to 60--90\,s. Fly the same plot across
+all conditions so that comparisons isolate one variable at a time.
 
 \subsection*{Required takes}
 
@@ -320,13 +398,13 @@ object in the scene has a known identity and position. Keep takes to 60--90\,s.
 \textbf{Take} & \textbf{Profile} & \textbf{What it measures} \\
 \midrule
 \endhead
-Altitude descent & Hover, descend 20\,m$\rightarrow$1\,m over a fixed seeded plot & The empirical detection threshold per class. The altitude at which each object first appears is the single most useful number you can collect. \\
+Altitude descent & Hover, descend 15\,m$\rightarrow$0.5\,m over a fixed seeded plot, pausing 5\,s at 15, 10, 5, 3, 2, 1, 0.5\,m & \textbf{Fly this one first.} It gives the empirical detection threshold per class. The altitude at which each object first appears is the single most useful number you can collect, and it validates or corrects Table~2 against your actual airframe. \\
 \addlinespace
-High survey lawn & 20\,m, 3\,m/s, straight transects & Large-object recall and false-positive rate over open ground. \\
+High survey & 10--12\,m, 3\,m/s, straight transects & Large-object recall and false-positive rate over open ground. Flown at 10--12\,m rather than 20\,m per Section~\ref{sec:gsd}. \\
 \addlinespace
-Low sweep & 2\,m, 1\,m/s, parallel tracks with 20\% overlap & Primary small-object detection performance; also validates that the swath/overlap plan actually achieves full coverage. \\
+Low sweep & 1.5--2\,m, 1\,m/s, parallel tracks with 20\% overlap (4.4\,m swath) & Primary small-object detection performance; also validates that the swath/overlap plan actually achieves full coverage. \\
 \addlinespace
-Speed sweep & 2\,m at 0.5, 1, 2, 4\,m/s & Where motion blur breaks detection --- sets the operational speed limit. \\
+Speed sweep & 2\,m at 0.5, 1, 2, 4\,m/s; repeat at 60 and 100\,fps & Where motion blur breaks detection --- sets the operational speed limit, and quantifies what the 100\,fps mode buys you. \\
 \addlinespace
 Occlusion plot & 2\,m over a plot seeded at all four occlusion levels & Recall as a function of occlusion; the number to quote when scoping expectations. \\
 \addlinespace
@@ -341,6 +419,8 @@ Buggy patrol & 0.5\,m, continuous drive through a seeded area & End-to-end groun
 Grasp approach & 0.2\,m static, arm entering frame & Whether detection survives occlusion \emph{by the robot's own arm} --- a failure mode that is easy to forget and fatal in practice. \\
 \addlinespace
 Confuser plot & 2\,m and 0.5\,m over pine cones, stones, leaves only & False-positive rate on a scene containing zero litter. \\
+\addlinespace
+Downwash check & Hover 60\,s at 2\,m, then 1\,m, over a seeded plot & Whether the aircraft's own prop wash displaces the targets. Not a detection test --- a validity test for every other low take. \\
 \addlinespace
 Empty control & Each altitude over verified-clean ground & Baseline false-positive rate. Any detection here is an error, which makes this the cheapest take to score. \\
 \bottomrule
