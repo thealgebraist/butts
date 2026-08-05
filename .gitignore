@@ -43,3 +43,5 @@ analysis/pseudo_work/
 *.onnx
 *.pth
 weights/
+analysis/det_work/
+runs/

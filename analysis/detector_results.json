@@ -1,0 +1,28 @@
+{
+ "counts": {
+  "train": {
+   "annotated": 35,
+   "background": 44,
+   "boxes": 43
+  },
+  "val": {
+   "annotated": 14,
+   "background": 16,
+   "boxes": 14
+  }
+ },
+ "boxes": 57,
+ "mAP50": 0.5101,
+ "mAP50_95": 0.3485,
+ "precision": 0.8026,
+ "recall": 0.4286,
+ "per_class": {
+  "cigarette_butt": {
+   "AP50": 0.51,
+   "precision": 0.803,
+   "recall": 0.429
+  },
+  "cigarette_pack": "no instances landed in the val split; not evaluated"
+ },
+ "note": "val split is GPS-location-disjoint; 30 val images, 14 boxes (all butts)"
+}

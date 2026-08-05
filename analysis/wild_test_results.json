@@ -1,0 +1,87 @@
+{
+ "model": "yolo11n, 640px, trained on 35 images / 43 boxes",
+ "source": "Wikimedia Commons",
+ "note": "images not redistributed in this repo; see descurl for each",
+ "images": [
+  {
+   "file": "Butt_4511714047_.jpg",
+   "title": "File:Butt (4511714047).jpg",
+   "license": "CC BY 2.0",
+   "descurl": "https://commons.wikimedia.org/wiki/File:Butt_(4511714047).jpg",
+   "ground_truth_butts": 1,
+   "n_detections": 4,
+   "max_conf": 0.485,
+   "localised_correctly": true
+  },
+  {
+   "file": "Camel_Crush_cigarette.jpg",
+   "title": "File:Camel Crush cigarette.jpg",
+   "license": "CC0",
+   "descurl": "https://commons.wikimedia.org/wiki/File:Camel_Crush_cigarette.jpg",
+   "ground_truth_butts": 1,
+   "n_detections": 0,
+   "max_conf": 0.0,
+   "localised_correctly": false
+  },
+  {
+   "file": "Ceniza_9627019646_.jpg",
+   "title": "File:Ceniza (9627019646).jpg",
+   "license": "CC BY 2.0",
+   "descurl": "https://commons.wikimedia.org/wiki/File:Ceniza_(9627019646).jpg",
+   "ground_truth_butts": 4,
+   "n_detections": 0,
+   "max_conf": 0.0,
+   "localised_correctly": false
+  },
+  {
+   "file": "Chalk_of_shame_Kreda_wstydu_Poznan_PST.jpg",
+   "title": "File:Chalk of shame, Kreda wstydu, Poznan PST Aleje Solidarnosci (2).jpg",
+   "license": "CC BY-SA 4.0",
+   "descurl": "https://commons.wikimedia.org/wiki/File:Chalk_of_shame,_Kreda_wstydu,_Poznan_PST_Aleje_Solidarnosci_(2).jpg",
+   "ground_truth_butts": 0,
+   "n_detections": 1,
+   "max_conf": 0.138,
+   "localised_correctly": false
+  },
+  {
+   "file": "Cigarette_butt_20190408.jpg",
+   "title": "File:Cigarette butt 20190408.jpg",
+   "license": "CC BY-SA 4.0",
+   "descurl": "https://commons.wikimedia.org/wiki/File:Cigarette_butt_20190408.jpg",
+   "ground_truth_butts": 1,
+   "n_detections": 3,
+   "max_conf": 0.129,
+   "localised_correctly": true
+  },
+  {
+   "file": "Cigarette_butt_in_dirty_snow.jpg",
+   "title": "File:Cigarette butt in dirty snow.jpg",
+   "license": "CC BY-SA 3.0",
+   "descurl": "https://commons.wikimedia.org/wiki/File:Cigarette_butt_in_dirty_snow.jpg",
+   "ground_truth_butts": 1,
+   "n_detections": 1,
+   "max_conf": 0.116,
+   "localised_correctly": true
+  },
+  {
+   "file": "Cigarette_butt_on_asphalt.jpg",
+   "title": "File:Cigarette butt on asphalt.jpg",
+   "license": "CC BY-SA 4.0",
+   "descurl": "https://commons.wikimedia.org/wiki/File:Cigarette_butt_on_asphalt.jpg",
+   "ground_truth_butts": 1,
+   "n_detections": 1,
+   "max_conf": 0.581,
+   "localised_correctly": true
+  },
+  {
+   "file": "Wet_sidewalk_after_rain_Medoc.jpg",
+   "title": "File:Cigarette butt on wet sidewalk after heavy rain M\u00e9got 01.jpg",
+   "license": "CC BY-SA 4.0",
+   "descurl": "https://commons.wikimedia.org/wiki/File:Cigarette_butt_on_wet_sidewalk_after_heavy_rain_M%C3%A9got_01.jpg",
+   "ground_truth_butts": 1,
+   "n_detections": 0,
+   "max_conf": 0.0,
+   "localised_correctly": false
+  }
+ ]
+}
