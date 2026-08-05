@@ -1,0 +1,156 @@
+[
+ {
+  "rel": "dontknow/IMG_2151.jpg",
+  "folder": "dontknow",
+  "pred": "cigarette_butt",
+  "conf": 1.0,
+  "in_train": false
+ },
+ {
+  "rel": "dontknow/IMG_2748.jpg",
+  "folder": "dontknow",
+  "pred": "cigarette_butt",
+  "conf": 1.0,
+  "in_train": false
+ },
+ {
+  "rel": "plastic_bag/A70E66A7-9F9F-42AA-BCFA-1A05EF9DEF87.jpg",
+  "folder": "plastic_bag",
+  "pred": "cigarette_butt",
+  "conf": 1.0,
+  "in_train": false
+ },
+ {
+  "rel": "plastic_piece/IMG_2728.jpg",
+  "folder": "plastic_piece",
+  "pred": "cigarette_butt",
+  "conf": 1.0,
+  "in_train": false
+ },
+ {
+  "rel": "cigarette_pack/IMG_2239.jpg",
+  "folder": "cigarette_pack",
+  "pred": "cigarette_butt",
+  "conf": 0.999,
+  "in_train": false
+ },
+ {
+  "rel": "rope/DAFB6D5D-7F8D-45D5-B12A-28D02D5937A5.jpg",
+  "folder": "rope",
+  "pred": "cigarette_butt",
+  "conf": 0.999,
+  "in_train": false
+ },
+ {
+  "rel": "cigarette_pack/IMG_2240.jpg",
+  "folder": "cigarette_pack",
+  "pred": "cigarette_butt",
+  "conf": 0.998,
+  "in_train": false
+ },
+ {
+  "rel": "can/5873E130-B505-4B37-8B3B-0D02587B44BD.jpg",
+  "folder": "can",
+  "pred": "cigarette_butt",
+  "conf": 0.997,
+  "in_train": false
+ },
+ {
+  "rel": "detergent_package/C6FD95AA-DB99-441E-B2D2-8A35BF39FE87.jpg",
+  "folder": "detergent_package",
+  "pred": "cigarette_butt",
+  "conf": 0.997,
+  "in_train": false
+ },
+ {
+  "rel": "dontknow/IMG_2729.jpg",
+  "folder": "dontknow",
+  "pred": "cigarette_butt",
+  "conf": 0.997,
+  "in_train": false
+ },
+ {
+  "rel": "plastic_bag/868B6347-04D9-480E-8E2F-891EC929140D.jpg",
+  "folder": "plastic_bag",
+  "pred": "cigarette_butt",
+  "conf": 0.987,
+  "in_train": false
+ },
+ {
+  "rel": "glove/E84E85EE-21DB-47B8-B18A-FAAB5C3F78B7.jpg",
+  "folder": "glove",
+  "pred": "cigarette_butt",
+  "conf": 0.98,
+  "in_train": false
+ },
+ {
+  "rel": "dontknow/IMG_2723.jpg",
+  "folder": "dontknow",
+  "pred": "cigarette_butt",
+  "conf": 0.977,
+  "in_train": false
+ },
+ {
+  "rel": "textile/C5386BFC-CC65-4E32-BDCF-15E8195A7956.jpg",
+  "folder": "textile",
+  "pred": "cigarette_butt",
+  "conf": 0.962,
+  "in_train": false
+ },
+ {
+  "rel": "cigarette_pack/IMG_2241.jpg",
+  "folder": "cigarette_pack",
+  "pred": "cigarette_butt",
+  "conf": 0.94,
+  "in_train": false
+ },
+ {
+  "rel": "cigarette_pack/IMG_2244.jpg",
+  "folder": "cigarette_pack",
+  "pred": "cigarette_butt",
+  "conf": 0.927,
+  "in_train": false
+ },
+ {
+  "rel": "bottle_cap/IMG_2753.jpg",
+  "folder": "bottle_cap",
+  "pred": "cigarette_butt",
+  "conf": 0.901,
+  "in_train": false
+ },
+ {
+  "rel": "can/IMG_2243.jpg",
+  "folder": "can",
+  "pred": "cigarette_butt",
+  "conf": 0.731,
+  "in_train": false
+ },
+ {
+  "rel": "plastic_straw/04A093A4-BB63-4E0A-91C9-6183B9100791.jpg",
+  "folder": "plastic_straw",
+  "pred": "cigarette_butt",
+  "conf": 0.677,
+  "in_train": false
+ },
+ {
+  "rel": "plastic_container/8FDB6A4C-9ED3-46BF-AF61-CA16595FFE52.jpg",
+  "folder": "plastic_container",
+  "pred": "cigarette_butt",
+  "conf": 0.578,
+  "in_train": false
+ },
+ {
+  "rel": "paper/57846B35-27F5-46E1-8CCA-400929953D62.jpg",
+  "folder": "paper",
+  "pred": "cigarette_butt",
+  "conf": 0.55,
+  "in_train": false
+ },
+ {
+  "rel": "plastic_bottle/0FC821EB-ED5B-44E4-A7BB-3ACC06FB1316.jpg",
+  "folder": "plastic_bottle",
+  "pred": "cigarette_butt",
+  "conf": 0.51,
+  "in_train": false
+ }
+]

@@ -1,0 +1,35 @@
+{
+ "baseline": {
+  "added": 0,
+  "skipped_in_val": 0,
+  "val_n": 41,
+  "accuracy": 0.829,
+  "majority_baseline": 0.756,
+  "recall": {
+   "cigarette_butt": 0.8,
+   "dontknow": 0.839
+  }
+ },
+ "verified": {
+  "added": 1,
+  "skipped_in_val": 1,
+  "val_n": 41,
+  "accuracy": 0.854,
+  "majority_baseline": 0.756,
+  "recall": {
+   "cigarette_butt": 0.7,
+   "dontknow": 0.903
+  }
+ },
+ "all_found": {
+  "added": 18,
+  "skipped_in_val": 4,
+  "val_n": 41,
+  "accuracy": 0.829,
+  "majority_baseline": 0.756,
+  "recall": {
+   "cigarette_butt": 0.9,
+   "dontknow": 0.806
+  }
+ }
+}
