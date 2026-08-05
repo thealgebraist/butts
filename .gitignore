@@ -37,3 +37,9 @@ analysis/batch/
 
 analysis/cls_work/
 analysis/pseudo_work/
+
+# Model weights (downloaded, not versioned)
+*.pt
+*.onnx
+*.pth
+weights/
