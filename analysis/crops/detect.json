@@ -1,0 +1,242 @@
+[
+ [
+  "gpt-5.4",
+  "burgerking",
+  {
+   "object": "takeout drink cup lid",
+   "category": "plastic food packaging",
+   "brand": "Burger King",
+   "confidence": "high"
+  }
+ ],
+ [
+  "gpt-5.4",
+  "chair",
+  {
+   "object": "folding beach chair",
+   "category": "outdoor furniture",
+   "brand": null,
+   "confidence": "high"
+  }
+ ],
+ [
+  "gpt-5.4",
+  "cocio",
+  {
+   "object": "soft drink bottle",
+   "category": "plastic bottle",
+   "brand": "Coca-Cola",
+   "confidence": "high"
+  }
+ ],
+ [
+  "gpt-5.4",
+  "dirty_cloth",
+  {
+   "object": "car carpet liner",
+   "category": "fabric/automotive interior",
+   "brand": null,
+   "confidence": "medium"
+  }
+ ],
+ [
+  "gpt-5.4",
+  "gloves",
+  {
+   "object": "work glove",
+   "category": "rubber-coated glove",
+   "brand": null,
+   "confidence": "high"
+  }
+ ],
+ [
+  "gpt-5.4",
+  "maoam",
+  {
+   "object": "candy wrapper",
+   "category": "plastic packaging",
+   "brand": "MAOAM",
+   "confidence": "high"
+  }
+ ],
+ [
+  "gpt-5.4",
+  "paper",
+  {
+   "object": "plastic straw",
+   "category": "plastic",
+   "brand": null,
+   "confidence": "medium"
+  }
+ ],
+ [
+  "gpt-5.4",
+  "plastic_bag",
+  {
+   "object": "plastic bag",
+   "category": "plastic film",
+   "brand": null,
+   "confidence": "high"
+  }
+ ],
+ [
+  "gpt-5.5",
+  "burgerking",
+  {
+   "object": "Burger King wrapper",
+   "category": "paper food packaging",
+   "brand": "Burger King",
+   "confidence": "high"
+  }
+ ],
+ [
+  "gpt-5.5",
+  "chair",
+  {
+   "object": "folding chair",
+   "category": "metal and fabric outdoor furniture",
+   "brand": null,
+   "confidence": "high"
+  }
+ ],
+ [
+  "gpt-5.5",
+  "cocio",
+  {
+   "object": "chocolate milk bottle",
+   "category": "plastic bottle",
+   "brand": "Chocomel",
+   "confidence": "high"
+  }
+ ],
+ [
+  "gpt-5.5",
+  "dirty_cloth",
+  {
+   "object": "carpet fragment",
+   "category": "textile/fabric",
+   "brand": null,
+   "confidence": "medium"
+  }
+ ],
+ [
+  "gpt-5.5",
+  "gloves",
+  {
+   "object": "work glove",
+   "category": "fabric/rubber glove",
+   "brand": null,
+   "confidence": "high"
+  }
+ ],
+ [
+  "gpt-5.5",
+  "maoam",
+  {
+   "object": "MAOAM Bloxx candy wrapper",
+   "category": "plastic candy wrapper",
+   "brand": "MAOAM",
+   "confidence": "high"
+  }
+ ],
+ [
+  "gpt-5.5",
+  "paper",
+  {
+   "object": "drinking straw",
+   "category": "plastic",
+   "brand": null,
+   "confidence": "medium"
+  }
+ ],
+ [
+  "gpt-5.5",
+  "plastic_bag",
+  {
+   "object": "plastic wrapper",
+   "category": "plastic film",
+   "brand": null,
+   "confidence": "medium"
+  }
+ ],
+ [
+  "gpt-5.6-sol",
+  "burgerking",
+  {
+   "object": "food wrapper",
+   "category": "paper packaging",
+   "brand": "Burger King",
+   "confidence": "high"
+  }
+ ],
+ [
+  "gpt-5.6-sol",
+  "chair",
+  {
+   "object": "folding lawn chair",
+   "category": "outdoor furniture",
+   "brand": null,
+   "confidence": "high"
+  }
+ ],
+ [
+  "gpt-5.6-sol",
+  "cocio",
+  {
+   "object": "chocolate milk bottle",
+   "category": "glass beverage bottle",
+   "brand": "Cocio",
+   "confidence": "high"
+  }
+ ],
+ [
+  "gpt-5.6-sol",
+  "dirty_cloth",
+  {
+   "object": "automotive felt liner",
+   "category": "molded textile insulation",
+   "brand": null,
+   "confidence": "medium"
+  }
+ ],
+ [
+  "gpt-5.6-sol",
+  "gloves",
+  {
+   "object": "work glove",
+   "category": "rubber-coated fabric PPE",
+   "brand": null,
+   "confidence": "high"
+  }
+ ],
+ [
+  "gpt-5.6-sol",
+  "maoam",
+  {
+   "object": "candy multipack wrapper",
+   "category": "plastic packaging",
+   "brand": "MAOAM",
+   "confidence": "high"
+  }
+ ],
+ [
+  "gpt-5.6-sol",
+  "paper",
+  {
+   "object": "plastic bag fragment",
+   "category": "plastic film",
+   "brand": null,
+   "confidence": "low"
+  }
+ ],
+ [
+  "gpt-5.6-sol",
+  "plastic_bag",
+  {
+   "object": "bubble wrap",
+   "category": "plastic packaging",
+   "brand": null,
+   "confidence": "high"
+  }
+ ]
+]

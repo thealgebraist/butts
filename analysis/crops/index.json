@@ -1,0 +1,66 @@
+[
+ {
+  "label": "paper",
+  "size": [
+   1139,
+   868
+  ],
+  "src": "D6781D3F-9821-43FF-8851-031BA55E4DFB.jpg"
+ },
+ {
+  "label": "dirty_cloth",
+  "size": [
+   3764,
+   2219
+  ],
+  "src": "A1159253-21D4-4032-AF02-B4EF00935CC5.jpg"
+ },
+ {
+  "label": "chair",
+  "size": [
+   2725,
+   1675
+  ],
+  "src": "B5296087-7065-455C-AD77-14CA730EECF6.jpg"
+ },
+ {
+  "label": "gloves",
+  "size": [
+   1537,
+   1754
+  ],
+  "src": "E84E85EE-21DB-47B8-B18A-FAAB5C3F78B7.jpg"
+ },
+ {
+  "label": "plastic_bag",
+  "size": [
+   1373,
+   1225
+  ],
+  "src": "A70E66A7-9F9F-42AA-BCFA-1A05EF9DEF87.jpg"
+ },
+ {
+  "label": "maoam",
+  "size": [
+   967,
+   756
+  ],
+  "src": "66637352-21A9-4BB6-9D1C-90DB588D4239.jpg"
+ },
+ {
+  "label": "burgerking",
+  "size": [
+   1685,
+   2057
+  ],
+  "src": "24326C0F-133F-4B95-A983-19ADD10F9B16.jpg"
+ },
+ {
+  "label": "cocio",
+  "size": [
+   1109,
+   2023
+  ],
+  "src": "0FC79A8F-45D8-45AB-879E-2CD23277BC90.jpg"
+ }
+]
