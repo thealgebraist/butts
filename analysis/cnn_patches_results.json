@@ -1,0 +1,17 @@
+{
+ "params": 471970,
+ "patch": 64,
+ "epochs": 30,
+ "train_pos": 492,
+ "train_neg": 1289,
+ "val_pos": 96,
+ "val_neg": 478,
+ "val_majority_baseline": 0.8328,
+ "best": {
+  "accuracy": 0.8676,
+  "precision": 0.5862,
+  "recall": 0.7083,
+  "f1": 0.6415,
+  "epoch": 13
+ }
+}

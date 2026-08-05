@@ -1,0 +1,72 @@
+{
+ "note": "peak/box location judged visually against the object; images not redistributed",
+ "scratch_cnn": {
+  "architecture": "8 conv + GAP + 2 FC, 472k params, trained from random init",
+  "val_patch_f1": 0.6415,
+  "val_accuracy": 0.8676,
+  "majority_baseline": 0.8328
+ },
+ "yolo11n": {
+  "val_mAP50": 0.51,
+  "val_precision": 0.803,
+  "val_recall": 0.429
+ },
+ "wild": [
+  {
+   "file": "Butt_4511714047_.jpg",
+   "gt_butts": 1,
+   "cnn_peak_conf": 0.354,
+   "cnn_on_target": false,
+   "yolo_on_target": true
+  },
+  {
+   "file": "Camel_Crush_cigarette.jpg",
+   "gt_butts": 1,
+   "cnn_peak_conf": 0.621,
+   "cnn_on_target": true,
+   "yolo_on_target": false
+  },
+  {
+   "file": "Ceniza_9627019646_.jpg",
+   "gt_butts": 4,
+   "cnn_peak_conf": 0.903,
+   "cnn_on_target": true,
+   "yolo_on_target": false
+  },
+  {
+   "file": "Chalk_of_shame_Kreda_wstydu_Poznan_PST.jpg",
+   "gt_butts": 0,
+   "cnn_peak_conf": 1.0,
+   "cnn_on_target": false,
+   "yolo_on_target": false
+  },
+  {
+   "file": "Cigarette_butt_20190408.jpg",
+   "gt_butts": 1,
+   "cnn_peak_conf": 0.808,
+   "cnn_on_target": false,
+   "yolo_on_target": true
+  },
+  {
+   "file": "Cigarette_butt_in_dirty_snow.jpg",
+   "gt_butts": 1,
+   "cnn_peak_conf": 0.903,
+   "cnn_on_target": false,
+   "yolo_on_target": true
+  },
+  {
+   "file": "Cigarette_butt_on_asphalt.jpg",
+   "gt_butts": 1,
+   "cnn_peak_conf": 1.0,
+   "cnn_on_target": true,
+   "yolo_on_target": true
+  },
+  {
+   "file": "Wet_sidewalk_after_rain_Medoc.jpg",
+   "gt_butts": 1,
+   "cnn_peak_conf": 0.996,
+   "cnn_on_target": false,
+   "yolo_on_target": false
+  }
+ ]
+}

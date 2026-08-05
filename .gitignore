@@ -45,3 +45,4 @@ analysis/pseudo_work/
 weights/
 analysis/det_work/
 runs/
+analysis/cnn_patches.pt
